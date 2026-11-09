@@ -1,0 +1,18 @@
+{
+  "method": "resnet18",
+  "backbone": "resnet18",
+  "head": "logistic",
+  "C": 1.0,
+  "serving_fit_examples": 22,
+  "head_grid": {
+    "baseline_C": 1,
+    "nested_C": [
+      0.01,
+      0.1,
+      1,
+      10
+    ]
+  },
+  "head_file": "head.json",
+  "operational_prediction": "review"
+}

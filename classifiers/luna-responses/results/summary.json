@@ -1,0 +1,54 @@
+{
+  "method": "luna-responses",
+  "all22": {
+    "n": 22,
+    "correct": 19,
+    "accepted": 20,
+    "reviews": 2,
+    "errors": 0,
+    "bad_n": 13,
+    "bad_false_good": 1,
+    "coverage": 0.9090909090909091,
+    "accepted_accuracy": 0.95,
+    "confusion": {
+      "bad": {
+        "bad": 10,
+        "good": 1,
+        "review": 2,
+        "error": 0
+      },
+      "good": {
+        "bad": 0,
+        "good": 9,
+        "review": 0,
+        "error": 0
+      }
+    }
+  },
+  "shared9": {
+    "n": 9,
+    "correct": 8,
+    "accepted": 8,
+    "reviews": 1,
+    "errors": 0,
+    "bad_n": 5,
+    "bad_false_good": 0,
+    "coverage": 0.8888888888888888,
+    "accepted_accuracy": 1.0,
+    "confusion": {
+      "bad": {
+        "bad": 4,
+        "good": 0,
+        "review": 1,
+        "error": 0
+      },
+      "good": {
+        "bad": 0,
+        "good": 4,
+        "review": 0,
+        "error": 0
+      }
+    }
+  },
+  "operational_automation_coverage": 0
+}

@@ -1,0 +1,54 @@
+{
+  "method": "clip",
+  "all22": {
+    "n": 22,
+    "correct": 18,
+    "accepted": 22,
+    "reviews": 0,
+    "errors": 0,
+    "bad_n": 13,
+    "bad_false_good": 2,
+    "coverage": 1.0,
+    "accepted_accuracy": 0.8181818181818182,
+    "confusion": {
+      "bad": {
+        "bad": 11,
+        "good": 2,
+        "review": 0,
+        "error": 0
+      },
+      "good": {
+        "bad": 2,
+        "good": 7,
+        "review": 0,
+        "error": 0
+      }
+    }
+  },
+  "shared9": {
+    "n": 9,
+    "correct": 7,
+    "accepted": 9,
+    "reviews": 0,
+    "errors": 0,
+    "bad_n": 5,
+    "bad_false_good": 2,
+    "coverage": 1.0,
+    "accepted_accuracy": 0.7777777777777778,
+    "confusion": {
+      "bad": {
+        "bad": 3,
+        "good": 2,
+        "review": 0,
+        "error": 0
+      },
+      "good": {
+        "bad": 0,
+        "good": 4,
+        "review": 0,
+        "error": 0
+      }
+    }
+  },
+  "operational_automation_coverage": 0
+}

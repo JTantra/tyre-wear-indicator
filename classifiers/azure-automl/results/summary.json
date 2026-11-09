@@ -1,0 +1,7 @@
+{
+  "status": "unrun",
+  "train": 10,
+  "validation": 3,
+  "evaluation": 9,
+  "score": null
+}

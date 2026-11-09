@@ -1,7 +1,11 @@
 """Fail-closed offline publication check; diagnostics never print values."""
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())))
+_sys.path.insert(1,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())/'classifiers/common'))
 import ast, hashlib, json, re, sys
 from pathlib import Path
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[next(i for i,p in enumerate(Path(__file__).resolve().parents) if (p/'export-manifest.json').is_file())]
 METHODS=['resnet18','mobilenet','clip','luna-responses','luna-decisions','gpt41-finetuned','azure-automl']
 SECTIONS=['Status','Model and checkpoint provenance','Inputs and transforms','Training, validation and test','Metrics and coverage','Prompt or questions','Cost and runtime','Reproduce and expected artifacts','Limitations and rights']
 RULES={
@@ -17,8 +21,19 @@ RULES={
 }
 ALLOWED_BINARY={'docs/assets/twi-six-methods-costs.png'}
 def digest(data):return hashlib.sha256(data).hexdigest()
+OWNED_NUMERIC_HEADS={'classifiers/resnet18/weights/head.json': {'sha256': '887a7f40d8b1fa0a204681ce9a5033acb1616496213f80fac3ce0ed4679748ec', 'bytes': 38046}, 'classifiers/mobilenet/weights/head.json': {'sha256': '9714bc2539909ed8cc78b1c3719d6c21d56bd834076a940166463b869bfa3b89', 'bytes': 73684}, 'classifiers/clip/weights/head.json': {'sha256': 'b753a861108e77028f06dedd69e6f800a9e0215c6f3c8b02cec2917717b330a5', 'bytes': 40341}}
 def content_rules(rel,data):
  hits=[]
+ if rel in OWNED_NUMERIC_HEADS:
+  spec=OWNED_NUMERIC_HEADS[rel]
+  if len(data)!=spec['bytes'] or digest(data)!=spec['sha256']:hits.append('unapproved_owned_head_content')
+  try:
+   from classifiers.common.numeric_head import validate
+   validate(json.loads(data))
+  except Exception:hits.append('invalid_numeric_head_schema')
+  return hits
+ if Path(rel).suffix.lower() in {'.jpg','.jpeg','.webp','.joblib','.pkl','.pickle','.npz','.npy','.pth','.pt','.bin','.safetensors','.db','.jsonl','.zip'}:hits.append('private_or_large_artifact_path')
+ if '/weights/' in rel and not (rel.endswith(('README.md','pretrained.json','fetch.py')) or '/upstream/' in rel):hits.append('unapproved_weights_path')
  if len(data)>5*1024*1024:hits.append('oversized_file')
  if rel in ALLOWED_BINARY:
   if digest(data) != 'c83b73e196b0ccb555ef98ef47bac1c7737bd45103606a77667c0427e05c4c59':hits.append('unapproved_infographic_content')
@@ -37,7 +52,7 @@ def metric(rows):
  accepted=[r for r in rows if r['prediction'] in ['bad','good']];bad=[r for r in rows if r['truth']=='bad']
  return dict(n=len(rows),correct=sum(r['truth']==r['prediction'] for r in rows),accepted=len(accepted),reviews=sum(r['prediction']=='review' for r in rows),errors=sum(r['prediction'] not in ['bad','good','review'] for r in rows),bad_n=len(bad),bad_false_good=sum(r['prediction']=='good' for r in bad),coverage=len(accepted)/len(rows),accepted_accuracy=sum(r['truth']==r['prediction'] for r in accepted)/len(accepted) if accepted else None,confusion={a:{b:sum(r['truth']==a and r['prediction']==b for r in rows) for b in ['bad','good','review','error']} for a in ['bad','good']})
 def numeric_checks(root):
- rows=json.loads((root/'results/per-image.json').read_text());summ=json.loads((root/'results/method-summary.json').read_text());part=json.loads((root/'results/partitions.json').read_text());ft=json.loads((root/'results/gpt-training.json').read_text())
+ rows=json.loads((root/'classifiers/common/results/per-image.json').read_text());summ=json.loads((root/'classifiers/common/results/method-summary.json').read_text());part=json.loads((root/'classifiers/common/results/partitions.json').read_text());ft=json.loads((root/'classifiers/common/results/gpt-training.json').read_text())
  assert len(rows)==128 and len(summ)==7
  expected=[(12,4,2,1),(14,4,3,1),(18,7,2,2),(19,8,1,0),(11,3,6,3),(None,9,None,0),(None,8,None,0)]
  for m,exp in zip(summ,expected):
@@ -54,7 +69,7 @@ def numeric_checks(root):
  assert ft['actual_training_examples']==13 and ft['actual_training_counts']=={'good':5,'bad':6,'review':2}
  assert len(ft['actual_training_indices'])==13 and not set(ft['actual_training_indices'])&set(ft['evaluation_indices'])
  assert ft['actual_hyperparameters']==dict(n_epochs=1,batch_size=1,learning_rate_multiplier=2)
- cloud=json.loads((root/'results/cloud-rounds-per-case.json').read_text());assert len(cloud)==150
+ cloud=json.loads((root/'classifiers/common/results/cloud-rounds-per-case.json').read_text());assert len(cloud)==150
  assert len({(r['variant'],r['index']) for r in cloud})==150
  for key in ['vision-rubric-v2','decisions-rubric-v2']:
   rr=[r for r in cloud if r['variant']==key];assert len(rr)==25 and sum(r['population']=='unique_binary_scoring' for r in rr)==22
@@ -79,7 +94,7 @@ def check(root=ROOT):
   if not p.is_file():continue
   rel=str(p.relative_to(root));parts=p.relative_to(root).parts
   if parts[0] in ['.git','.cache','.venv'] or '__pycache__' in parts:continue
-  if parts[0]=='app' and len(parts)>1 and parts[1].startswith('runtime'):continue
+  if parts[0]=='dashboard' and 'runtime' in parts:continue
   if rel=='export-manifest.json':continue
   if p.is_symlink():err(rel,'symlink_forbidden');continue
   if rel not in expected:err(rel,'not_allowlisted');continue
@@ -100,7 +115,7 @@ def check(root=ROOT):
  for rel in expected:
   if not (root/rel).is_file():err(rel,'missing_allowlisted_file')
  for mid in METHODS:
-  rel='methods/'+mid+'/README.md'
+  rel='classifiers/'+mid+'/README.md'
   try:s=(root/rel).read_text()
   except OSError:err(rel,'missing_method_readme');continue
   for h in SECTIONS:
@@ -108,8 +123,23 @@ def check(root=ROOT):
  try:counts=numeric_checks(root)
  except Exception:err('results','numeric_contract');counts={}
  return errors,counts
+def staged_check():
+ """Read exact index blobs, not working-tree promises or a Git status approximation."""
+ import subprocess,tempfile
+ with tempfile.TemporaryDirectory(dir=ROOT/'.cache') as directory:
+  target=Path(directory)
+  files=subprocess.check_output(['git','ls-files','--stage','-z'],cwd=ROOT).split(bytes([0]))
+  for line in files:
+   if not line:continue
+   meta,rel=line.split(bytes([9]),1);mode,oid,stage=meta.decode().split();rel=rel.decode()
+   if stage!='0' or mode!='100644':return [dict(path=rel,rule='nonregular_or_unmerged_index')],{}
+   dest=target/rel;dest.parent.mkdir(parents=True,exist_ok=True)
+   dest.write_bytes(subprocess.check_output(['git','cat-file','blob',oid],cwd=ROOT))
+  return check(target)
 if __name__=='__main__':
- errors,counts=check()
+ import argparse
+ p=argparse.ArgumentParser();p.add_argument('--staged',action='store_true',help='Audit exact prospective index blobs including all owned head bytes');a=p.parse_args()
+ errors,counts=staged_check() if a.staged else check()
  for e in errors:print(e['path']+' :: '+e['rule'])
- if not errors:print(json.dumps(dict(status='PASS',**counts),sort_keys=True))
+ if not errors:print(json.dumps(dict(status='PASS',scope='exact-git-index' if a.staged else 'allowlisted-working-tree',**counts),sort_keys=True))
  raise SystemExit(1 if errors else 0)

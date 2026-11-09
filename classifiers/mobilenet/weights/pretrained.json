@@ -1,0 +1,10 @@
+[
+  {
+    "file": "backbone.pth",
+    "url": "https://download.pytorch.org/models/mobilenet_v3_large-5c1a4163.pth",
+    "sha256": "5c1a416349c4cf298f2a6a5e2600ed0ee55e604713578f5e74e6bc8bcaef7997",
+    "bytes": 22132113,
+    "architecture": "mobilenet_v3_large",
+    "revision": "MobileNet_V3_Large_Weights.IMAGENET1K_V2"
+  }
+]

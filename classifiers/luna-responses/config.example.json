@@ -1,0 +1,21 @@
+{
+  "variants": [
+    {
+      "name": "vision-rubric-v2",
+      "api": "responses",
+      "endpoint": "https://YOUR-RESOURCE.openai.azure.com",
+      "deployment": "EXACT-APPROVED-LUNA-DEPLOYMENT",
+      "multi_question": true,
+      "bearer_token_env": "AZURE_OPENAI_BEARER_TOKEN",
+      "model": "gpt-6-luna",
+      "model_version": "2026-09-22",
+      "sku": "DataZoneStandard",
+      "geography": "US",
+      "currency": "USD",
+      "context_tier": "UNVERIFIED",
+      "rate_card": null,
+      "max_output_tokens": 1500
+    }
+  ],
+  "project_request_limit": 200
+}

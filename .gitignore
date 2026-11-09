@@ -37,3 +37,17 @@ config/*.local.json
 # PNG whitelist exists only for inspected no-photo infographic
 *.png
 !docs/assets/twi-six-methods-costs.png
+
+# Classifier-local generated output and giant public acquisitions
+classifiers/*/weights/generated/
+classifiers/*/weights/backbone.pth
+classifiers/clip/weights/clip/
+classifiers/*/*.local.json
+classifiers/*/*readback*.json
+classifiers/*/deployment-*.json
+classifiers/*/preflight-*.json
+classifiers/*/inference-results.jsonl
+dashboard/backend/runtime*/
+infra/experiment-request-ledger.json
+
+dashboard/backend/private_live_providers.py

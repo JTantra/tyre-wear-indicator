@@ -1,9 +1,13 @@
 """Synthetic unit fixtures only: NOT service responses or model performance."""
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())))
+_sys.path.insert(1,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())/'classifiers/common'))
 import io
 import json
 import unittest
 from PIL import Image
-from scripts.benchmark_contract import (decisions_payload, vision_payload, normalise_decisions,
+from classifiers.common.benchmark_contract import (decisions_payload, vision_payload, normalise_decisions,
     normalise_vision, validate_split, evaluate_independent_tyres)
 
 

@@ -1,0 +1,14 @@
+{
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "Pillow": "12.0.0"
+  },
+  "total_experiment_seconds": 3.6196139650419354,
+  "timing": null,
+  "provenance": null,
+  "weights_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+  "weights_sha256": "b91ef9c434259b176d80152454b02a28a9f4b08d54543e1b4382f06ee7939430"
+}

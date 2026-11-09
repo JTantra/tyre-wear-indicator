@@ -1,6 +1,10 @@
 """Synthetic arithmetic fixtures only; no actual model measurements."""
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())))
+_sys.path.insert(1,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())/'classifiers/common'))
 import unittest
-from scripts.cost_bounds import bounds
+from classifiers.common.cost_bounds import bounds
 class BoundsTests(unittest.TestCase):
  def test_no_cache_short_long(self):
   b=bounds({'input_tokens':5000,'output_tokens':200,'total_tokens':5200,'input_tokens_details':{'cached_tokens':0,'cache_write_tokens':0}})

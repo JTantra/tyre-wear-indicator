@@ -1,0 +1,151 @@
+{
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "Pillow": "12.0.0",
+    "joblib": "1.6.0"
+  },
+  "total_experiment_seconds": 6.95775705203414,
+  "timing": {
+    "cpu": "x86_64",
+    "torch_threads": 4,
+    "unique_timing_photos": 24,
+    "canonical_preprocessing_seconds": 1.4884768000338227,
+    "canonical_seconds_per_photo": 0.06201986666807594,
+    "per_candidate": {
+      "efficientnet_b0_full": {
+        "download_and_model_load_seconds": 0.19340590084902942,
+        "shape_adaptation_seconds": 0.05324640404433012,
+        "feature_batch8_seconds": 0.2701175499241799,
+        "feature_batch8_seconds_per_photo": 0.011254897913507497
+      },
+      "mobilenet_v3_large_full": {
+        "download_and_model_load_seconds": 0.061492836102843285,
+        "shape_adaptation_seconds": 0.052761622006073594,
+        "feature_batch8_seconds": 0.1267438749782741,
+        "feature_batch8_seconds_per_photo": 0.005280994790761421
+      },
+      "resnet50_full": {
+        "download_and_model_load_seconds": 0.29151293192990124,
+        "shape_adaptation_seconds": 0.054784636944532394,
+        "feature_batch8_seconds": 0.8795863739214838,
+        "feature_batch8_seconds_per_photo": 0.03664943224672849
+      },
+      "efficientnet_b0_full-grid": {
+        "download_and_model_load_seconds": 0.05305035994388163,
+        "shape_adaptation_seconds": 0.14174812007695436,
+        "feature_batch8_seconds": 1.4381836731918156,
+        "feature_batch8_seconds_per_photo": 0.05992431971632565
+      }
+    },
+    "all_nested_search_and_outer_refits_seconds": 0.3955203390214592,
+    "deployment_grouped_search_seconds": 0.17789365397766232,
+    "final_head_fit_seconds": 0.0017530601471662521,
+    "deployed_candidate": "mobilenet_v3_large_full",
+    "reloaded_backbone_seconds": 0.054381385911256075,
+    "reloaded_head_seconds": 0.0006004020106047392,
+    "smoke_per_image": [
+      {
+        "preprocessing_seconds": 0.02884517190977931,
+        "feature_seconds": 0.014654895989224315,
+        "head_seconds": 0.0007933659944683313
+      },
+      {
+        "preprocessing_seconds": 0.04858327494002879,
+        "feature_seconds": 0.008809804916381836,
+        "head_seconds": 0.00070966687053442
+      },
+      {
+        "preprocessing_seconds": 0.048247798113152385,
+        "feature_seconds": 0.008882327005267143,
+        "head_seconds": 0.000707823084667325
+      },
+      {
+        "preprocessing_seconds": 0.08386751194484532,
+        "feature_seconds": 0.008358265040442348,
+        "head_seconds": 0.0008201079908758402
+      }
+    ],
+    "batch8_repeat_seconds": [
+      0.12472872901707888,
+      0.13414299488067627,
+      0.13743972987867892
+    ],
+    "batch8_median_seconds_per_photo": 0.005589291453361511,
+    "head_repeat_seconds": [
+      0.0007711958605796099,
+      0.0009037470445036888,
+      0.000613346928730607
+    ],
+    "head_median_seconds_per_photo": 3.2133160857483745e-05,
+    "api_fee": 0,
+    "economic_cost": null,
+    "cost_note": "Local CPU; no tariff/electricity/hosting assumption. No paid training. Public pretrained training cost not measured."
+  },
+  "provenance": {
+    "efficientnet_b0_full": {
+      "architecture": "efficientnet_b0",
+      "weights_enum": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+      "weights_url": "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth",
+      "download_file_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+      "frozen_state_sha256": "e3d706952923d973403b039958a2f4bd4c2abdb74de753f45eb8f5ef2b904e36",
+      "parameter_count": 4007548,
+      "feature_dimension": 1280,
+      "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+      "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+      "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+      "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+      "view_policy": "full",
+      "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+    },
+    "mobilenet_v3_large_full": {
+      "architecture": "mobilenet_v3_large",
+      "weights_enum": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+      "weights_url": "https://download.pytorch.org/models/mobilenet_v3_large-5c1a4163.pth",
+      "download_file_sha256": "5c1a416349c4cf298f2a6a5e2600ed0ee55e604713578f5e74e6bc8bcaef7997",
+      "frozen_state_sha256": "f5e19dc610f5cd2cb72612ec99b90e62739f353332c94db7ef7fe2033df9609a",
+      "parameter_count": 2971952,
+      "feature_dimension": 960,
+      "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+      "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+      "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+      "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+      "view_policy": "full",
+      "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+    },
+    "resnet50_full": {
+      "architecture": "resnet50",
+      "weights_enum": "ResNet50_Weights.IMAGENET1K_V2",
+      "weights_url": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth",
+      "download_file_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+      "frozen_state_sha256": "a536001487d7dca0979699c3ce9f02d01b3031c4a56469c9d3632035db7e4f5f",
+      "parameter_count": 23508032,
+      "feature_dimension": 2048,
+      "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+      "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+      "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+      "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+      "view_policy": "full",
+      "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+    },
+    "efficientnet_b0_full-grid": {
+      "architecture": "efficientnet_b0",
+      "weights_enum": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+      "weights_url": "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth",
+      "download_file_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+      "frozen_state_sha256": "e3d706952923d973403b039958a2f4bd4c2abdb74de753f45eb8f5ef2b904e36",
+      "parameter_count": 4007548,
+      "feature_dimension": 2560,
+      "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+      "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+      "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+      "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+      "view_policy": "full-grid",
+      "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+    }
+  },
+  "weights_url": null,
+  "weights_sha256": null
+}

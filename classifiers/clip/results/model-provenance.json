@@ -1,0 +1,189 @@
+{
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "transformers": "4.46.3",
+    "huggingface-hub": "0.36.0",
+    "safetensors": "0.6.2",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "Pillow": "12.0.0",
+    "joblib": "1.6.0"
+  },
+  "total_experiment_seconds": 15.623683704063296,
+  "timing": {
+    "cpu": "x86_64",
+    "torch_threads": 4,
+    "photos": 24,
+    "canonical_seconds": 1.4943178021349013,
+    "per_candidate": {
+      "dinov2_224": {
+        "backbone_load_seconds": 0.17299039592035115,
+        "adaptation_seconds": 0.09609261993318796,
+        "warm_batch4_seconds": 0.9653700240887702,
+        "batch_amortized_seconds_per_photo": 0.04022375100369876,
+        "feature_dimension": 768
+      },
+      "dinov2_336": {
+        "backbone_load_seconds": 0.17299039592035115,
+        "adaptation_seconds": 0.10762478201650083,
+        "warm_batch4_seconds": 2.4704563580453396,
+        "batch_amortized_seconds_per_photo": 0.10293568158522248,
+        "feature_dimension": 768
+      },
+      "clip_224": {
+        "backbone_load_seconds": 1.0319999200291932,
+        "adaptation_seconds": 0.10700019192881882,
+        "warm_batch4_seconds": 0.755621027899906,
+        "batch_amortized_seconds_per_photo": 0.03148420949582942,
+        "feature_dimension": 512
+      },
+      "clip_384": {
+        "backbone_load_seconds": 1.0319999200291932,
+        "adaptation_seconds": 0.11506693600676954,
+        "warm_batch4_seconds": 1.9630280118435621,
+        "batch_amortized_seconds_per_photo": 0.08179283382681508,
+        "feature_dimension": 512
+      }
+    },
+    "nested_search_seconds": 0.7022741949185729,
+    "final_grouped_search_seconds": 0.1423965881112963,
+    "backbone_reload_seconds": 0.9631474220659584,
+    "head_reload_seconds": 0.0004929900169372559,
+    "single_photo_smoke_timings": [
+      {
+        "canonical_and_adaptation_seconds": 0.030758407898247242,
+        "feature_seconds": 0.036214014049619436,
+        "head_seconds": 0.0007767379283905029
+      },
+      {
+        "canonical_and_adaptation_seconds": 0.049861480947583914,
+        "feature_seconds": 0.04781136987730861,
+        "head_seconds": 0.0008983640000224113
+      },
+      {
+        "canonical_and_adaptation_seconds": 0.0493532030377537,
+        "feature_seconds": 0.04232131992466748,
+        "head_seconds": 0.0015750329475849867
+      },
+      {
+        "canonical_and_adaptation_seconds": 0.09174434607848525,
+        "feature_seconds": 0.04337790491990745,
+        "head_seconds": 0.0007094689644873142
+      }
+    ],
+    "warm_batch4_repeat_seconds": [
+      0.7555577419698238,
+      0.6950584449805319,
+      0.6692400728352368
+    ],
+    "batch_amortized_median_seconds_per_photo": 0.028960768540855497,
+    "warm_head_repeat_seconds": [
+      0.0009862661827355623,
+      0.0006253200117498636,
+      0.0005585390608757734
+    ],
+    "api_fee": 0,
+    "local_compute_cost": null,
+    "cpu_tariff": null,
+    "note": "Public downloads only; no image uploads, no paid APIs/GPU. Batch amortized time is not single-request latency. Local economic cost unknown."
+  },
+  "provenance": {
+    "dinov2": {
+      "repo": "facebook/dinov2-small",
+      "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+      "file": "model.safetensors",
+      "license": "Apache-2.0 model card; upstream code Apache-2.0",
+      "license_url": "https://huggingface.co/facebook/dinov2-small/blob/ed25f3a31f01632728cabb09d1542f84ab7b0056/README.md",
+      "files": {
+        "config.json": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+          "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/config.json",
+          "bytes": 547
+        },
+        "preprocessor_config.json": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+          "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/preprocessor_config.json",
+          "bytes": 436
+        },
+        "README.md": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+          "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/README.md",
+          "bytes": 3033
+        },
+        "model.safetensors": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+          "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/model.safetensors",
+          "bytes": 88249960
+        }
+      },
+      "code_license": "Transformers Apache-2.0",
+      "code_license_url": "https://github.com/huggingface/transformers/blob/v4.46.3/LICENSE"
+    },
+    "clip": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "file": "pytorch_model.bin",
+      "license": "OpenAI CLIP upstream code MIT; HF mirror card does not specify a separate weight license. Commercial clearance not established.",
+      "license_url": "https://github.com/openai/CLIP/blob/main/LICENSE",
+      "files": {
+        "config.json": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+          "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/config.json",
+          "bytes": 4186
+        },
+        "preprocessor_config.json": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+          "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/preprocessor_config.json",
+          "bytes": 316
+        },
+        "README.md": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+          "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/README.md",
+          "bytes": 7942
+        },
+        "pytorch_model.bin": {
+          "cached": true,
+          "seconds": 0.0,
+          "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+          "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/pytorch_model.bin",
+          "bytes": 605247071
+        }
+      },
+      "code_license": "Transformers Apache-2.0",
+      "code_license_url": "https://github.com/huggingface/transformers/blob/v4.46.3/LICENSE"
+    }
+  },
+  "weights_url": null,
+  "weights_sha256": null,
+  "models": {
+    "dinov2": {
+      "repo": "facebook/dinov2-small",
+      "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+      "file": "model.safetensors",
+      "license": "Apache-2.0 model card; upstream code Apache-2.0",
+      "license_url": "https://huggingface.co/facebook/dinov2-small/blob/ed25f3a31f01632728cabb09d1542f84ab7b0056/README.md"
+    },
+    "clip": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "file": "pytorch_model.bin",
+      "license": "OpenAI CLIP upstream code MIT; HF mirror card does not specify a separate weight license. Commercial clearance not established.",
+      "license_url": "https://github.com/openai/CLIP/blob/main/LICENSE"
+    }
+  }
+}

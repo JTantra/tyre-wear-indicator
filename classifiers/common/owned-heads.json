@@ -1,0 +1,41 @@
+{
+  "resnet18": {
+    "trusted_source_path": "artifacts/classifier/baseline_head.joblib",
+    "trusted_source_sha256": "78d6ead0f7e82db6bd9f1549e48d60e371f60a73015361093e5a265450ad2f56",
+    "trusted_source_bytes": 17757,
+    "published_path": "classifiers/resnet18/weights/head.json",
+    "published_sha256": "887a7f40d8b1fa0a204681ce9a5033acb1616496213f80fac3ce0ed4679748ec",
+    "published_bytes": 38046,
+    "inspection": "Exact allowed scaler and logistic attributes; numeric final parameters only; no samples, per-row labels, features, paths or provider metadata.",
+    "serving_fit_examples": 22,
+    "head": "logistic",
+    "C": 1.0,
+    "synthetic_feature_margin_max_absolute_error": 0.0
+  },
+  "mobilenet": {
+    "trusted_source_path": "artifacts/custom-improvements/head.joblib",
+    "trusted_source_sha256": "7571238a4109ecc0806df98d8d4809f8b48312478baf44c72c027e3b825ffa86",
+    "trusted_source_bytes": 32093,
+    "published_path": "classifiers/mobilenet/weights/head.json",
+    "published_sha256": "9714bc2539909ed8cc78b1c3719d6c21d56bd834076a940166463b869bfa3b89",
+    "published_bytes": 73684,
+    "inspection": "Exact allowed scaler and logistic attributes; numeric final parameters only; no samples, per-row labels, features, paths or provider metadata.",
+    "serving_fit_examples": 22,
+    "head": "logistic",
+    "C": 0.01,
+    "synthetic_feature_margin_max_absolute_error": 0.0
+  },
+  "clip": {
+    "trusted_source_path": "artifacts/custom-v2/head.joblib",
+    "trusted_source_sha256": "02423114238a4ca721142ca901843a970e18ee117227e3437e5893f5e6c90830",
+    "trusted_source_bytes": 17757,
+    "published_path": "classifiers/clip/weights/head.json",
+    "published_sha256": "b753a861108e77028f06dedd69e6f800a9e0215c6f3c8b02cec2917717b330a5",
+    "published_bytes": 40341,
+    "inspection": "Exact allowed scaler and logistic attributes; numeric final parameters only; no samples, per-row labels, features, paths or provider metadata.",
+    "serving_fit_examples": 22,
+    "head": "logistic",
+    "C": 0.01,
+    "synthetic_feature_margin_max_absolute_error": 0.0
+  }
+}

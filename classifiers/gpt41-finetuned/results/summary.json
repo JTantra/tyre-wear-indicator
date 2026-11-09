@@ -1,0 +1,30 @@
+{
+  "method": "gpt41-finetuned",
+  "all22": null,
+  "shared9": {
+    "n": 9,
+    "correct": 9,
+    "accepted": 9,
+    "reviews": 0,
+    "errors": 0,
+    "bad_n": 5,
+    "bad_false_good": 0,
+    "coverage": 1.0,
+    "accepted_accuracy": 1.0,
+    "confusion": {
+      "bad": {
+        "bad": 5,
+        "good": 0,
+        "review": 0,
+        "error": 0
+      },
+      "good": {
+        "bad": 0,
+        "good": 4,
+        "review": 0,
+        "error": 0
+      }
+    }
+  },
+  "operational_automation_coverage": 0
+}

@@ -1,4 +1,8 @@
 """All prices and usage here are clearly synthetic, not Azure evidence."""
+import sys as _sys
+from pathlib import Path as _Path
+_sys.path.insert(0,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())))
+_sys.path.insert(1,str(next(p for p in _Path(__file__).resolve().parents if (p/'export-manifest.json').is_file())/'classifiers/common'))
 import copy
 import json
 from pathlib import Path
@@ -6,8 +10,8 @@ import subprocess
 import sys
 import tempfile
 import unittest
-from scripts.cost_accounting import estimate, aggregate, local_economics, usage_components
-from scripts.project_ledger import ProjectLedger, read_events, retry_deadline
+from classifiers.common.cost_accounting import estimate, aggregate, local_economics, usage_components
+from classifiers.common.project_ledger import ProjectLedger, read_events, retry_deadline
 from clock_fixture import Clock
 
 
@@ -78,7 +82,7 @@ class CostTests(unittest.TestCase):
 
 class LedgerTests(unittest.TestCase):
     def setUp(self):
-        root=Path(__file__).resolve().parents[1]
+        root=Path(__file__).resolve().parents[next(i for i,p in enumerate(Path(__file__).resolve().parents) if (p/'export-manifest.json').is_file())]
         self.temp=tempfile.TemporaryDirectory(dir=root/'.cache/tmp'); self.root=Path(self.temp.name); self.clock=Clock()
     def tearDown(self):self.temp.cleanup()
 
@@ -123,7 +127,7 @@ class LedgerTests(unittest.TestCase):
 
     def test_concurrent_process_project_lease(self):
         # Real independent interpreter, deterministic handshake: no sleep polling.
-        code="from scripts.project_ledger import ProjectLedger; from pathlib import Path; import sys; l=ProjectLedger(Path(sys.argv[1])); l.__enter__(); print('locked',flush=True); sys.stdin.readline(); l.__exit__()"
+        code="from classifiers.common.project_ledger import ProjectLedger; from pathlib import Path; import sys; l=ProjectLedger(Path(sys.argv[1])); l.__enter__(); print('locked',flush=True); sys.stdin.readline(); l.__exit__()"
         child=subprocess.Popen([sys.executable,'-c',code,str(self.root)],stdin=subprocess.PIPE,stdout=subprocess.PIPE,text=True)
         try:
             self.assertEqual(child.stdout.readline().strip(),'locked')

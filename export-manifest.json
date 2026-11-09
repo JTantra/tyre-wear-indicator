@@ -1,15 +1,17 @@
 {
-  "schema": 1,
-  "generated_utc": "2026-11-09T00:36:30.323929+00:00",
+  "schema": "twi-safe-export-v2-classifier-layout",
+  "generated_utc": "2026-11-09T01:19:11.561929+00:00",
   "source_root": "original private tyre-wear-indicator project; retained locally",
   "files": [
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": ".gitignore",
-      "export_sha256": "4b4f3cf71af913d9ce927337d1f212184d497dc0e3ca0aa68c1025a8dde9180b",
-      "bytes": 612
+      "export_sha256": "ee27d3c54cadb78f7e0b530a9515e76578c9f22030f866f0657ec2b550d49c15",
+      "bytes": 1046,
+      "baseline_export_path": ".gitignore",
+      "baseline_export_sha256": "4b4f3cf71af913d9ce927337d1f212184d497dc0e3ca0aa68c1025a8dde9180b"
     },
     {
       "original_path": null,
@@ -17,207 +19,1173 @@
       "original_sha256": null,
       "export_sha256": "d8b0f11d426a98c2033d6d463f1cdf6c19e960df87bd83fbd8b9ed9acd245ee3",
       "bytes": 7789,
-      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "FINAL_BENCHMARK.json",
+      "baseline_export_sha256": "d8b0f11d426a98c2033d6d463f1cdf6c19e960df87bd83fbd8b9ed9acd245ee3"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "README.md",
-      "export_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab",
-      "bytes": 7055
+      "export_sha256": "1accabab8dbcf15d3d46bafed5e38d613d88ec6981203845d7dd25f33e0e8ce0",
+      "bytes": 4133,
+      "baseline_export_path": "README.md",
+      "baseline_export_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "SECURITY.md",
-      "export_sha256": "de079b23ae811649eb70808ea3d4808a12e04f0a2d5748e66e097e0e6eb2580c",
-      "bytes": 1756
+      "export_sha256": "fd3ef084ce13246ecc1a5665f4c621c2aa11cdcb8680137582ab7fce28598d2a",
+      "bytes": 2183,
+      "baseline_export_path": "SECURITY.md",
+      "baseline_export_sha256": "de079b23ae811649eb70808ea3d4808a12e04f0a2d5748e66e097e0e6eb2580c"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "THIRD_PARTY_NOTICES.md",
-      "export_sha256": "b4766dc0f4145d4e59818e23cce3b4b85b3dfa167f3fc2e735498e5476f9bbf3",
-      "bytes": 1583
+      "export_sha256": "a7139de2e6934db534648ddf0d14af646dfd3d50ea45a7af44d1465ca2d2abf9",
+      "bytes": 2070,
+      "baseline_export_path": "THIRD_PARTY_NOTICES.md",
+      "baseline_export_sha256": "b4766dc0f4145d4e59818e23cce3b4b85b3dfa167f3fc2e735498e5476f9bbf3"
+    },
+    {
+      "export_path": "classifiers/__init__.py",
+      "export_sha256": "89a44bc013dd7583c86132bdc65c8d3e88169b6e7502e784eb14d2c6b145389c",
+      "bytes": 62,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/azure-automl/README.md",
+      "export_sha256": "89c390b10e47bad12982ebc56618c538c2371fe37533e0d79d533c29ac9e80d3",
+      "bytes": 5959,
+      "baseline_export_path": "methods/azure-automl/README.md",
+      "baseline_export_sha256": "74df300333cecdbe8d27e660cf245a673009def7523b8ebf6fc842c11b0ef6b3"
+    },
+    {
+      "export_path": "classifiers/azure-automl/config.json",
+      "export_sha256": "12a3e414c2c75bb6d2c2280bf70d168383f654c3e51495e09ce513e95a596fe1",
+      "bytes": 354,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/azure-automl/contracts.py",
+      "export_sha256": "667e30409d900527ddec2697922b58f37c153d7fce16bc324e803c170d007efe",
+      "bytes": 777,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/download_best.py",
+      "export_path": "classifiers/azure-automl/download_best.py",
+      "original_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c",
+      "export_sha256": "4d5ca2e55c5a074014a253b913ea472f238079649fb6b379700f813887398da1",
+      "bytes": 4052,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/automl-pilot-v1/preparation/download_best.py",
+      "baseline_export_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/evaluate.py",
+      "export_path": "classifiers/azure-automl/evaluate.py",
+      "original_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159",
+      "export_sha256": "f765e49f7a8f165792be6fa16beb0183ecd379bf42deeafe84758929214de2a2",
+      "bytes": 7439,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/automl-pilot-v1/preparation/evaluate.py",
+      "baseline_export_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159"
+    },
+    {
+      "export_path": "classifiers/azure-automl/inference.py",
+      "export_sha256": "e0f92df14d349a323752092450f15702086f670b7307f641a689aff19a82a32a",
+      "bytes": 1001,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/prepare.py",
+      "export_path": "classifiers/azure-automl/prepare.py",
+      "original_sha256": "f54a1164d420208c1fe812169a6d2576bd3b978f0817f1533800b86e6397dbde",
+      "export_sha256": "c28a95039bdd024ce8f3b7be78d55d78468879cb5447b3d4dedb014f46130a76",
+      "bytes": 9554,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/automl-pilot-v1/preparation/prepare.py",
+      "baseline_export_sha256": "3ba330b70f13de4c17254d20d49bec4e2369c3c584d0cdc15fe394eb92709e52"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
+      "export_path": "classifiers/azure-automl/requirements-client.txt",
+      "original_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
+      "export_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
+      "bytes": 402,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
+      "baseline_export_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
+      "export_path": "classifiers/azure-automl/requirements-preparation.txt",
+      "original_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
+      "export_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
+      "bytes": 187,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
+      "baseline_export_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96"
+    },
+    {
+      "export_path": "classifiers/azure-automl/results/per-image.json",
+      "export_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/azure-automl/results/summary.json",
+      "export_sha256": "8c2c09be8125e35f704821114bd3fdb5f0619ab652e51848dc7c7cf165007253",
+      "bytes": 94,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
+      "export_path": "classifiers/azure-automl/sdk_job.py",
+      "original_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee",
+      "export_sha256": "07ac43fc90503b1909535d2e7aa1564f22a591c8bcd4301b56519ffa2ade2e62",
+      "bytes": 863,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
+      "baseline_export_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee"
+    },
+    {
+      "export_path": "classifiers/azure-automl/test.py",
+      "export_sha256": "cdfd9239ad1fd4704b50e4716f9f350a2c163d117998ccdaa249c78fe56dc406",
+      "bytes": 240,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/azure-automl/train.py",
+      "export_sha256": "a58ecf74dcb90280bb07e9d3d5fe47f3e0aa32b6996aaf84bb95e93200f99cca",
+      "bytes": 1953,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/azure-automl/weights/README.md",
+      "export_sha256": "3aee4ef4e85389fc8d9d07e5aacbd0d7abad592f9e79fa8df36c4d9a47c5f89f",
+      "bytes": 675,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/clip/README.md",
+      "export_sha256": "1c2f85eb130a67aa06a85b415f7b91820ef7123471f198afd2d03b0faa953a35",
+      "bytes": 7141,
+      "baseline_export_path": "methods/clip/README.md",
+      "baseline_export_sha256": "7d020155f9c3b62ba88bc0205129ac7749987c14e766ccade3d43beb6eee8d50"
+    },
+    {
+      "export_path": "classifiers/clip/config.json",
+      "export_sha256": "43304990e7c414e3eebdac47902c4a5abb494638758dec044a5e462402a5cea4",
+      "bytes": 533,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "scripts/custom_refinement_v2.py",
+      "export_path": "classifiers/clip/experiment.py",
+      "original_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e",
+      "export_sha256": "3167a4b6ffb10225231a4b2e6d0220aab8f1fff725d7b2233388c3f1b90995a4",
+      "bytes": 15247,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/custom_refinement_v2.py",
+      "baseline_export_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e"
+    },
+    {
+      "export_path": "classifiers/clip/inference.py",
+      "export_sha256": "1ef946ea986fdeba0bd7116d6be011f686645189f09808904f6aa611b0d893ea",
+      "bytes": 2483,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/README.md",
+      "export_path": "classifiers/clip/legacy/dinov2/README.md",
+      "original_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+      "export_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+      "bytes": 3033,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/dinov2/README.md",
+      "baseline_export_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/config.json",
+      "export_path": "classifiers/clip/legacy/dinov2/config.json",
+      "original_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+      "export_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+      "bytes": 547,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/dinov2/config.json",
+      "baseline_export_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/preprocessor_config.json",
+      "export_path": "classifiers/clip/legacy/dinov2/preprocessor_config.json",
+      "original_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "export_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "bytes": 436,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/dinov2/preprocessor_config.json",
+      "baseline_export_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+    },
+    {
+      "export_path": "classifiers/clip/results/model-provenance.json",
+      "export_sha256": "8c59a9da51949ce36be4882af3072862fea91ab931b66f0396c7fc5739ad895b",
+      "bytes": 7719,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/results/per-image.json",
+      "export_sha256": "7af162305a130a07dfba9e55581f6a71e988eddc405b8fa1eb431957ce99debe",
+      "bytes": 2499,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/results/summary.json",
+      "export_sha256": "4f8288ee9cf1f22fc13ca3d51bbbbdd84f030e306c4363a89dd89262cb7830cf",
+      "bytes": 942,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/test.py",
+      "export_sha256": "67a54bbb998ead4e9815d3f0b301b125ed1a1b2d6b2efef98ea1857e7a958227",
+      "bytes": 232,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/train.py",
+      "export_sha256": "69aac6990b1d63f68fce54e96b6a6a71897d0cc1d6d456ab127229a551254108",
+      "bytes": 957,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/weights/README.md",
+      "export_sha256": "3cd6f2a928ed112ff557085766e578638d94262a961125e832aa9386db1a560b",
+      "bytes": 1401,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/weights/fetch.py",
+      "export_sha256": "7aae380da17a82f63a2554e9553483817202a4316e0610ddc9cca32c02fe45c9",
+      "bytes": 414,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/weights/head.json",
+      "export_sha256": "b753a861108e77028f06dedd69e6f800a9e0215c6f3c8b02cec2917717b330a5",
+      "bytes": 40341,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/clip/weights/pretrained.json",
+      "export_sha256": "cb2cf4a0e1c11de0101caa489aa1acde63cf76ffcbc98ac96613fac2602e236b",
+      "bytes": 1529,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/README.md",
+      "export_path": "classifiers/clip/weights/upstream/clip/README.md",
+      "original_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+      "export_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+      "bytes": 7942,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/clip/README.md",
+      "baseline_export_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/config.json",
+      "export_path": "classifiers/clip/weights/upstream/clip/config.json",
+      "original_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+      "export_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+      "bytes": 4186,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/clip/config.json",
+      "baseline_export_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/preprocessor_config.json",
+      "export_path": "classifiers/clip/weights/upstream/clip/preprocessor_config.json",
+      "original_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+      "export_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+      "bytes": 316,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/clip/preprocessor_config.json",
+      "baseline_export_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+    },
+    {
+      "export_path": "classifiers/common/README.md",
+      "export_sha256": "9e74d37dcf338c7f07b7e03ba1f0af7d4192dfc5b8391804dd61181b96805987",
+      "bytes": 837,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/common/__init__.py",
+      "export_sha256": "58a57348bde05d80a9ad44165d2e483286d329b533d86f56e69b9f5578ab80b7",
+      "bytes": 88,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/common/acquisition.py",
+      "export_sha256": "afd087b7d4dd3081a1d72b90972443414822e6848de6517df38718d3880eafa0",
+      "bytes": 943,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/common/approval.py",
+      "export_sha256": "32a193fa62352f2f2aa4660bfadd59dc3a63ea74b1328af5e556696c95188041",
+      "bytes": 1008,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "scripts/audit_dataset.py",
+      "export_path": "classifiers/common/audit_dataset.py",
+      "original_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1",
+      "export_sha256": "a378c42890348b323b16502df123d0aade26041039857c92a9b9c5b68d1e6ce5",
+      "bytes": 19109,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/audit_dataset.py",
+      "baseline_export_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1"
+    },
+    {
+      "export_path": "classifiers/common/benchmark.py",
+      "export_sha256": "9c61caa0cecc5f589a339c46c3e69af50d83d61f239ed991c4be0d538e4f8859",
+      "bytes": 681,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "scripts/benchmark_contract.py",
+      "export_path": "classifiers/common/benchmark_contract.py",
+      "original_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f",
+      "export_sha256": "f9811a45eccf46a79754c6cd8aed0bb8d40aee499baf98e9694fa5f84c699d3a",
+      "bytes": 11480,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/benchmark_contract.py",
+      "baseline_export_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f"
+    },
+    {
+      "original_path": "infra/cloud_policy_v2.py",
+      "export_path": "classifiers/common/cloud_policy_v2.py",
+      "original_sha256": "d7a9cb4e79efd692ba43669f92436a7b48f62eb5ca490b43d4d510333a170512",
+      "export_sha256": "e31ce7975756d78701139b94292b78bceddb91c9cf3489be7ac2a44a7e53ec78",
+      "bytes": 1444,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/cloud_policy_v2.py",
+      "baseline_export_sha256": "09269b458ab08d128fbd857e48cedf2d2e0954f919cb6e96503c6d4032fe181a"
+    },
+    {
+      "original_path": "scripts/cost_accounting.py",
+      "export_path": "classifiers/common/cost_accounting.py",
+      "original_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382",
+      "export_sha256": "1d958b1c1cb666f6dfc6ab43941276b71d5023f53787bb3ee1f2938ec1865c51",
+      "bytes": 6117,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/cost_accounting.py",
+      "baseline_export_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382"
+    },
+    {
+      "original_path": "scripts/cost_bounds.py",
+      "export_path": "classifiers/common/cost_bounds.py",
+      "original_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28",
+      "export_sha256": "1b42f978a072ea116f3dd821aa9144d1c2348de81d8f9883853f31cd93dc38bd",
+      "bytes": 2430,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/cost_bounds.py",
+      "baseline_export_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28"
+    },
+    {
+      "export_path": "classifiers/common/head_selection.py",
+      "export_sha256": "98598282fb8d204343cf1040799550ce60a9ac57d191d898ed9674b3e247855f",
+      "bytes": 7727,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "byte-identical baseline export, relocated",
+      "export_path": "classifiers/common/luna.example.json",
+      "export_sha256": "ddaa736af896f64c70fa78c847e7273634bb80f982826bec8eebad5acce14f51",
+      "bytes": 1086,
+      "baseline_export_path": "config/luna.example.json",
+      "baseline_export_sha256": "ddaa736af896f64c70fa78c847e7273634bb80f982826bec8eebad5acce14f51"
+    },
+    {
+      "export_path": "classifiers/common/luna_rubric.py",
+      "export_sha256": "e4a9ea42436a738ac83ce17e0f2f18467a6d2c3363fd6226782388b8b8ca5797",
+      "bytes": 1440,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/common/luna_runner.py",
+      "export_sha256": "b6d9717661cbadf09324903c3ed131ec392ac878d8650f1f2a5de769fbe214f4",
+      "bytes": 1583,
+      "baseline_export_path": "tools/run_luna.py",
+      "baseline_export_sha256": "7db560c090325497795bbc76af36e8c1b33ad272f8b5df862446a10d22256210"
+    },
+    {
+      "export_path": "classifiers/common/luna_single.py",
+      "export_sha256": "70b11fdd61c45ead719cf24c48a5b1dda765f46d922efc21ac816941c4672929",
+      "bytes": 3008,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/common/numeric_head.py",
+      "export_sha256": "a56ab009960dad598a346a6c1b145529cc81e19969dbb3ed1fcce5f940aba0d4",
+      "bytes": 1693,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/common/owned-heads.json",
+      "export_sha256": "8c82562a43458b8328de7e41079330bdf95670cae6e06db6895a755ac0986056",
+      "bytes": 2089,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/common/paths.py",
+      "export_sha256": "df579dc96496045332295776c98e2c9648150707e83b3c0d5fa66d3f7ddc38d7",
+      "bytes": 263,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "scripts/preprocessing.py",
+      "export_path": "classifiers/common/preprocessing.py",
+      "original_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed",
+      "export_sha256": "26e4f82e672b2e9a1bed6ddd3903b00cabdb24bef36311d38c6580c813e67eee",
+      "bytes": 4653,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/preprocessing.py",
+      "baseline_export_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed"
+    },
+    {
+      "original_path": "scripts/project_ledger.py",
+      "export_path": "classifiers/common/project_ledger.py",
+      "original_sha256": "a87d8b0d3805ab0ef76721c3d5d3e82cc76458b435919a03e73ff504ffc28ebf",
+      "export_sha256": "832881663820d5228369041b787b413bf94562a92efde5061bfe1d887cba0723",
+      "bytes": 6671,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/project_ledger.py",
+      "baseline_export_sha256": "b3bb3875115724ee892e6ee74af2080bdb04c9c5d6ccaad077f06dace47ca1db"
+    },
+    {
+      "original_path": "scripts/run_benchmark.py",
+      "export_path": "classifiers/common/provider_runner.py",
+      "original_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe",
+      "export_sha256": "38c41f11da09d2c2b2cb0f8d81d87c85ea1e6b435387a7775302a4d80b51e705",
+      "bytes": 29897,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/run_benchmark.py",
+      "baseline_export_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe"
+    },
+    {
+      "original_path": "infra/cloud-refinement-v3/per-image.json",
+      "export_path": "classifiers/common/results/cloud-rounds-per-case.json",
+      "original_sha256": "21ce9b942f6b64950b22bff6c5761bb40445e781ceba2f2821be8b90654dc80b",
+      "export_sha256": "512bbdb0ef880b868fca427c9632957bff796acbed750eb565717ae01a0d68ab",
+      "bytes": 121130,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/cloud-rounds-per-case.json",
+      "baseline_export_sha256": "512bbdb0ef880b868fca427c9632957bff796acbed750eb565717ae01a0d68ab"
+    },
+    {
+      "original_path": "infra/vision-finetune/dataset-receipt.json",
+      "export_path": "classifiers/common/results/gpt-training.json",
+      "original_sha256": "574727d253e0219c0ff558b80534d62483bf2884582bcb3ff2af3dc2159be6dd",
+      "export_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a",
+      "bytes": 2651,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/gpt-training.json",
+      "baseline_export_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a"
+    },
+    {
+      "original_path": null,
+      "export_path": "classifiers/common/results/legacy-rounds.json",
+      "original_sha256": null,
+      "export_sha256": "3f78291b9cd3983f4574940b5adeec7500f7e1609d404969c11bf622467ddafa",
+      "bytes": 29650,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/legacy-rounds.json",
+      "baseline_export_sha256": "3f78291b9cd3983f4574940b5adeec7500f7e1609d404969c11bf622467ddafa"
+    },
+    {
+      "original_path": null,
+      "export_path": "classifiers/common/results/method-summary.json",
+      "original_sha256": null,
+      "export_sha256": "6564b6897049a3cd68772711f86c5cc463198ed3097e69efda23213c157b47ea",
+      "bytes": 6454,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/method-summary.json",
+      "baseline_export_sha256": "6564b6897049a3cd68772711f86c5cc463198ed3097e69efda23213c157b47ea"
+    },
+    {
+      "original_path": null,
+      "export_path": "classifiers/common/results/model-provenance.json",
+      "original_sha256": null,
+      "export_sha256": "2021312c938eb668cc4ae111bc65b6f4b7e53e5b8d7fd8e7b3728dc55f3bef79",
+      "bytes": 16156,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/model-provenance.json",
+      "baseline_export_sha256": "2021312c938eb668cc4ae111bc65b6f4b7e53e5b8d7fd8e7b3728dc55f3bef79"
+    },
+    {
+      "original_path": "artifacts/classifier/splits.json",
+      "export_path": "classifiers/common/results/partitions.json",
+      "original_sha256": "206fdaa0d6dc8b3284d6f9355ad32232c746b738bd14cc64522c5ee77063b701",
+      "export_sha256": "4da669d2aafa6bdff0bfcd9b639384834938bd462fee6071c4341e7435efb7b8",
+      "bytes": 2827,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/partitions.json",
+      "baseline_export_sha256": "4da669d2aafa6bdff0bfcd9b639384834938bd462fee6071c4341e7435efb7b8"
+    },
+    {
+      "original_path": null,
+      "export_path": "classifiers/common/results/per-image.csv",
+      "original_sha256": null,
+      "export_sha256": "a7cde9ed98ee4a3929f8f4f0d4f14679846b49a925c3c351defc01b384e86fe2",
+      "bytes": 3368,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/per-image.csv",
+      "baseline_export_sha256": "a7cde9ed98ee4a3929f8f4f0d4f14679846b49a925c3c351defc01b384e86fe2"
+    },
+    {
+      "original_path": null,
+      "export_path": "classifiers/common/results/per-image.json",
+      "original_sha256": null,
+      "export_sha256": "da128b7d85394ec0a7f50b17c4a4b9cc48af8626e315919aeaf2fcd6d1f36efe",
+      "bytes": 44766,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "results/per-image.json",
+      "baseline_export_sha256": "da128b7d85394ec0a7f50b17c4a4b9cc48af8626e315919aeaf2fcd6d1f36efe"
+    },
+    {
+      "export_path": "classifiers/common/test_cli.py",
+      "export_sha256": "137bb5924e0c1b3f65102dfa1102c64d39a4d93f28f221033b1d928b2a7625fe",
+      "bytes": 1965,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "artifacts/custom-improvements/torchvision-LICENSE.txt",
+      "export_path": "classifiers/common/torchvision-LICENSE.txt",
+      "original_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+      "export_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+      "bytes": 1517,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "third_party/torchvision-LICENSE.txt",
+      "baseline_export_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+    },
+    {
+      "export_path": "classifiers/common/training.py",
+      "export_sha256": "acb57574457109898dc48dcb5267b639a7c85c50015d3f962bcf56624e11423f",
+      "bytes": 3757,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/gpt41-finetuned/README.md",
+      "export_sha256": "6928c6f50222992c9febf00ca550a8997ef2d696e5ef492b0d176293c5517aaf",
+      "bytes": 6230,
+      "baseline_export_path": "methods/gpt41-finetuned/README.md",
+      "baseline_export_sha256": "e4bcca70e30cf633325243e76119f3a20d469478d9c7b6d5bfe471a9f1ccb7c4"
+    },
+    {
+      "original_path": "infra/vision-finetune/adapter.py",
+      "export_path": "classifiers/gpt41-finetuned/adapter.py",
+      "original_sha256": "d89280b0f2ae36907bca78b52f5f31224ae0331d6e492094dd4a72215d54bb87",
+      "export_sha256": "19a45a677a25fceb4c0f4ff5fa93a0e5052ab80a502b0f52c00ccdabea70fdea",
+      "bytes": 11009,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/vision-finetune/adapter.py",
+      "baseline_export_sha256": "ae3f8119bce9f3a9abc298c5752ab2e29489fa70dd8d130497395dda425d687d"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/inference.py",
+      "export_sha256": "7caf8cc2a380a5018c83189ac572854df1f2d199b09ebfcf95fad7998d98497d",
+      "bytes": 801,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "infra/vision-finetune/plan.json",
+      "export_path": "classifiers/gpt41-finetuned/plan.json",
+      "original_sha256": "558423c3434e59eee50d10d3dbba2652793403c8417da5fce0c861915faac0f5",
+      "export_sha256": "3fad6655f65876c43513f067c38be56b14584c2098d3a46e1008f89f53c11043",
+      "bytes": 2864,
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "infra/vision-finetune/plan.json",
+      "baseline_export_sha256": "3fad6655f65876c43513f067c38be56b14584c2098d3a46e1008f89f53c11043"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/gpt41-finetuned/preparation.py",
+      "export_sha256": "dc6e55aca630556ee5cbb7741d638ca2ae309ed88c8e2522b027adb62c000d57",
+      "bytes": 2823,
+      "baseline_export_path": "tools/prepare_gpt_training.py",
+      "baseline_export_sha256": "0331dcd7049ad2579ff5922ad79b5a493284000685e450ea526c1eedc599c286"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/results/per-image.json",
+      "export_sha256": "fde17dbc37d78b4f0939d61200d0e6997fc3e79cf81796eb5f4746541647ab49",
+      "bytes": 7620,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/results/summary.json",
+      "export_sha256": "d7abbe0c4daac708b83195e08853b58add0291db922597fe0058d20ed2cec212",
+      "bytes": 514,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/results/training.json",
+      "export_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a",
+      "bytes": 2651,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/test.py",
+      "export_sha256": "5ca646fe35f1917bf048590b718677e06d75b10096c66df41b8f026e9584c5a1",
+      "bytes": 243,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/train.py",
+      "export_sha256": "9963429e9415f6cf860558072ec60a039709e75f47580c349e18ff48a2fd0764",
+      "bytes": 821,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/gpt41-finetuned/weights/README.md",
+      "export_sha256": "dadfa14edd77ac1ced1c8a89c1e8e2fa2408709dd7a34ca0460a4bd879163adc",
+      "bytes": 903,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/luna-decisions/QUESTIONS.md",
+      "export_sha256": "acaf65c71644eee4d2a2e947b8abb7ac402f671fa1de9938a2bc19c1344cdefb",
+      "bytes": 1631,
+      "baseline_export_path": "docs/LUNA_QUESTIONS.md",
+      "baseline_export_sha256": "a708da94a8051a53d936c34d1457fcb36ae2689f5c2acce248a312a552d3c3f7"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/luna-decisions/README.md",
+      "export_sha256": "016bf8ab755799934ac1fcef5479ce1a42961e7d17253708358468f5e7b3abc5",
+      "bytes": 5987,
+      "baseline_export_path": "methods/luna-decisions/README.md",
+      "baseline_export_sha256": "8943732fd9dbb1d8a9a6f9290ed6cafe62f9422c393851d6c0fec4a00c30ca19"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/config.example.json",
+      "export_sha256": "30864a4bf7af4c3b34434ee7cde6104d7c1c0d603e6bee0d813ed18cd369fd94",
+      "bytes": 572,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/inference.py",
+      "export_sha256": "a19515e8dc3ffa42829cb584ec3927061c04916d97807ee98d07f0d651ccdc07",
+      "bytes": 271,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "infra/refinement_v3.py",
+      "export_path": "classifiers/luna-decisions/refinement_v3.py",
+      "original_sha256": "1447202acd7cf12a1a3b4e93f2e62ea757fb9f9e0d39e25f1f6d378a75a12314",
+      "export_sha256": "b0dedc44bb7f72e33ffe217d49a2198ced7c4f6f2638e8344ca8d62da8cc80fc",
+      "bytes": 10790,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/refinement_v3.py",
+      "baseline_export_sha256": "4d376aa9486e84a82b48c48d68b938c558e69d89eb575e7f1e4fa8e8c5f602f9"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/results/archived-api-cases.json",
+      "export_sha256": "a7c0dda4df2f451972e73b58592f61945471a55e90f37655bc10982d84a3f76a",
+      "bytes": 56376,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/results/per-image.json",
+      "export_sha256": "f929bdffb755142e5a3eb95a4629164634c792472545c0009cb8ad2a8624f7a8",
+      "bytes": 9666,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/results/summary.json",
+      "export_sha256": "bef693f12e3e1a62da322af7d399176e7775d14470a94a5b8dcbbfeae6169f9d",
+      "bytes": 954,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/test.py",
+      "export_sha256": "86da7ee0dd08e89311715e3d0a3f01e1084de270f53d46640fc5865c264ffce3",
+      "bytes": 242,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/train.py",
+      "export_sha256": "8221a0936e034e8bace24bda8629928b42e6bc61f741a27c3c34a5591b6fbb50",
+      "bytes": 959,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-decisions/weights/README.md",
+      "export_sha256": "e22d9316784600a4a15b03278fd6290a90fc595a2280a589fbd3ceda249003b1",
+      "bytes": 558,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/luna-responses/README.md",
+      "export_sha256": "456b73842cd5490b7976efe2cd96d60a466df7d7b6a3c90074b9bcba2c280149",
+      "bytes": 5993,
+      "baseline_export_path": "methods/luna-responses/README.md",
+      "baseline_export_sha256": "3c7c0c5355504ba734571b9d07bb311691bda963811617a3382f82f1bd7f0e26"
+    },
+    {
+      "export_path": "classifiers/luna-responses/config.example.json",
+      "export_sha256": "7d690a35e9fd9ad890d879b89eff37fb671ee47e5f9bf00f90cdf362e0d6172b",
+      "bytes": 569,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/inference.py",
+      "export_sha256": "8a6c5c488a5a4132e36e2cfdbb9bfea3fc805b067a3db48f5b8cf37fabc75415",
+      "bytes": 271,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/results/archived-api-cases.json",
+      "export_sha256": "24b3357da865a847b5f0160ab0c830d6f70def0ad7019c835b7791a2055c166a",
+      "bytes": 64757,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/results/per-image.json",
+      "export_sha256": "796573e8ebcf29ca79faf995e1453ae9b64606fb6023266eee181676d41f4fd5",
+      "bytes": 12194,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/results/summary.json",
+      "export_sha256": "43a62908ef9ac728d775507d1979e04ebefdfb0a086416b7129aa7b8419287dd",
+      "bytes": 953,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/rubric.py",
+      "export_sha256": "de2d3b7b1c94fa2241e2ab5efd167f6a7d0808e07ac67587007755a4631c94f0",
+      "bytes": 1392,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/test.py",
+      "export_sha256": "008efb96dc3c830c979130d197044b345fece71319bc762cbbebf7841481203b",
+      "bytes": 242,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/train.py",
+      "export_sha256": "f00bf5f07cb7f82be77a6d054060273175bb3ea71d2151d49ebf4ef66c5dc3fc",
+      "bytes": 959,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/luna-responses/weights/README.md",
+      "export_sha256": "9b9deebd2de11f499f7f9b79fe61884ccaf1c4216d282a251ccd6a9ac00efbc6",
+      "bytes": 558,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/mobilenet/README.md",
+      "export_sha256": "bf3805cefbd332dcf42797d970ce8353ece9474e10aeccedb086cd133b61d71f",
+      "bytes": 6905,
+      "baseline_export_path": "methods/mobilenet/README.md",
+      "baseline_export_sha256": "a4bd755cb9fa9a59837bcf4c89e4164e3312737f27050f4b9b6b06ae829cf512"
+    },
+    {
+      "export_path": "classifiers/mobilenet/config.json",
+      "export_sha256": "14f25c7256b9b1ee441603770145e78e81052dfa7397acf642421ebc805be555",
+      "bytes": 548,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "scripts/custom_improvements.py",
+      "export_path": "classifiers/mobilenet/experiment.py",
+      "original_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a",
+      "export_sha256": "92d6861544061010a9dc545677bd24d2a4d8acaa74a76272027d2fa78ef1c5ef",
+      "bytes": 15508,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/custom_improvements.py",
+      "baseline_export_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a"
+    },
+    {
+      "original_path": "scripts/predict_custom.py",
+      "export_path": "classifiers/mobilenet/inference.py",
+      "original_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291",
+      "export_sha256": "e95127ecab4041b017448b6e9a0346b02a6f62d16f569b8c6b61d1229d29e9eb",
+      "bytes": 1860,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/predict_custom.py",
+      "baseline_export_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291"
+    },
+    {
+      "export_path": "classifiers/mobilenet/results/model-provenance.json",
+      "export_sha256": "c5884df17b46b3bc36ea97c3b4194fb4e8b1e1a34997086f72e4edce301f3935",
+      "bytes": 7276,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/results/per-image.json",
+      "export_sha256": "42a024cbe48d57d30b0867c90bd695365f1b19bb313bba75d4b5c2f33a7ae3d1",
+      "bytes": 2607,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/results/summary.json",
+      "export_sha256": "b6a435693b526acc3079f36468533c5995ff7ba68575b3ba6ec24b88fb89616b",
+      "bytes": 947,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/test.py",
+      "export_sha256": "874faf0f9efa2762b3d4c9fc9ceeec67cb7b2003896da3fcc66d7629c0d4355f",
+      "bytes": 237,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/train.py",
+      "export_sha256": "4bd2c57ece5db48d25e636b7ee4488c2b2cdd100bc237bae5eee0fa3f61c059d",
+      "bytes": 967,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/weights/README.md",
+      "export_sha256": "8aafe6931a768a80efe1fcf557496d182cdb5dc8275259fb4156ce77ef44b81c",
+      "bytes": 1414,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/weights/fetch.py",
+      "export_sha256": "7aae380da17a82f63a2554e9553483817202a4316e0610ddc9cca32c02fe45c9",
+      "bytes": 414,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/weights/head.json",
+      "export_sha256": "9714bc2539909ed8cc78b1c3719d6c21d56bd834076a940166463b869bfa3b89",
+      "bytes": 73684,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/mobilenet/weights/pretrained.json",
+      "export_sha256": "e39216a7753e7ee2bd16119cc26988b9e48fc34a022470b185bda86eb55dd2a7",
+      "bytes": 328,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "classifiers/resnet18/README.md",
+      "export_sha256": "471df435e1eee4d0804ead7104d5f044e9125050a8dd929475ae390c0372b894",
+      "bytes": 6683,
+      "baseline_export_path": "methods/resnet18/README.md",
+      "baseline_export_sha256": "726a784e06ab478d1da5317b9e866ad2dbcd1f7a1ac7362c8a6c2abd841dd421"
+    },
+    {
+      "export_path": "classifiers/resnet18/config.json",
+      "export_sha256": "c165190eb0488270e3be7dc7921cde338aaa10ba138107af670d3f5334d24fab",
+      "bytes": 291,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": "scripts/local_classifier.py",
+      "export_path": "classifiers/resnet18/experiment.py",
+      "original_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1",
+      "export_sha256": "4f9b52038aa38fe827d39f1a8c72c564ea6ada54b792007c81143eef529eae35",
+      "bytes": 10076,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/local_classifier.py",
+      "baseline_export_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1"
+    },
+    {
+      "original_path": "scripts/predict_classifier.py",
+      "export_path": "classifiers/resnet18/inference.py",
+      "original_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6",
+      "export_sha256": "d08312e58d734dd65bde454f0f5686d4c5d683169167296281269a6927fb585b",
+      "bytes": 2030,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "scripts/predict_classifier.py",
+      "baseline_export_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6"
+    },
+    {
+      "export_path": "classifiers/resnet18/results/model-provenance.json",
+      "export_sha256": "d73f548c5bf528cba0773c9d601701f6da329fb818b89e03956f30b9940859a0",
+      "bytes": 414,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/results/per-image.json",
+      "export_sha256": "a5e6407f9038cf9ee97a877ba853c9dd1bfd799516da8163ecca5a6c3e12d7d6",
+      "bytes": 2581,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/results/summary.json",
+      "export_sha256": "90cdd551495215d441d60ae4be8ea444d43aca60dc1dc214097cab8f3b544a55",
+      "bytes": 946,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/test.py",
+      "export_sha256": "0a45d1065bad8c3bb314547e9e5d50bb8d04499a708b66c5c2e8cde0120ce167",
+      "bytes": 236,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/train.py",
+      "export_sha256": "b4684d8e4910d2182f6e8efc9618d2ddd072a7e2031ed974f4d4f723b3160f6b",
+      "bytes": 965,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/weights/README.md",
+      "export_sha256": "87a1debe43f55d5fdf34343d2303ae56013758248071cfd041019bc738828468",
+      "bytes": 1412,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/weights/fetch.py",
+      "export_sha256": "7aae380da17a82f63a2554e9553483817202a4316e0610ddc9cca32c02fe45c9",
+      "bytes": 414,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/weights/head.json",
+      "export_sha256": "887a7f40d8b1fa0a204681ce9a5033acb1616496213f80fac3ce0ed4679748ec",
+      "bytes": 38046,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "export_path": "classifiers/resnet18/weights/pretrained.json",
+      "export_sha256": "2b0371a2410b63f026e123cc6dbe490c84ae7207404b24deeabb9f9ef9112016",
+      "bytes": 298,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_path": "dashboard/README.md",
+      "export_sha256": "93f116882b9930e531c31faa5e19652881d0fdc2ecca42a3cef785810b030148",
+      "bytes": 4216,
+      "baseline_export_path": "docs/RUNTIME.md",
+      "baseline_export_sha256": "4f693a52a2e92ebcb221f51c386a8c939d1e34c4efe2acc5c2bb63d9b4449539"
+    },
+    {
+      "export_path": "dashboard/__init__.py",
+      "export_sha256": "81addefb3c9b6739cc56b7fac9c9aa68583b993e6394e8b1b8e328fe66337e7a",
+      "bytes": 64,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
     },
     {
       "original_path": "app/__init__.py",
-      "export_path": "app/__init__.py",
+      "export_path": "dashboard/backend/__init__.py",
       "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-      "bytes": 0,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "881ef2c50ac6b6a92dba1dfce4b6def3c1115022e22bddd38f5874c6d86b49e0",
+      "bytes": 306,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/__init__.py",
+      "baseline_export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
     {
       "original_path": "app/benchmark.py",
-      "export_path": "app/benchmark.py",
+      "export_path": "dashboard/backend/benchmark.py",
       "original_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
-      "export_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
-      "bytes": 4991,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "1a0436a684b3aece48c000edd27a1f19eee5660679720e6e1f5ad180bf3b3cfd",
+      "bytes": 2981,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/benchmark.py",
+      "baseline_export_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86"
     },
     {
       "original_path": "app/feedback.py",
-      "export_path": "app/feedback.py",
+      "export_path": "dashboard/backend/feedback.py",
       "original_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6",
-      "export_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6",
-      "bytes": 19505,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "7abe98f96d1714386ad59552e2839b89ac9a26c1cd067a4e5039e8127eacb8ea",
+      "bytes": 19811,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/feedback.py",
+      "baseline_export_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6"
     },
     {
       "original_path": "app/job_store.py",
-      "export_path": "app/job_store.py",
+      "export_path": "dashboard/backend/job_store.py",
       "original_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c",
-      "export_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c",
-      "bytes": 17928,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "app/local_worker.py",
-      "export_path": "app/local_worker.py",
-      "original_sha256": "4815b94b50d76a8c596130f74dba01f5bdf1b58e2f5b135a81b077404e123f3d",
-      "export_sha256": "4815b94b50d76a8c596130f74dba01f5bdf1b58e2f5b135a81b077404e123f3d",
-      "bytes": 1283,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "a00e66f64071058368085327d6e38503508e0a182bc84bbdeab2669d54f0a52e",
+      "bytes": 18234,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/job_store.py",
+      "baseline_export_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c"
     },
     {
       "original_path": "app/providers.py",
-      "export_path": "app/providers.py",
+      "export_path": "dashboard/backend/providers.py",
       "original_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3",
-      "export_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3",
-      "bytes": 4122,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "216c6e3d017a36f658d5c63aab64c6d58b9feb81a9c648caf7108c294266c0c4",
+      "bytes": 4886,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/providers.py",
+      "baseline_export_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3"
     },
     {
       "original_path": "app/server.py",
-      "export_path": "app/server.py",
+      "export_path": "dashboard/backend/server.py",
       "original_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
-      "export_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
-      "bytes": 25637,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "35a10181b8f630432cc360880ac7cab09e11cf24c8427a143ae44bb54dddb9b6",
+      "bytes": 26434,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/server.py",
+      "baseline_export_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff"
     },
     {
       "original_path": "app/session_security.py",
-      "export_path": "app/session_security.py",
+      "export_path": "dashboard/backend/session_security.py",
       "original_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32",
-      "export_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32",
-      "bytes": 6508,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "1b662c259b1313a5e665a369cedca6e17b26211c1c9356e2c7634101444d547e",
+      "bytes": 6814,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/session_security.py",
+      "baseline_export_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32"
     },
     {
       "original_path": "app/site_gate.py",
-      "export_path": "app/site_gate.py",
+      "export_path": "dashboard/backend/site_gate.py",
       "original_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114",
-      "export_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114",
-      "bytes": 8116,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "cf524ff041a9c212e8b35b3a8e255b88f51e9ee36b8ac6359a196b9e57836038",
+      "bytes": 8464,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/site_gate.py",
+      "baseline_export_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114"
     },
     {
       "original_path": "app/test_feedback.py",
-      "export_path": "app/test_feedback.py",
+      "export_path": "dashboard/backend/test_feedback.py",
       "original_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae",
-      "export_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae",
-      "bytes": 8257,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "0fe558fcc48c55da33d26e193c80fb1c77c505cd71f50fd47df10a374b714744",
+      "bytes": 8577,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/test_feedback.py",
+      "baseline_export_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae"
     },
     {
       "original_path": "app/test_dashboard.py",
-      "export_path": "app/test_upload_contract.py",
+      "export_path": "dashboard/backend/test_upload_contract.py",
       "original_sha256": "fada50b5df2c8127ee980b6f38b23f239c50b93bf676f9f2260c2411b7833a1f",
-      "export_sha256": "581781a1a288af40516ffe9749fe36eff26530f009b361dd35cba2953aa94331",
-      "bytes": 1321,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "config/environment.example.txt",
-      "export_sha256": "7f38d01f34e8f38f7344a7f23fb41c464c6fc6f4953ed36fc5ced1764ff6b6ce",
-      "bytes": 733
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "config/luna.example.json",
-      "export_sha256": "ddaa736af896f64c70fa78c847e7273634bb80f982826bec8eebad5acce14f51",
-      "bytes": 1086
+      "export_sha256": "d02813d8addc39d291c16d687099d6226f8710a5b073164424f2c8633426ee58",
+      "bytes": 1756,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "app/test_upload_contract.py",
+      "baseline_export_sha256": "581781a1a288af40516ffe9749fe36eff26530f009b361dd35cba2953aa94331"
     },
     {
       "original_path": "dashboard/dashboard.js",
-      "export_path": "dashboard/dashboard.js",
+      "export_path": "dashboard/frontend/dashboard.js",
       "original_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
       "export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
       "bytes": 22014,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "dashboard/dashboard.js",
+      "baseline_export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5"
     },
     {
       "original_path": "dashboard/index.html",
-      "export_path": "dashboard/index.html",
+      "export_path": "dashboard/frontend/index.html",
       "original_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
       "export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
       "bytes": 10204,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "dashboard/index.html",
+      "baseline_export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953"
     },
     {
       "original_path": "dashboard/style.css",
-      "export_path": "dashboard/style.css",
+      "export_path": "dashboard/frontend/style.css",
       "original_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
       "export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
       "bytes": 8971,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export, relocated",
+      "baseline_export_path": "dashboard/style.css",
+      "baseline_export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "byte-identical baseline export",
       "export_path": "docs/COSTS.md",
       "export_sha256": "da9b1640a6227d79789ac4fbd0dac5ebe794147b19312fe093fcc6931a95770a",
-      "bytes": 3030
+      "bytes": 3030,
+      "baseline_export_path": "docs/COSTS.md",
+      "baseline_export_sha256": "da9b1640a6227d79789ac4fbd0dac5ebe794147b19312fe093fcc6931a95770a"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "docs/DATA_EXCLUDED.md",
-      "export_sha256": "ec067fc208186db467246d1336b411810a761fc1e8fb6bed029b3188588f1efd",
-      "bytes": 3131
+      "export_sha256": "cb8c6e748433af8e664c8c240807497d8ee29b6815ec1b3cad4993ad1ec67195",
+      "bytes": 3599,
+      "baseline_export_path": "docs/DATA_EXCLUDED.md",
+      "baseline_export_sha256": "ec067fc208186db467246d1336b411810a761fc1e8fb6bed029b3188588f1efd"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "docs/EXPERIMENTS.md",
-      "export_sha256": "53083f498a5ea76a5131cbc1bc3e02821f238a6e2511ea564a1ebea159b82ac7",
-      "bytes": 2919
+      "export_sha256": "0f89f18ca86b07e753aecee9d91583e60797533f4385bf6ae9f6c77c1a15d0b9",
+      "bytes": 2957,
+      "baseline_export_path": "docs/EXPERIMENTS.md",
+      "baseline_export_sha256": "53083f498a5ea76a5131cbc1bc3e02821f238a6e2511ea564a1ebea159b82ac7"
+    },
+    {
+      "export_path": "docs/REFACTOR_VERIFICATION.md",
+      "export_sha256": "1abc2f600469b06d6f0868f3bbc5268c6fdaf29f8c4a6a2a89a9717ae52cde2f",
+      "bytes": 4228,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "docs/LUNA_QUESTIONS.md",
-      "export_sha256": "a708da94a8051a53d936c34d1457fcb36ae2689f5c2acce248a312a552d3c3f7",
-      "bytes": 1629
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "docs/RUNTIME.md",
-      "export_sha256": "4f693a52a2e92ebcb221f51c386a8c939d1e34c4efe2acc5c2bb63d9b4449539",
-      "bytes": 3411
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "docs/VERIFICATION.md",
-      "export_sha256": "b752954b17ae51292ff1c2d6968397dff61a117783982417263926414f4369af",
-      "bytes": 2160
+      "export_sha256": "ca0591de6a4bec3c93247e41b6af447393b7c76adb823efb09a75827a94badeb",
+      "bytes": 2587,
+      "baseline_export_path": "docs/VERIFICATION.md",
+      "baseline_export_sha256": "b752954b17ae51292ff1c2d6968397dff61a117783982417263926414f4369af"
     },
     {
       "original_path": null,
@@ -225,7 +1193,9 @@
       "original_sha256": null,
       "export_sha256": "293e580d8c8e8d0b48923ded22bfea9adc4d83e40a92bd31bb6c78b7f2191aa6",
       "bytes": 4214,
-      "treatment": "allowlisted reviewed infographic/team copy; no photos"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "docs/assets/team-summary-with-costs.txt",
+      "baseline_export_sha256": "293e580d8c8e8d0b48923ded22bfea9adc4d83e40a92bd31bb6c78b7f2191aa6"
     },
     {
       "original_path": null,
@@ -233,7 +1203,9 @@
       "original_sha256": null,
       "export_sha256": "c83b73e196b0ccb555ef98ef47bac1c7737bd45103606a77667c0427e05c4c59",
       "bytes": 619164,
-      "treatment": "allowlisted reviewed infographic/team copy; no photos"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "docs/assets/twi-six-methods-costs.png",
+      "baseline_export_sha256": "c83b73e196b0ccb555ef98ef47bac1c7737bd45103606a77667c0427e05c4c59"
     },
     {
       "original_path": null,
@@ -241,7 +1213,9 @@
       "original_sha256": null,
       "export_sha256": "c39f6c13b8727d926762897541b42923731f350895e4a4d57029e378474d0703",
       "bytes": 31934,
-      "treatment": "allowlisted reviewed infographic/team copy; no photos"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "docs/assets/twi-six-methods-costs.svg",
+      "baseline_export_sha256": "c39f6c13b8727d926762897541b42923731f350895e4a4d57029e378474d0703"
     },
     {
       "original_path": null,
@@ -249,151 +1223,25 @@
       "original_sha256": null,
       "export_sha256": "e5965211d4e8a061aaa437b27de529ca902264673ad13b44743cd2815c97c9db",
       "bytes": 22076,
-      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "docs/assets/verified-azure-costs.json",
+      "baseline_export_sha256": "e5965211d4e8a061aaa437b27de529ca902264673ad13b44743cd2815c97c9db"
     },
     {
-      "original_path": "infra/automl-pilot-v1/preparation/download_best.py",
-      "export_path": "infra/automl-pilot-v1/preparation/download_best.py",
-      "original_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c",
-      "export_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c",
-      "bytes": 3584,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "infra/automl-pilot-v1/preparation/evaluate.py",
-      "export_path": "infra/automl-pilot-v1/preparation/evaluate.py",
-      "original_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159",
-      "export_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159",
-      "bytes": 6971,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "infra/automl-pilot-v1/preparation/prepare.py",
-      "export_path": "infra/automl-pilot-v1/preparation/prepare.py",
-      "original_sha256": "f54a1164d420208c1fe812169a6d2576bd3b978f0817f1533800b86e6397dbde",
-      "export_sha256": "3ba330b70f13de4c17254d20d49bec4e2369c3c584d0cdc15fe394eb92709e52",
-      "bytes": 9220,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
-      "export_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
-      "original_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
-      "export_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
-      "bytes": 402,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
-      "export_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
-      "original_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
-      "export_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
-      "bytes": 187,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
-      "export_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
-      "original_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee",
-      "export_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee",
-      "bytes": 851,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "infra/cloud_policy_v2.py",
-      "export_path": "infra/cloud_policy_v2.py",
-      "original_sha256": "d7a9cb4e79efd692ba43669f92436a7b48f62eb5ca490b43d4d510333a170512",
-      "export_sha256": "09269b458ab08d128fbd857e48cedf2d2e0954f919cb6e96503c6d4032fe181a",
-      "bytes": 1138,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "infra/refinement_v3.py",
-      "export_path": "infra/refinement_v3.py",
-      "original_sha256": "1447202acd7cf12a1a3b4e93f2e62ea757fb9f9e0d39e25f1f6d378a75a12314",
-      "export_sha256": "4d376aa9486e84a82b48c48d68b938c558e69d89eb575e7f1e4fa8e8c5f602f9",
-      "bytes": 12461,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "infra/test-refinement-v3.py",
-      "export_path": "infra/test-refinement-v3.py",
-      "original_sha256": "8859e5c995190ac263c7c4914be5e789c1de1bfafc69ba1795dfa1e3595d3217",
-      "export_sha256": "be621a87df93fbe66112b9d962fbc83f8f743f8776a773e199016ba7245f4f7c",
-      "bytes": 4908,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "infra/vision-finetune/adapter.py",
-      "export_path": "infra/vision-finetune/adapter.py",
-      "original_sha256": "d89280b0f2ae36907bca78b52f5f31224ae0331d6e492094dd4a72215d54bb87",
-      "export_sha256": "ae3f8119bce9f3a9abc298c5752ab2e29489fa70dd8d130497395dda425d687d",
-      "bytes": 10578,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "infra/vision-finetune/plan.json",
-      "export_path": "infra/vision-finetune/plan.json",
-      "original_sha256": "558423c3434e59eee50d10d3dbba2652793403c8417da5fce0c861915faac0f5",
-      "export_sha256": "3fad6655f65876c43513f067c38be56b14584c2098d3a46e1008f89f53c11043",
-      "bytes": 2864,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+      "export_path": "infra/README.md",
+      "export_sha256": "cb99518f09f5a89662a4f801d0cb687dd9d843e01d70b6560e6280402b7fab94",
+      "bytes": 758,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/azure-automl/README.md",
-      "export_sha256": "74df300333cecdbe8d27e660cf245a673009def7523b8ebf6fc842c11b0ef6b3",
-      "bytes": 4940
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/clip/README.md",
-      "export_sha256": "7d020155f9c3b62ba88bc0205129ac7749987c14e766ccade3d43beb6eee8d50",
-      "bytes": 5176
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/gpt41-finetuned/README.md",
-      "export_sha256": "e4bcca70e30cf633325243e76119f3a20d469478d9c7b6d5bfe471a9f1ccb7c4",
-      "bytes": 5358
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/luna-decisions/README.md",
-      "export_sha256": "8943732fd9dbb1d8a9a6f9290ed6cafe62f9422c393851d6c0fec4a00c30ca19",
-      "bytes": 5084
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/luna-responses/README.md",
-      "export_sha256": "3c7c0c5355504ba734571b9d07bb311691bda963811617a3382f82f1bd7f0e26",
-      "bytes": 5054
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/mobilenet/README.md",
-      "export_sha256": "a4bd755cb9fa9a59837bcf4c89e4164e3312737f27050f4b9b6b06ae829cf512",
-      "bytes": 4871
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "methods/resnet18/README.md",
-      "export_sha256": "726a784e06ab478d1da5317b9e866ad2dbcd1f7a1ac7362c8a6c2abd841dd421",
-      "bytes": 4653
+      "treatment": "byte-identical baseline export, relocated",
+      "export_path": "infra/environment.example.txt",
+      "export_sha256": "7f38d01f34e8f38f7344a7f23fb41c464c6fc6f4953ed36fc5ced1764ff6b6ce",
+      "bytes": 733,
+      "baseline_export_path": "config/environment.example.txt",
+      "baseline_export_sha256": "7f38d01f34e8f38f7344a7f23fb41c464c6fc6f4953ed36fc5ced1764ff6b6ce"
     },
     {
       "original_path": "requirements-audit.txt",
@@ -401,7 +1249,9 @@
       "original_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023",
       "export_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023",
       "bytes": 94,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "requirements-audit.txt",
+      "baseline_export_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023"
     },
     {
       "original_path": "artifacts/custom-v2/requirements-custom-v2-lock.txt",
@@ -409,7 +1259,9 @@
       "original_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874",
       "export_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874",
       "bytes": 655,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "requirements-foundation-lock.txt",
+      "baseline_export_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874"
     },
     {
       "original_path": "requirements-pilot-lock.txt",
@@ -417,7 +1269,9 @@
       "original_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0",
       "export_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0",
       "bytes": 430,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "requirements-pilot-lock.txt",
+      "baseline_export_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0"
     },
     {
       "original_path": "requirements-pilot.txt",
@@ -425,303 +1279,111 @@
       "original_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656",
       "export_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656",
       "bytes": 106,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "infra/cloud-refinement-v3/per-image.json",
-      "export_path": "results/cloud-rounds-per-case.json",
-      "original_sha256": "21ce9b942f6b64950b22bff6c5761bb40445e781ceba2f2821be8b90654dc80b",
-      "export_sha256": "512bbdb0ef880b868fca427c9632957bff796acbed750eb565717ae01a0d68ab",
-      "bytes": 121130,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "infra/vision-finetune/dataset-receipt.json",
-      "export_path": "results/gpt-training.json",
-      "original_sha256": "574727d253e0219c0ff558b80534d62483bf2884582bcb3ff2af3dc2159be6dd",
-      "export_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a",
-      "bytes": 2651,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": null,
-      "export_path": "results/legacy-rounds.json",
-      "original_sha256": null,
-      "export_sha256": "3f78291b9cd3983f4574940b5adeec7500f7e1609d404969c11bf622467ddafa",
-      "bytes": 29650,
-      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
-    },
-    {
-      "original_path": null,
-      "export_path": "results/method-summary.json",
-      "original_sha256": null,
-      "export_sha256": "6564b6897049a3cd68772711f86c5cc463198ed3097e69efda23213c157b47ea",
-      "bytes": 6454,
-      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
-    },
-    {
-      "original_path": null,
-      "export_path": "results/model-provenance.json",
-      "original_sha256": null,
-      "export_sha256": "2021312c938eb668cc4ae111bc65b6f4b7e53e5b8d7fd8e7b3728dc55f3bef79",
-      "bytes": 16156,
-      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
-    },
-    {
-      "original_path": "artifacts/classifier/splits.json",
-      "export_path": "results/partitions.json",
-      "original_sha256": "206fdaa0d6dc8b3284d6f9355ad32232c746b738bd14cc64522c5ee77063b701",
-      "export_sha256": "4da669d2aafa6bdff0bfcd9b639384834938bd462fee6071c4341e7435efb7b8",
-      "bytes": 2827,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": null,
-      "export_path": "results/per-image.csv",
-      "original_sha256": null,
-      "export_sha256": "a7cde9ed98ee4a3929f8f4f0d4f14679846b49a925c3c351defc01b384e86fe2",
-      "bytes": 3368,
-      "treatment": "new documentation/tool"
-    },
-    {
-      "original_path": null,
-      "export_path": "results/per-image.json",
-      "original_sha256": null,
-      "export_sha256": "da128b7d85394ec0a7f50b17c4a4b9cc48af8626e315919aeaf2fcd6d1f36efe",
-      "bytes": 44766,
-      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
-    },
-    {
-      "original_path": "scripts/audit_dataset.py",
-      "export_path": "scripts/audit_dataset.py",
-      "original_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1",
-      "export_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1",
-      "bytes": 18702,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/benchmark_contract.py",
-      "export_path": "scripts/benchmark_contract.py",
-      "original_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f",
-      "export_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f",
-      "bytes": 11174,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/cost_accounting.py",
-      "export_path": "scripts/cost_accounting.py",
-      "original_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382",
-      "export_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382",
-      "bytes": 5811,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/cost_bounds.py",
-      "export_path": "scripts/cost_bounds.py",
-      "original_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28",
-      "export_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28",
-      "bytes": 2124,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/custom_improvements.py",
-      "export_path": "scripts/custom_improvements.py",
-      "original_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a",
-      "export_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a",
-      "bytes": 19497,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/custom_refinement_v2.py",
-      "export_path": "scripts/custom_refinement_v2.py",
-      "original_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e",
-      "export_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e",
-      "bytes": 14750,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/local_classifier.py",
-      "export_path": "scripts/local_classifier.py",
-      "original_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1",
-      "export_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1",
-      "bytes": 12271,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/predict_classifier.py",
-      "export_path": "scripts/predict_classifier.py",
-      "original_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6",
-      "export_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6",
-      "bytes": 1638,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/predict_custom.py",
-      "export_path": "scripts/predict_custom.py",
-      "original_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291",
-      "export_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291",
-      "bytes": 2115,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/preprocessing.py",
-      "export_path": "scripts/preprocessing.py",
-      "original_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed",
-      "export_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed",
-      "bytes": 4246,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "scripts/project_ledger.py",
-      "export_path": "scripts/project_ledger.py",
-      "original_sha256": "a87d8b0d3805ab0ef76721c3d5d3e82cc76458b435919a03e73ff504ffc28ebf",
-      "export_sha256": "b3bb3875115724ee892e6ee74af2080bdb04c9c5d6ccaad077f06dace47ca1db",
-      "bytes": 6365,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
-    },
-    {
-      "original_path": "scripts/run_benchmark.py",
-      "export_path": "scripts/run_benchmark.py",
-      "original_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe",
-      "export_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe",
-      "bytes": 29479,
-      "treatment": "byte-identical reviewed allowlist source"
+      "treatment": "byte-identical baseline export",
+      "baseline_export_path": "requirements-pilot.txt",
+      "baseline_export_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656"
     },
     {
       "original_path": "tests/test_fresh_review.py",
       "export_path": "tests/clock_fixture.py",
       "original_sha256": "d900d0d0bd52d4522bee53a4a46732d45f791b361985e9a4fe29ada1fb0eb0d3",
-      "export_sha256": "a9874efe4546fcc86493c5f2e95a427e82aacc5cfb9d5ae3bf9b0f4b8af26663",
-      "bytes": 185,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+      "export_sha256": "1c56253c62e7352a61bd83960ca4b8a248db13d00d2781694d7292f7c027a864",
+      "bytes": 491,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "tests/clock_fixture.py",
+      "baseline_export_sha256": "a9874efe4546fcc86493c5f2e95a427e82aacc5cfb9d5ae3bf9b0f4b8af26663"
     },
     {
       "original_path": "tests/test_benchmark_contract.py",
       "export_path": "tests/test_benchmark_contract.py",
       "original_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98",
-      "export_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98",
-      "bytes": 4705,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "fdde6c94078e4f64055ee4e85723b6ccddd335a90dd2c242c8883eee6da22849",
+      "bytes": 5022,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "tests/test_benchmark_contract.py",
+      "baseline_export_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98"
     },
     {
       "original_path": "tests/test_cloud_cost_bounds.py",
       "export_path": "tests/test_cloud_cost_bounds.py",
       "original_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a",
-      "export_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a",
-      "bytes": 1311,
-      "treatment": "byte-identical reviewed allowlist source"
+      "export_sha256": "7ef1c5b440165276d9d43215b2574f46903ad3c1d85516a1d12a7cf8803b72c9",
+      "bytes": 1628,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "tests/test_cloud_cost_bounds.py",
+      "baseline_export_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a"
     },
     {
       "original_path": "tests/test_cost_ledger.py",
       "export_path": "tests/test_cost_ledger.py",
       "original_sha256": "6d628e1d0fe815607d514d2b52e6dfa3f3ed86aa6e4080d2ad17643c76df36b6",
-      "export_sha256": "4797f9a0cf97bef849e667473c4ef554fa39e0a820a94e3e0070e5092f47a21c",
-      "bytes": 8859,
-      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+      "export_sha256": "eb204ce073520cda4a7c0ce4969bf5005cacc6709f342e648ccec9ddc04872d2",
+      "bytes": 9299,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "tests/test_cost_ledger.py",
+      "baseline_export_sha256": "4797f9a0cf97bef849e667473c4ef554fa39e0a820a94e3e0070e5092f47a21c"
+    },
+    {
+      "export_path": "tests/test_layout.py",
+      "export_sha256": "ed9634cc6169aa98cbec9b0816e3b67240d1773ef8904ceb990acf1b0b4d67a5",
+      "bytes": 8774,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "tests/test_publication.py",
-      "export_sha256": "8490004d28c8dc5e6f96cb2d9bfa092ae89d2ea43d5dab85f8a16c2148c7b819",
-      "bytes": 7312
+      "export_sha256": "6d95c7dec971b6619048e42db9c99ba176582ee14f01edf24be9656c17ca07b7",
+      "bytes": 7795,
+      "baseline_export_path": "tests/test_publication.py",
+      "baseline_export_sha256": "8490004d28c8dc5e6f96cb2d9bfa092ae89d2ea43d5dab85f8a16c2148c7b819"
     },
     {
-      "original_path": "artifacts/custom-v2/weights/clip/README.md",
-      "export_path": "third_party/clip/README.md",
-      "original_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
-      "export_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
-      "bytes": 7942,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "artifacts/custom-v2/weights/clip/config.json",
-      "export_path": "third_party/clip/config.json",
-      "original_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
-      "export_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
-      "bytes": 4186,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "artifacts/custom-v2/weights/clip/preprocessor_config.json",
-      "export_path": "third_party/clip/preprocessor_config.json",
-      "original_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
-      "export_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
-      "bytes": 316,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "artifacts/custom-v2/weights/dinov2/README.md",
-      "export_path": "third_party/dinov2/README.md",
-      "original_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
-      "export_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
-      "bytes": 3033,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "artifacts/custom-v2/weights/dinov2/config.json",
-      "export_path": "third_party/dinov2/config.json",
-      "original_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
-      "export_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
-      "bytes": 547,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "artifacts/custom-v2/weights/dinov2/preprocessor_config.json",
-      "export_path": "third_party/dinov2/preprocessor_config.json",
-      "original_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
-      "export_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
-      "bytes": 436,
-      "treatment": "byte-identical reviewed allowlist source"
-    },
-    {
-      "original_path": "artifacts/custom-improvements/torchvision-LICENSE.txt",
-      "export_path": "third_party/torchvision-LICENSE.txt",
-      "original_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
-      "export_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
-      "bytes": 1517,
-      "treatment": "byte-identical reviewed allowlist source"
+      "original_path": "infra/test-refinement-v3.py",
+      "export_path": "tests/test_refinement_v3.py",
+      "original_sha256": "8859e5c995190ac263c7c4914be5e789c1de1bfafc69ba1795dfa1e3595d3217",
+      "export_sha256": "1f22c91bdce67baddc3988c9fc03d20ca4466f454e645fc30add7f6c01d992c2",
+      "bytes": 5400,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "baseline_export_path": "infra/test-refinement-v3.py",
+      "baseline_export_sha256": "be621a87df93fbe66112b9d962fbc83f8f743f8776a773e199016ba7245f4f7c"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "tools/check_private_archive.py",
-      "export_sha256": "776908f90549c77c3d752db5f4e4f28af98422a52ec17a4951810621155c4189",
-      "bytes": 600
+      "export_sha256": "6360d011b54acf6d8e114ec4d34409bcf5a379720a6a90dbdc6747a431e8d43b",
+      "bytes": 1018,
+      "baseline_export_path": "tools/check_private_archive.py",
+      "baseline_export_sha256": "776908f90549c77c3d752db5f4e4f28af98422a52ec17a4951810621155c4189"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "tools/check_publication.py",
-      "export_sha256": "a8513f0462add51a9a6d9aeeef925e82fc4fa9935941df3e9525edd57f71d74c",
-      "bytes": 8358
+      "export_sha256": "bb2f62c9957025143a66597d662d02aab8dac4c4aaab38f97eefe497be94835e",
+      "bytes": 10979,
+      "baseline_export_path": "tools/check_publication.py",
+      "baseline_export_sha256": "a8513f0462add51a9a6d9aeeef925e82fc4fa9935941df3e9525edd57f71d74c"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "tools/prepare_gpt_training.py",
-      "export_sha256": "0331dcd7049ad2579ff5922ad79b5a493284000685e450ea526c1eedc599c286",
-      "bytes": 2359
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
-      "export_path": "tools/run_luna.py",
-      "export_sha256": "7db560c090325497795bbc76af36e8c1b33ad272f8b5df862446a10d22256210",
-      "bytes": 1091
-    },
-    {
-      "original_path": null,
-      "original_sha256": null,
-      "treatment": "new method documentation/offline tool/safe result projection",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "tools/run_offline_tests.py",
-      "export_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a",
-      "bytes": 1274
+      "export_sha256": "96c7c57fcf2ed7dc4762cec46e02a30689b0bcac09f7519ce4431ecf7cc30439",
+      "bytes": 1756,
+      "baseline_export_path": "tools/run_offline_tests.py",
+      "baseline_export_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a"
+    },
+    {
+      "export_path": "tools/smoke_local_models.py",
+      "export_sha256": "1ae63c3d317dd5d76a9da180f7508c16edc166d68352b995ad8a526d12ff645f",
+      "bytes": 2567,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
     }
   ],
   "projection_sources": [
@@ -997,7 +1659,7 @@
     },
     {
       "category": "model weights/features/trained heads",
-      "reason": "large files; public pinned checkpoint acquisition and private regeneration; no pickle/LFS export"
+      "reason": "Large public backbones, feature matrices, raw samples and pickle/LFS excluded. Exact inspected small original final numeric scaler/coefficients are explicitly authorized, narrowly hash/size/schema allowlisted."
     },
     {
       "category": "cloud/IAM/ARM/service readbacks/provider raw responses",
@@ -1012,5 +1674,659 @@
       "reason": "non-source runtime or secret-bearing historical material"
     }
   ],
-  "recursive_hash_note": "Manifest does not self-hash; external preparation receipt pins manifest+full tree."
+  "recursive_hash_note": "Manifest does not self-hash; baseline mapping pins original export blobs; final local commit pins the complete updated staging tree.",
+  "migration": {
+    "baseline_commit": "38f5d37d14aafa494fb944a82f14c9ea2d1bf1d4",
+    "baseline_files": [
+      {
+        "old_path": ".gitignore",
+        "new_path": ".gitignore",
+        "baseline_sha256": "4b4f3cf71af913d9ce927337d1f212184d497dc0e3ca0aa68c1025a8dde9180b",
+        "disposition": "retained/moved",
+        "export_sha256": "ee27d3c54cadb78f7e0b530a9515e76578c9f22030f866f0657ec2b550d49c15"
+      },
+      {
+        "old_path": "FINAL_BENCHMARK.json",
+        "new_path": "FINAL_BENCHMARK.json",
+        "baseline_sha256": "d8b0f11d426a98c2033d6d463f1cdf6c19e960df87bd83fbd8b9ed9acd245ee3",
+        "disposition": "retained/moved",
+        "export_sha256": "d8b0f11d426a98c2033d6d463f1cdf6c19e960df87bd83fbd8b9ed9acd245ee3"
+      },
+      {
+        "old_path": "README.md",
+        "new_path": "README.md",
+        "baseline_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab",
+        "disposition": "retained/moved",
+        "export_sha256": "1accabab8dbcf15d3d46bafed5e38d613d88ec6981203845d7dd25f33e0e8ce0"
+      },
+      {
+        "old_path": "SECURITY.md",
+        "new_path": "SECURITY.md",
+        "baseline_sha256": "de079b23ae811649eb70808ea3d4808a12e04f0a2d5748e66e097e0e6eb2580c",
+        "disposition": "retained/moved",
+        "export_sha256": "fd3ef084ce13246ecc1a5665f4c621c2aa11cdcb8680137582ab7fce28598d2a"
+      },
+      {
+        "old_path": "THIRD_PARTY_NOTICES.md",
+        "new_path": "THIRD_PARTY_NOTICES.md",
+        "baseline_sha256": "b4766dc0f4145d4e59818e23cce3b4b85b3dfa167f3fc2e735498e5476f9bbf3",
+        "disposition": "retained/moved",
+        "export_sha256": "a7139de2e6934db534648ddf0d14af646dfd3d50ea45a7af44d1465ca2d2abf9"
+      },
+      {
+        "old_path": "app/__init__.py",
+        "new_path": "dashboard/backend/__init__.py",
+        "baseline_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "disposition": "retained/moved",
+        "export_sha256": "881ef2c50ac6b6a92dba1dfce4b6def3c1115022e22bddd38f5874c6d86b49e0"
+      },
+      {
+        "old_path": "app/benchmark.py",
+        "new_path": "dashboard/backend/benchmark.py",
+        "baseline_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
+        "disposition": "retained/moved",
+        "export_sha256": "1a0436a684b3aece48c000edd27a1f19eee5660679720e6e1f5ad180bf3b3cfd"
+      },
+      {
+        "old_path": "app/feedback.py",
+        "new_path": "dashboard/backend/feedback.py",
+        "baseline_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6",
+        "disposition": "retained/moved",
+        "export_sha256": "7abe98f96d1714386ad59552e2839b89ac9a26c1cd067a4e5039e8127eacb8ea"
+      },
+      {
+        "old_path": "app/job_store.py",
+        "new_path": "dashboard/backend/job_store.py",
+        "baseline_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c",
+        "disposition": "retained/moved",
+        "export_sha256": "a00e66f64071058368085327d6e38503508e0a182bc84bbdeab2669d54f0a52e"
+      },
+      {
+        "old_path": "app/local_worker.py",
+        "new_path": null,
+        "baseline_sha256": "4815b94b50d76a8c596130f74dba01f5bdf1b58e2f5b135a81b077404e123f3d",
+        "disposition": "replaced by method inference CLI",
+        "export_sha256": null
+      },
+      {
+        "old_path": "app/providers.py",
+        "new_path": "dashboard/backend/providers.py",
+        "baseline_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3",
+        "disposition": "retained/moved",
+        "export_sha256": "216c6e3d017a36f658d5c63aab64c6d58b9feb81a9c648caf7108c294266c0c4"
+      },
+      {
+        "old_path": "app/server.py",
+        "new_path": "dashboard/backend/server.py",
+        "baseline_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
+        "disposition": "retained/moved",
+        "export_sha256": "35a10181b8f630432cc360880ac7cab09e11cf24c8427a143ae44bb54dddb9b6"
+      },
+      {
+        "old_path": "app/session_security.py",
+        "new_path": "dashboard/backend/session_security.py",
+        "baseline_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32",
+        "disposition": "retained/moved",
+        "export_sha256": "1b662c259b1313a5e665a369cedca6e17b26211c1c9356e2c7634101444d547e"
+      },
+      {
+        "old_path": "app/site_gate.py",
+        "new_path": "dashboard/backend/site_gate.py",
+        "baseline_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114",
+        "disposition": "retained/moved",
+        "export_sha256": "cf524ff041a9c212e8b35b3a8e255b88f51e9ee36b8ac6359a196b9e57836038"
+      },
+      {
+        "old_path": "app/test_feedback.py",
+        "new_path": "dashboard/backend/test_feedback.py",
+        "baseline_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae",
+        "disposition": "retained/moved",
+        "export_sha256": "0fe558fcc48c55da33d26e193c80fb1c77c505cd71f50fd47df10a374b714744"
+      },
+      {
+        "old_path": "app/test_upload_contract.py",
+        "new_path": "dashboard/backend/test_upload_contract.py",
+        "baseline_sha256": "581781a1a288af40516ffe9749fe36eff26530f009b361dd35cba2953aa94331",
+        "disposition": "retained/moved",
+        "export_sha256": "d02813d8addc39d291c16d687099d6226f8710a5b073164424f2c8633426ee58"
+      },
+      {
+        "old_path": "config/environment.example.txt",
+        "new_path": "infra/environment.example.txt",
+        "baseline_sha256": "7f38d01f34e8f38f7344a7f23fb41c464c6fc6f4953ed36fc5ced1764ff6b6ce",
+        "disposition": "retained/moved",
+        "export_sha256": "7f38d01f34e8f38f7344a7f23fb41c464c6fc6f4953ed36fc5ced1764ff6b6ce"
+      },
+      {
+        "old_path": "config/luna.example.json",
+        "new_path": "classifiers/common/luna.example.json",
+        "baseline_sha256": "ddaa736af896f64c70fa78c847e7273634bb80f982826bec8eebad5acce14f51",
+        "disposition": "retained/moved",
+        "export_sha256": "ddaa736af896f64c70fa78c847e7273634bb80f982826bec8eebad5acce14f51"
+      },
+      {
+        "old_path": "dashboard/dashboard.js",
+        "new_path": "dashboard/frontend/dashboard.js",
+        "baseline_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
+        "disposition": "retained/moved",
+        "export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5"
+      },
+      {
+        "old_path": "dashboard/index.html",
+        "new_path": "dashboard/frontend/index.html",
+        "baseline_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
+        "disposition": "retained/moved",
+        "export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953"
+      },
+      {
+        "old_path": "dashboard/style.css",
+        "new_path": "dashboard/frontend/style.css",
+        "baseline_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
+        "disposition": "retained/moved",
+        "export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf"
+      },
+      {
+        "old_path": "docs/COSTS.md",
+        "new_path": "docs/COSTS.md",
+        "baseline_sha256": "da9b1640a6227d79789ac4fbd0dac5ebe794147b19312fe093fcc6931a95770a",
+        "disposition": "retained/moved",
+        "export_sha256": "da9b1640a6227d79789ac4fbd0dac5ebe794147b19312fe093fcc6931a95770a"
+      },
+      {
+        "old_path": "docs/DATA_EXCLUDED.md",
+        "new_path": "docs/DATA_EXCLUDED.md",
+        "baseline_sha256": "ec067fc208186db467246d1336b411810a761fc1e8fb6bed029b3188588f1efd",
+        "disposition": "retained/moved",
+        "export_sha256": "cb8c6e748433af8e664c8c240807497d8ee29b6815ec1b3cad4993ad1ec67195"
+      },
+      {
+        "old_path": "docs/EXPERIMENTS.md",
+        "new_path": "docs/EXPERIMENTS.md",
+        "baseline_sha256": "53083f498a5ea76a5131cbc1bc3e02821f238a6e2511ea564a1ebea159b82ac7",
+        "disposition": "retained/moved",
+        "export_sha256": "0f89f18ca86b07e753aecee9d91583e60797533f4385bf6ae9f6c77c1a15d0b9"
+      },
+      {
+        "old_path": "docs/LUNA_QUESTIONS.md",
+        "new_path": "classifiers/luna-decisions/QUESTIONS.md",
+        "baseline_sha256": "a708da94a8051a53d936c34d1457fcb36ae2689f5c2acce248a312a552d3c3f7",
+        "disposition": "retained/moved",
+        "export_sha256": "acaf65c71644eee4d2a2e947b8abb7ac402f671fa1de9938a2bc19c1344cdefb"
+      },
+      {
+        "old_path": "docs/RUNTIME.md",
+        "new_path": "dashboard/README.md",
+        "baseline_sha256": "4f693a52a2e92ebcb221f51c386a8c939d1e34c4efe2acc5c2bb63d9b4449539",
+        "disposition": "retained/moved",
+        "export_sha256": "93f116882b9930e531c31faa5e19652881d0fdc2ecca42a3cef785810b030148"
+      },
+      {
+        "old_path": "docs/VERIFICATION.md",
+        "new_path": "docs/VERIFICATION.md",
+        "baseline_sha256": "b752954b17ae51292ff1c2d6968397dff61a117783982417263926414f4369af",
+        "disposition": "retained/moved",
+        "export_sha256": "ca0591de6a4bec3c93247e41b6af447393b7c76adb823efb09a75827a94badeb"
+      },
+      {
+        "old_path": "docs/assets/team-summary-with-costs.txt",
+        "new_path": "docs/assets/team-summary-with-costs.txt",
+        "baseline_sha256": "293e580d8c8e8d0b48923ded22bfea9adc4d83e40a92bd31bb6c78b7f2191aa6",
+        "disposition": "retained/moved",
+        "export_sha256": "293e580d8c8e8d0b48923ded22bfea9adc4d83e40a92bd31bb6c78b7f2191aa6"
+      },
+      {
+        "old_path": "docs/assets/twi-six-methods-costs.png",
+        "new_path": "docs/assets/twi-six-methods-costs.png",
+        "baseline_sha256": "c83b73e196b0ccb555ef98ef47bac1c7737bd45103606a77667c0427e05c4c59",
+        "disposition": "retained/moved",
+        "export_sha256": "c83b73e196b0ccb555ef98ef47bac1c7737bd45103606a77667c0427e05c4c59"
+      },
+      {
+        "old_path": "docs/assets/twi-six-methods-costs.svg",
+        "new_path": "docs/assets/twi-six-methods-costs.svg",
+        "baseline_sha256": "c39f6c13b8727d926762897541b42923731f350895e4a4d57029e378474d0703",
+        "disposition": "retained/moved",
+        "export_sha256": "c39f6c13b8727d926762897541b42923731f350895e4a4d57029e378474d0703"
+      },
+      {
+        "old_path": "docs/assets/verified-azure-costs.json",
+        "new_path": "docs/assets/verified-azure-costs.json",
+        "baseline_sha256": "e5965211d4e8a061aaa437b27de529ca902264673ad13b44743cd2815c97c9db",
+        "disposition": "retained/moved",
+        "export_sha256": "e5965211d4e8a061aaa437b27de529ca902264673ad13b44743cd2815c97c9db"
+      },
+      {
+        "old_path": "export-manifest.json",
+        "new_path": "export-manifest.json",
+        "baseline_sha256": "573c2dd4884eb0ecb537d4fd01d2e463ebd073724f663d0b169ca6f1e7d6be5a",
+        "disposition": "manifest updated (no recursive self hash)",
+        "export_sha256": null
+      },
+      {
+        "old_path": "infra/automl-pilot-v1/preparation/download_best.py",
+        "new_path": "classifiers/azure-automl/download_best.py",
+        "baseline_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c",
+        "disposition": "retained/moved",
+        "export_sha256": "4d5ca2e55c5a074014a253b913ea472f238079649fb6b379700f813887398da1"
+      },
+      {
+        "old_path": "infra/automl-pilot-v1/preparation/evaluate.py",
+        "new_path": "classifiers/azure-automl/evaluate.py",
+        "baseline_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159",
+        "disposition": "retained/moved",
+        "export_sha256": "f765e49f7a8f165792be6fa16beb0183ecd379bf42deeafe84758929214de2a2"
+      },
+      {
+        "old_path": "infra/automl-pilot-v1/preparation/prepare.py",
+        "new_path": "classifiers/azure-automl/prepare.py",
+        "baseline_sha256": "3ba330b70f13de4c17254d20d49bec4e2369c3c584d0cdc15fe394eb92709e52",
+        "disposition": "retained/moved",
+        "export_sha256": "c28a95039bdd024ce8f3b7be78d55d78468879cb5447b3d4dedb014f46130a76"
+      },
+      {
+        "old_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
+        "new_path": "classifiers/azure-automl/requirements-client.txt",
+        "baseline_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
+        "disposition": "retained/moved",
+        "export_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f"
+      },
+      {
+        "old_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
+        "new_path": "classifiers/azure-automl/requirements-preparation.txt",
+        "baseline_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
+        "disposition": "retained/moved",
+        "export_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96"
+      },
+      {
+        "old_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
+        "new_path": "classifiers/azure-automl/sdk_job.py",
+        "baseline_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee",
+        "disposition": "retained/moved",
+        "export_sha256": "07ac43fc90503b1909535d2e7aa1564f22a591c8bcd4301b56519ffa2ade2e62"
+      },
+      {
+        "old_path": "infra/cloud_policy_v2.py",
+        "new_path": "classifiers/common/cloud_policy_v2.py",
+        "baseline_sha256": "09269b458ab08d128fbd857e48cedf2d2e0954f919cb6e96503c6d4032fe181a",
+        "disposition": "retained/moved",
+        "export_sha256": "e31ce7975756d78701139b94292b78bceddb91c9cf3489be7ac2a44a7e53ec78"
+      },
+      {
+        "old_path": "infra/refinement_v3.py",
+        "new_path": "classifiers/luna-decisions/refinement_v3.py",
+        "baseline_sha256": "4d376aa9486e84a82b48c48d68b938c558e69d89eb575e7f1e4fa8e8c5f602f9",
+        "disposition": "retained/moved",
+        "export_sha256": "b0dedc44bb7f72e33ffe217d49a2198ced7c4f6f2638e8344ca8d62da8cc80fc"
+      },
+      {
+        "old_path": "infra/test-refinement-v3.py",
+        "new_path": "tests/test_refinement_v3.py",
+        "baseline_sha256": "be621a87df93fbe66112b9d962fbc83f8f743f8776a773e199016ba7245f4f7c",
+        "disposition": "retained/moved",
+        "export_sha256": "1f22c91bdce67baddc3988c9fc03d20ca4466f454e645fc30add7f6c01d992c2"
+      },
+      {
+        "old_path": "infra/vision-finetune/adapter.py",
+        "new_path": "classifiers/gpt41-finetuned/adapter.py",
+        "baseline_sha256": "ae3f8119bce9f3a9abc298c5752ab2e29489fa70dd8d130497395dda425d687d",
+        "disposition": "retained/moved",
+        "export_sha256": "19a45a677a25fceb4c0f4ff5fa93a0e5052ab80a502b0f52c00ccdabea70fdea"
+      },
+      {
+        "old_path": "infra/vision-finetune/plan.json",
+        "new_path": "classifiers/gpt41-finetuned/plan.json",
+        "baseline_sha256": "3fad6655f65876c43513f067c38be56b14584c2098d3a46e1008f89f53c11043",
+        "disposition": "retained/moved",
+        "export_sha256": "3fad6655f65876c43513f067c38be56b14584c2098d3a46e1008f89f53c11043"
+      },
+      {
+        "old_path": "methods/azure-automl/README.md",
+        "new_path": "classifiers/azure-automl/README.md",
+        "baseline_sha256": "74df300333cecdbe8d27e660cf245a673009def7523b8ebf6fc842c11b0ef6b3",
+        "disposition": "retained/moved",
+        "export_sha256": "89c390b10e47bad12982ebc56618c538c2371fe37533e0d79d533c29ac9e80d3"
+      },
+      {
+        "old_path": "methods/clip/README.md",
+        "new_path": "classifiers/clip/README.md",
+        "baseline_sha256": "7d020155f9c3b62ba88bc0205129ac7749987c14e766ccade3d43beb6eee8d50",
+        "disposition": "retained/moved",
+        "export_sha256": "1c2f85eb130a67aa06a85b415f7b91820ef7123471f198afd2d03b0faa953a35"
+      },
+      {
+        "old_path": "methods/gpt41-finetuned/README.md",
+        "new_path": "classifiers/gpt41-finetuned/README.md",
+        "baseline_sha256": "e4bcca70e30cf633325243e76119f3a20d469478d9c7b6d5bfe471a9f1ccb7c4",
+        "disposition": "retained/moved",
+        "export_sha256": "6928c6f50222992c9febf00ca550a8997ef2d696e5ef492b0d176293c5517aaf"
+      },
+      {
+        "old_path": "methods/luna-decisions/README.md",
+        "new_path": "classifiers/luna-decisions/README.md",
+        "baseline_sha256": "8943732fd9dbb1d8a9a6f9290ed6cafe62f9422c393851d6c0fec4a00c30ca19",
+        "disposition": "retained/moved",
+        "export_sha256": "016bf8ab755799934ac1fcef5479ce1a42961e7d17253708358468f5e7b3abc5"
+      },
+      {
+        "old_path": "methods/luna-responses/README.md",
+        "new_path": "classifiers/luna-responses/README.md",
+        "baseline_sha256": "3c7c0c5355504ba734571b9d07bb311691bda963811617a3382f82f1bd7f0e26",
+        "disposition": "retained/moved",
+        "export_sha256": "456b73842cd5490b7976efe2cd96d60a466df7d7b6a3c90074b9bcba2c280149"
+      },
+      {
+        "old_path": "methods/mobilenet/README.md",
+        "new_path": "classifiers/mobilenet/README.md",
+        "baseline_sha256": "a4bd755cb9fa9a59837bcf4c89e4164e3312737f27050f4b9b6b06ae829cf512",
+        "disposition": "retained/moved",
+        "export_sha256": "bf3805cefbd332dcf42797d970ce8353ece9474e10aeccedb086cd133b61d71f"
+      },
+      {
+        "old_path": "methods/resnet18/README.md",
+        "new_path": "classifiers/resnet18/README.md",
+        "baseline_sha256": "726a784e06ab478d1da5317b9e866ad2dbcd1f7a1ac7362c8a6c2abd841dd421",
+        "disposition": "retained/moved",
+        "export_sha256": "471df435e1eee4d0804ead7104d5f044e9125050a8dd929475ae390c0372b894"
+      },
+      {
+        "old_path": "requirements-audit.txt",
+        "new_path": "requirements-audit.txt",
+        "baseline_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023",
+        "disposition": "retained/moved",
+        "export_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023"
+      },
+      {
+        "old_path": "requirements-foundation-lock.txt",
+        "new_path": "requirements-foundation-lock.txt",
+        "baseline_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874",
+        "disposition": "retained/moved",
+        "export_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874"
+      },
+      {
+        "old_path": "requirements-pilot-lock.txt",
+        "new_path": "requirements-pilot-lock.txt",
+        "baseline_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0",
+        "disposition": "retained/moved",
+        "export_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0"
+      },
+      {
+        "old_path": "requirements-pilot.txt",
+        "new_path": "requirements-pilot.txt",
+        "baseline_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656",
+        "disposition": "retained/moved",
+        "export_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656"
+      },
+      {
+        "old_path": "results/cloud-rounds-per-case.json",
+        "new_path": "classifiers/common/results/cloud-rounds-per-case.json",
+        "baseline_sha256": "512bbdb0ef880b868fca427c9632957bff796acbed750eb565717ae01a0d68ab",
+        "disposition": "retained/moved",
+        "export_sha256": "512bbdb0ef880b868fca427c9632957bff796acbed750eb565717ae01a0d68ab"
+      },
+      {
+        "old_path": "results/gpt-training.json",
+        "new_path": "classifiers/common/results/gpt-training.json",
+        "baseline_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a",
+        "disposition": "retained/moved",
+        "export_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a"
+      },
+      {
+        "old_path": "results/legacy-rounds.json",
+        "new_path": "classifiers/common/results/legacy-rounds.json",
+        "baseline_sha256": "3f78291b9cd3983f4574940b5adeec7500f7e1609d404969c11bf622467ddafa",
+        "disposition": "retained/moved",
+        "export_sha256": "3f78291b9cd3983f4574940b5adeec7500f7e1609d404969c11bf622467ddafa"
+      },
+      {
+        "old_path": "results/method-summary.json",
+        "new_path": "classifiers/common/results/method-summary.json",
+        "baseline_sha256": "6564b6897049a3cd68772711f86c5cc463198ed3097e69efda23213c157b47ea",
+        "disposition": "retained/moved",
+        "export_sha256": "6564b6897049a3cd68772711f86c5cc463198ed3097e69efda23213c157b47ea"
+      },
+      {
+        "old_path": "results/model-provenance.json",
+        "new_path": "classifiers/common/results/model-provenance.json",
+        "baseline_sha256": "2021312c938eb668cc4ae111bc65b6f4b7e53e5b8d7fd8e7b3728dc55f3bef79",
+        "disposition": "retained/moved",
+        "export_sha256": "2021312c938eb668cc4ae111bc65b6f4b7e53e5b8d7fd8e7b3728dc55f3bef79"
+      },
+      {
+        "old_path": "results/partitions.json",
+        "new_path": "classifiers/common/results/partitions.json",
+        "baseline_sha256": "4da669d2aafa6bdff0bfcd9b639384834938bd462fee6071c4341e7435efb7b8",
+        "disposition": "retained/moved",
+        "export_sha256": "4da669d2aafa6bdff0bfcd9b639384834938bd462fee6071c4341e7435efb7b8"
+      },
+      {
+        "old_path": "results/per-image.csv",
+        "new_path": "classifiers/common/results/per-image.csv",
+        "baseline_sha256": "a7cde9ed98ee4a3929f8f4f0d4f14679846b49a925c3c351defc01b384e86fe2",
+        "disposition": "retained/moved",
+        "export_sha256": "a7cde9ed98ee4a3929f8f4f0d4f14679846b49a925c3c351defc01b384e86fe2"
+      },
+      {
+        "old_path": "results/per-image.json",
+        "new_path": "classifiers/common/results/per-image.json",
+        "baseline_sha256": "da128b7d85394ec0a7f50b17c4a4b9cc48af8626e315919aeaf2fcd6d1f36efe",
+        "disposition": "retained/moved",
+        "export_sha256": "da128b7d85394ec0a7f50b17c4a4b9cc48af8626e315919aeaf2fcd6d1f36efe"
+      },
+      {
+        "old_path": "scripts/audit_dataset.py",
+        "new_path": "classifiers/common/audit_dataset.py",
+        "baseline_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1",
+        "disposition": "retained/moved",
+        "export_sha256": "a378c42890348b323b16502df123d0aade26041039857c92a9b9c5b68d1e6ce5"
+      },
+      {
+        "old_path": "scripts/benchmark_contract.py",
+        "new_path": "classifiers/common/benchmark_contract.py",
+        "baseline_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f",
+        "disposition": "retained/moved",
+        "export_sha256": "f9811a45eccf46a79754c6cd8aed0bb8d40aee499baf98e9694fa5f84c699d3a"
+      },
+      {
+        "old_path": "scripts/cost_accounting.py",
+        "new_path": "classifiers/common/cost_accounting.py",
+        "baseline_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382",
+        "disposition": "retained/moved",
+        "export_sha256": "1d958b1c1cb666f6dfc6ab43941276b71d5023f53787bb3ee1f2938ec1865c51"
+      },
+      {
+        "old_path": "scripts/cost_bounds.py",
+        "new_path": "classifiers/common/cost_bounds.py",
+        "baseline_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28",
+        "disposition": "retained/moved",
+        "export_sha256": "1b42f978a072ea116f3dd821aa9144d1c2348de81d8f9883853f31cd93dc38bd"
+      },
+      {
+        "old_path": "scripts/custom_improvements.py",
+        "new_path": "classifiers/mobilenet/experiment.py",
+        "baseline_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a",
+        "disposition": "retained/moved",
+        "export_sha256": "92d6861544061010a9dc545677bd24d2a4d8acaa74a76272027d2fa78ef1c5ef"
+      },
+      {
+        "old_path": "scripts/custom_refinement_v2.py",
+        "new_path": "classifiers/clip/experiment.py",
+        "baseline_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e",
+        "disposition": "retained/moved",
+        "export_sha256": "3167a4b6ffb10225231a4b2e6d0220aab8f1fff725d7b2233388c3f1b90995a4"
+      },
+      {
+        "old_path": "scripts/local_classifier.py",
+        "new_path": "classifiers/resnet18/experiment.py",
+        "baseline_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1",
+        "disposition": "retained/moved",
+        "export_sha256": "4f9b52038aa38fe827d39f1a8c72c564ea6ada54b792007c81143eef529eae35"
+      },
+      {
+        "old_path": "scripts/predict_classifier.py",
+        "new_path": "classifiers/resnet18/inference.py",
+        "baseline_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6",
+        "disposition": "retained/moved",
+        "export_sha256": "d08312e58d734dd65bde454f0f5686d4c5d683169167296281269a6927fb585b"
+      },
+      {
+        "old_path": "scripts/predict_custom.py",
+        "new_path": "classifiers/mobilenet/inference.py",
+        "baseline_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291",
+        "disposition": "retained/moved",
+        "export_sha256": "e95127ecab4041b017448b6e9a0346b02a6f62d16f569b8c6b61d1229d29e9eb"
+      },
+      {
+        "old_path": "scripts/preprocessing.py",
+        "new_path": "classifiers/common/preprocessing.py",
+        "baseline_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed",
+        "disposition": "retained/moved",
+        "export_sha256": "26e4f82e672b2e9a1bed6ddd3903b00cabdb24bef36311d38c6580c813e67eee"
+      },
+      {
+        "old_path": "scripts/project_ledger.py",
+        "new_path": "classifiers/common/project_ledger.py",
+        "baseline_sha256": "b3bb3875115724ee892e6ee74af2080bdb04c9c5d6ccaad077f06dace47ca1db",
+        "disposition": "retained/moved",
+        "export_sha256": "832881663820d5228369041b787b413bf94562a92efde5061bfe1d887cba0723"
+      },
+      {
+        "old_path": "scripts/run_benchmark.py",
+        "new_path": "classifiers/common/provider_runner.py",
+        "baseline_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe",
+        "disposition": "retained/moved",
+        "export_sha256": "38c41f11da09d2c2b2cb0f8d81d87c85ea1e6b435387a7775302a4d80b51e705"
+      },
+      {
+        "old_path": "tests/clock_fixture.py",
+        "new_path": "tests/clock_fixture.py",
+        "baseline_sha256": "a9874efe4546fcc86493c5f2e95a427e82aacc5cfb9d5ae3bf9b0f4b8af26663",
+        "disposition": "retained/moved",
+        "export_sha256": "1c56253c62e7352a61bd83960ca4b8a248db13d00d2781694d7292f7c027a864"
+      },
+      {
+        "old_path": "tests/test_benchmark_contract.py",
+        "new_path": "tests/test_benchmark_contract.py",
+        "baseline_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98",
+        "disposition": "retained/moved",
+        "export_sha256": "fdde6c94078e4f64055ee4e85723b6ccddd335a90dd2c242c8883eee6da22849"
+      },
+      {
+        "old_path": "tests/test_cloud_cost_bounds.py",
+        "new_path": "tests/test_cloud_cost_bounds.py",
+        "baseline_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a",
+        "disposition": "retained/moved",
+        "export_sha256": "7ef1c5b440165276d9d43215b2574f46903ad3c1d85516a1d12a7cf8803b72c9"
+      },
+      {
+        "old_path": "tests/test_cost_ledger.py",
+        "new_path": "tests/test_cost_ledger.py",
+        "baseline_sha256": "4797f9a0cf97bef849e667473c4ef554fa39e0a820a94e3e0070e5092f47a21c",
+        "disposition": "retained/moved",
+        "export_sha256": "eb204ce073520cda4a7c0ce4969bf5005cacc6709f342e648ccec9ddc04872d2"
+      },
+      {
+        "old_path": "tests/test_publication.py",
+        "new_path": "tests/test_publication.py",
+        "baseline_sha256": "8490004d28c8dc5e6f96cb2d9bfa092ae89d2ea43d5dab85f8a16c2148c7b819",
+        "disposition": "retained/moved",
+        "export_sha256": "6d95c7dec971b6619048e42db9c99ba176582ee14f01edf24be9656c17ca07b7"
+      },
+      {
+        "old_path": "third_party/clip/README.md",
+        "new_path": "classifiers/clip/weights/upstream/clip/README.md",
+        "baseline_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+        "disposition": "retained/moved",
+        "export_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4"
+      },
+      {
+        "old_path": "third_party/clip/config.json",
+        "new_path": "classifiers/clip/weights/upstream/clip/config.json",
+        "baseline_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+        "disposition": "retained/moved",
+        "export_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770"
+      },
+      {
+        "old_path": "third_party/clip/preprocessor_config.json",
+        "new_path": "classifiers/clip/weights/upstream/clip/preprocessor_config.json",
+        "baseline_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+        "disposition": "retained/moved",
+        "export_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+      },
+      {
+        "old_path": "third_party/dinov2/README.md",
+        "new_path": "classifiers/clip/legacy/dinov2/README.md",
+        "baseline_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+        "disposition": "retained/moved",
+        "export_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c"
+      },
+      {
+        "old_path": "third_party/dinov2/config.json",
+        "new_path": "classifiers/clip/legacy/dinov2/config.json",
+        "baseline_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+        "disposition": "retained/moved",
+        "export_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d"
+      },
+      {
+        "old_path": "third_party/dinov2/preprocessor_config.json",
+        "new_path": "classifiers/clip/legacy/dinov2/preprocessor_config.json",
+        "baseline_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+        "disposition": "retained/moved",
+        "export_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+      },
+      {
+        "old_path": "third_party/torchvision-LICENSE.txt",
+        "new_path": "classifiers/common/torchvision-LICENSE.txt",
+        "baseline_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+        "disposition": "retained/moved",
+        "export_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+      },
+      {
+        "old_path": "tools/check_private_archive.py",
+        "new_path": "tools/check_private_archive.py",
+        "baseline_sha256": "776908f90549c77c3d752db5f4e4f28af98422a52ec17a4951810621155c4189",
+        "disposition": "retained/moved",
+        "export_sha256": "6360d011b54acf6d8e114ec4d34409bcf5a379720a6a90dbdc6747a431e8d43b"
+      },
+      {
+        "old_path": "tools/check_publication.py",
+        "new_path": "tools/check_publication.py",
+        "baseline_sha256": "a8513f0462add51a9a6d9aeeef925e82fc4fa9935941df3e9525edd57f71d74c",
+        "disposition": "retained/moved",
+        "export_sha256": "bb2f62c9957025143a66597d662d02aab8dac4c4aaab38f97eefe497be94835e"
+      },
+      {
+        "old_path": "tools/prepare_gpt_training.py",
+        "new_path": "classifiers/gpt41-finetuned/preparation.py",
+        "baseline_sha256": "0331dcd7049ad2579ff5922ad79b5a493284000685e450ea526c1eedc599c286",
+        "disposition": "retained/moved",
+        "export_sha256": "dc6e55aca630556ee5cbb7741d638ca2ae309ed88c8e2522b027adb62c000d57"
+      },
+      {
+        "old_path": "tools/run_luna.py",
+        "new_path": "classifiers/common/luna_runner.py",
+        "baseline_sha256": "7db560c090325497795bbc76af36e8c1b33ad272f8b5df862446a10d22256210",
+        "disposition": "retained/moved",
+        "export_sha256": "b6d9717661cbadf09324903c3ed131ec392ac878d8650f1f2a5de769fbe214f4"
+      },
+      {
+        "old_path": "tools/run_offline_tests.py",
+        "new_path": "tools/run_offline_tests.py",
+        "baseline_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a",
+        "disposition": "retained/moved",
+        "export_sha256": "96c7c57fcf2ed7dc4762cec46e02a30689b0bcac09f7519ce4431ecf7cc30439"
+      }
+    ],
+    "head_hyperparameters_changed": false,
+    "split_protocol_changed": false,
+    "benchmark_metrics_changed": false,
+    "changes": [
+      "Directory/import/CLI pathroots and output ownership; method-specific main training instead of historical broad comparison runs.",
+      "Small original final head parameters exported non-executable numeric JSON, no refitting; trusted hash/size binding and synthetic margin parity.",
+      "Shared frozen joins retained for total arithmetic; exact per-method materialized views co-located.",
+      "Historical original source hashes are origin evidence, never a claim path-rewritten export is byte-identical.",
+      "Public pretrained acquisition full-SHA pinned; no Git/LFS/public-backbone export.",
+      "App backend/frontend unified under dashboard; loopback read-only start; infra reserved hosting."
+    ],
+    "training_scope": "Method-specific fixed representation OOF uses same folds/head grid; historical multi-architecture searches preserved as separate experiments, not automatically rerun. ResNet baselineC1 and nestedC[.01,.1,1,10], other fixed candidates same six logistic/SVM grid; serving original hashes unchanged."
+  }
 }

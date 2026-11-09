@@ -1,0 +1,156 @@
+[
+  {
+    "method": "clip",
+    "image_index": 1,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 2,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 4,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 5,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2
+  },
+  {
+    "method": "clip",
+    "image_index": 6,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 7,
+    "truth": "good",
+    "prediction": "bad",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 8,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 9,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 10,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 11,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 12,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2
+  },
+  {
+    "method": "clip",
+    "image_index": 13,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2
+  },
+  {
+    "method": "clip",
+    "image_index": 16,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 17,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 18,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 19,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 2
+  },
+  {
+    "method": "clip",
+    "image_index": 20,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 21,
+    "truth": "good",
+    "prediction": "bad",
+    "fold": 2
+  },
+  {
+    "method": "clip",
+    "image_index": 22,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 0
+  },
+  {
+    "method": "clip",
+    "image_index": 23,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 1
+  },
+  {
+    "method": "clip",
+    "image_index": 24,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2
+  },
+  {
+    "method": "clip",
+    "image_index": 25,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 0
+  }
+]

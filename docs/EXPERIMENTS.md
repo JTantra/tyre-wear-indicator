@@ -1,6 +1,6 @@
 # Experimental history, kept distinct from headline six
 
-[Safe local/cloud/routing round metrics](../results/legacy-rounds.json) retain all local candidates and18shared-nine methods from the completed final comparison. [Physical cloud case projections](../results/cloud-rounds-per-case.json) retain150cases across six APIvariants, no raw providerreplies.
+[Safe local/cloud/routing round metrics](../classifiers/common/results/legacy-rounds.json) retain all local candidates and18shared-nine methods from the completed final comparison. [Physical cloud case projections](../classifiers/common/results/cloud-rounds-per-case.json) retain150cases across six APIvariants, no raw providerreplies.
 
 1.Archive audit:25 photos,24 unique,22 binary,2 review; no training claim.
 2.Local legacy center-crop baseline preceded canonicalfull-frame and is not the current12/22headline. Its code is superseded; original privately retained. Current genuine local_classifier source and exact canonical pipeline are exported.

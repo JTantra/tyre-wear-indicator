@@ -7,3 +7,10 @@ Run tools/check_publication.py before staging and inspect all staged blob conten
 Cloud execution is separately opt-in, needs fresh consent/approval/config/receipts; copied historical authorization reconciliation is disabled. No CI deployment or hosted upload activation. Production and local export budgets/receipts are never migrated/reset. Raw provider replies, training.jsonl, source dataset, photos, locally generated weights/heads and runtime feedback remain ignored. Do not bypass exclusion by adding a ZIP or joblib under a new name.
 
 Source app preserves client/server upload validation, origin/CSRF/session boundaries, explicit consent, atomic stores/revision checks and fail-closed durable publicmode. Local development SQLite feedback/volatile jobs/loopback is not a production persistence or distributed brute-force guarantee. Credentials should come from an approved secret manager/environment, never example literals or committed runtime readbacks.
+
+
+## Current structural refactor boundary
+Inspected small numeric final local heads are now explicitly owner-authorized in this private repository.
+Only exact owned hashes/sizes and the safe schema are allowlisted; giant backbones, raw data, feature matrices,
+private images/labels, credentials and production receipts remain excluded. Historical blanket head exclusion
+above describes the prior export, not the new exception.

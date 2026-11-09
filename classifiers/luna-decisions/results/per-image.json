@@ -1,0 +1,442 @@
+[
+  {
+    "method": "luna-decisions",
+    "image_index": 1,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 0,
+    "http_seconds": 2.1991560151800513,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 2,
+    "truth": "good",
+    "prediction": "bad",
+    "fold": 0,
+    "http_seconds": 7.601806390099227,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 4,
+    "truth": "bad",
+    "prediction": "review",
+    "fold": 1,
+    "http_seconds": 2.206516711972654,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 5,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2,
+    "http_seconds": 3.3635695539414883,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 6,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 1,
+    "http_seconds": 2.28987743309699,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 7,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 1,
+    "http_seconds": 4.405466191004962,
+    "usage": {
+      "input_tokens": 1402,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1402
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 8,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 0,
+    "http_seconds": 2.1940702819265425,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 9,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 1,
+    "http_seconds": 4.776285185944289,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 10,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 0,
+    "http_seconds": 2.4399054578971118,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 11,
+    "truth": "good",
+    "prediction": "bad",
+    "fold": 0,
+    "http_seconds": 7.1666691459249705,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 12,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 2,
+    "http_seconds": 3.107093489030376,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 13,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2,
+    "http_seconds": 2.4378012910019606,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 16,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 1,
+    "http_seconds": 4.4792796990368515,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 17,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 1,
+    "http_seconds": 2.415022380882874,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 18,
+    "truth": "bad",
+    "prediction": "good",
+    "fold": 0,
+    "http_seconds": 2.438034984981641,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 19,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 2,
+    "http_seconds": 2.395791022107005,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 20,
+    "truth": "bad",
+    "prediction": "review",
+    "fold": 0,
+    "http_seconds": 2.2196986568160355,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 21,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 2,
+    "http_seconds": 2.2250326189678162,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 22,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 0,
+    "http_seconds": 6.243092615157366,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 23,
+    "truth": "good",
+    "prediction": "bad",
+    "fold": 1,
+    "http_seconds": 2.219011737033725,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 24,
+    "truth": "bad",
+    "prediction": "bad",
+    "fold": 2,
+    "http_seconds": 2.208774361992255,
+    "usage": {
+      "input_tokens": 1370,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1370
+    }
+  },
+  {
+    "method": "luna-decisions",
+    "image_index": 25,
+    "truth": "good",
+    "prediction": "good",
+    "fold": 0,
+    "http_seconds": 6.358461281983182,
+    "usage": {
+      "input_tokens": 1562,
+      "input_tokens_details": {
+        "cached_tokens": 0,
+        "cache_write_tokens": 0
+      },
+      "output_tokens": 0,
+      "output_tokens_details": {
+        "reasoning_tokens": 0
+      },
+      "total_tokens": 1562
+    }
+  }
+]
