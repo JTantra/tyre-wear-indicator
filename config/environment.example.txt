@@ -1,0 +1,12 @@
+# Variable names only; no credentials or private origin/receipt values.
+# Local research defaults bind loopback; do not copy production environment.
+TYRE_BIND:127.0.0.1
+TYRE_PORT:8765
+TYRE_OWNER_AUTHORIZED_CLOUD:unset unless fresh owner explicitly approved paid/cloud-send execution
+AZURE_TENANT_ID:configure privately for real adapter token binding
+AZURE_SUBSCRIPTION_ID:configure privately for native AutoML
+AZURE_RESOURCE_GROUP:configure privately
+AZURE_ML_WORKSPACE:configure privately
+AZURE_OPENAI_BEARER_TOKEN:obtain via approved credential flow, never paste/commit
+# Publicmode additionally requires validated HTTPS origins, durable store factories,
+# signing/session secrets and checkpoint contract. No values included here.

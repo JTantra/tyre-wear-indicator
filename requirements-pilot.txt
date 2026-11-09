@@ -1,0 +1,3 @@
+# torch/torchvision CPU wheels are installed separately; see README.
+scikit-learn==1.9.1
+requests==2.34.2

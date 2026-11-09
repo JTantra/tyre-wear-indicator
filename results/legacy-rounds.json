@@ -1,0 +1,1376 @@
+{
+  "local_rounds": [
+    {
+      "round": "classifier",
+      "method": "baseline",
+      "all22": {
+        "n": 22,
+        "correct": 12,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5454545454545454,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 8,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "classifier",
+      "method": "nested_optimized",
+      "all22": {
+        "n": 22,
+        "correct": 12,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5454545454545454,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 8,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-improvements",
+      "method": "efficientnet_b0_full",
+      "all22": {
+        "n": 22,
+        "correct": 13,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5909090909090909,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 7,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-improvements",
+      "method": "mobilenet_v3_large_full",
+      "all22": {
+        "n": 22,
+        "correct": 14,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 3,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6363636363636364,
+        "confusion": {
+          "bad": {
+            "bad": 10,
+            "good": 3,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 5,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-improvements",
+      "method": "resnet50_full",
+      "all22": {
+        "n": 22,
+        "correct": 14,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6363636363636364,
+        "confusion": {
+          "bad": {
+            "bad": 12,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 7,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 5,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5555555555555556,
+        "confusion": {
+          "bad": {
+            "bad": 5,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-improvements",
+      "method": "efficientnet_b0_full-grid",
+      "all22": {
+        "n": 22,
+        "correct": 13,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5909090909090909,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 7,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-improvements",
+      "method": "nested_architecture",
+      "all22": {
+        "n": 22,
+        "correct": 13,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5909090909090909,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 7,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "dinov2_224",
+      "all22": {
+        "n": 22,
+        "correct": 15,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6818181818181818,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 5,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "dinov2_336",
+      "all22": {
+        "n": 22,
+        "correct": 15,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6818181818181818,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 5,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "clip_224",
+      "all22": {
+        "n": 22,
+        "correct": 18,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.8181818181818182,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 7,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 7,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.7777777777777778,
+        "confusion": {
+          "bad": {
+            "bad": 3,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 0,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "clip_384",
+      "all22": {
+        "n": 22,
+        "correct": 16,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.7272727272727273,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 5,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 6,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6666666666666666,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "nested_architecture",
+      "all22": {
+        "n": 22,
+        "correct": 15,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6818181818181818,
+        "confusion": {
+          "bad": {
+            "bad": 12,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 6,
+            "good": 3,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "dinov2_nested_resolution",
+      "all22": {
+        "n": 22,
+        "correct": 15,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6818181818181818,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 5,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "round": "custom-v2",
+      "method": "clip_nested_resolution",
+      "all22": {
+        "n": 22,
+        "correct": 17,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.7727272727272727,
+        "confusion": {
+          "bad": {
+            "bad": 12,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 5,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 6,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6666666666666666,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    }
+  ],
+  "shared9_cloud_and_routing": [
+    {
+      "method": "artifacts/classifier/predictions.json::baseline",
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/classifier/predictions.json::nested_optimized",
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::clip_224",
+      "shared9": {
+        "n": 9,
+        "correct": 7,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.7777777777777778,
+        "confusion": {
+          "bad": {
+            "bad": 3,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 0,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::clip_384",
+      "shared9": {
+        "n": 9,
+        "correct": 6,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6666666666666666,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::clip_nested_resolution",
+      "shared9": {
+        "n": 9,
+        "correct": 6,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6666666666666666,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::dinov2_224",
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::dinov2_336",
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::dinov2_nested_resolution",
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "artifacts/custom-v2/predictions.json::nested_architecture",
+      "shared9": {
+        "n": 9,
+        "correct": 4,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.4444444444444444,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 1,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "decisions-multi-v1",
+      "shared9": {
+        "n": 9,
+        "correct": 2,
+        "accepted": 3,
+        "reviews": 6,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy": 0.6666666666666666,
+        "confusion": {
+          "bad": {
+            "bad": 0,
+            "good": 1,
+            "review": 4,
+            "error": 0
+          },
+          "good": {
+            "bad": 0,
+            "good": 2,
+            "review": 2,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "decisions-rubric-v2",
+      "shared9": {
+        "n": 9,
+        "correct": 3,
+        "accepted": 8,
+        "reviews": 1,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 3,
+        "coverage": 0.8888888888888888,
+        "accepted_accuracy": 0.375,
+        "confusion": {
+          "bad": {
+            "bad": 1,
+            "good": 3,
+            "review": 1,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "decisions-rubric-v2-oof-routing",
+      "shared9": {
+        "n": 9,
+        "correct": 1,
+        "accepted": 3,
+        "reviews": 6,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 0.3333333333333333,
+        "accepted_accuracy": 0.3333333333333333,
+        "confusion": {
+          "bad": {
+            "bad": 1,
+            "good": 0,
+            "review": 4,
+            "error": 0
+          },
+          "good": {
+            "bad": 2,
+            "good": 0,
+            "review": 2,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "decisions-single-v1",
+      "shared9": {
+        "n": 9,
+        "correct": 2,
+        "accepted": 4,
+        "reviews": 5,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 1,
+        "coverage": 0.4444444444444444,
+        "accepted_accuracy": 0.5,
+        "confusion": {
+          "bad": {
+            "bad": 0,
+            "good": 1,
+            "review": 4,
+            "error": 0
+          },
+          "good": {
+            "bad": 1,
+            "good": 2,
+            "review": 1,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "gpt41-vision-base",
+      "shared9": {
+        "n": 9,
+        "correct": 8,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.8888888888888888,
+        "confusion": {
+          "bad": {
+            "bad": 5,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 1,
+            "good": 3,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "gpt41-vision-ft-pilot",
+      "shared9": {
+        "n": 9,
+        "correct": 9,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 1.0,
+        "accepted_accuracy": 1.0,
+        "confusion": {
+          "bad": {
+            "bad": 5,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 0,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "vision-multi-v1",
+      "shared9": {
+        "n": 9,
+        "correct": 7,
+        "accepted": 8,
+        "reviews": 1,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 0.8888888888888888,
+        "accepted_accuracy": 0.875,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 0,
+            "review": 1,
+            "error": 0
+          },
+          "good": {
+            "bad": 1,
+            "good": 3,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "vision-rubric-v2",
+      "shared9": {
+        "n": 9,
+        "correct": 8,
+        "accepted": 8,
+        "reviews": 1,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 0.8888888888888888,
+        "accepted_accuracy": 1.0,
+        "confusion": {
+          "bad": {
+            "bad": 4,
+            "good": 0,
+            "review": 1,
+            "error": 0
+          },
+          "good": {
+            "bad": 0,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    },
+    {
+      "method": "vision-single-v1",
+      "shared9": {
+        "n": 9,
+        "correct": 6,
+        "accepted": 7,
+        "reviews": 2,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 0.7777777777777778,
+        "accepted_accuracy": 0.8571428571428571,
+        "confusion": {
+          "bad": {
+            "bad": 3,
+            "good": 0,
+            "review": 2,
+            "error": 0
+          },
+          "good": {
+            "bad": 1,
+            "good": 3,
+            "review": 0,
+            "error": 0
+          }
+        }
+      }
+    }
+  ],
+  "superseded_center_crop": [
+    {
+      "method": "baseline",
+      "all22": {
+        "n": 22,
+        "correct": 16,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.7272727272727273,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 5,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 5,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5555555555555556,
+        "confusion": {
+          "bad": {
+            "bad": 5,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "status": "superseded center crop; not current canonical baseline"
+    },
+    {
+      "method": "nested_optimized",
+      "all22": {
+        "n": 22,
+        "correct": 15,
+        "accepted": 22,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 13,
+        "bad_false_good": 2,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.6818181818181818,
+        "confusion": {
+          "bad": {
+            "bad": 11,
+            "good": 2,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 5,
+            "good": 4,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "shared9": {
+        "n": 9,
+        "correct": 5,
+        "accepted": 9,
+        "reviews": 0,
+        "errors": 0,
+        "bad_n": 5,
+        "bad_false_good": 0,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5555555555555556,
+        "confusion": {
+          "bad": {
+            "bad": 5,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          },
+          "good": {
+            "bad": 4,
+            "good": 0,
+            "review": 0,
+            "error": 0
+          }
+        }
+      },
+      "status": "superseded center crop; not current canonical baseline"
+    }
+  ]
+}

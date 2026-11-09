@@ -1,0 +1,3 @@
+# Exact runtime versions used for the local audit (Python 3.12).
+Pillow==12.0.0
+PyYAML==6.0.3

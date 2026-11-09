@@ -1,0 +1,356 @@
+{
+  "resnet18": {
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "torchvision": "0.29.2+cpu",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "Pillow": "12.0.0"
+    },
+    "total_experiment_seconds": 3.6196139650419354,
+    "timing": null,
+    "provenance": null,
+    "weights_url": "https://download.pytorch.org/models/resnet18-f37072fd.pth",
+    "weights_sha256": "b91ef9c434259b176d80152454b02a28a9f4b08d54543e1b4382f06ee7939430"
+  },
+  "mobilenet": {
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "torchvision": "0.29.2+cpu",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "Pillow": "12.0.0",
+      "joblib": "1.6.0"
+    },
+    "total_experiment_seconds": 6.95775705203414,
+    "timing": {
+      "cpu": "x86_64",
+      "torch_threads": 4,
+      "unique_timing_photos": 24,
+      "canonical_preprocessing_seconds": 1.4884768000338227,
+      "canonical_seconds_per_photo": 0.06201986666807594,
+      "per_candidate": {
+        "efficientnet_b0_full": {
+          "download_and_model_load_seconds": 0.19340590084902942,
+          "shape_adaptation_seconds": 0.05324640404433012,
+          "feature_batch8_seconds": 0.2701175499241799,
+          "feature_batch8_seconds_per_photo": 0.011254897913507497
+        },
+        "mobilenet_v3_large_full": {
+          "download_and_model_load_seconds": 0.061492836102843285,
+          "shape_adaptation_seconds": 0.052761622006073594,
+          "feature_batch8_seconds": 0.1267438749782741,
+          "feature_batch8_seconds_per_photo": 0.005280994790761421
+        },
+        "resnet50_full": {
+          "download_and_model_load_seconds": 0.29151293192990124,
+          "shape_adaptation_seconds": 0.054784636944532394,
+          "feature_batch8_seconds": 0.8795863739214838,
+          "feature_batch8_seconds_per_photo": 0.03664943224672849
+        },
+        "efficientnet_b0_full-grid": {
+          "download_and_model_load_seconds": 0.05305035994388163,
+          "shape_adaptation_seconds": 0.14174812007695436,
+          "feature_batch8_seconds": 1.4381836731918156,
+          "feature_batch8_seconds_per_photo": 0.05992431971632565
+        }
+      },
+      "all_nested_search_and_outer_refits_seconds": 0.3955203390214592,
+      "deployment_grouped_search_seconds": 0.17789365397766232,
+      "final_head_fit_seconds": 0.0017530601471662521,
+      "deployed_candidate": "mobilenet_v3_large_full",
+      "reloaded_backbone_seconds": 0.054381385911256075,
+      "reloaded_head_seconds": 0.0006004020106047392,
+      "smoke_per_image": [
+        {
+          "preprocessing_seconds": 0.02884517190977931,
+          "feature_seconds": 0.014654895989224315,
+          "head_seconds": 0.0007933659944683313
+        },
+        {
+          "preprocessing_seconds": 0.04858327494002879,
+          "feature_seconds": 0.008809804916381836,
+          "head_seconds": 0.00070966687053442
+        },
+        {
+          "preprocessing_seconds": 0.048247798113152385,
+          "feature_seconds": 0.008882327005267143,
+          "head_seconds": 0.000707823084667325
+        },
+        {
+          "preprocessing_seconds": 0.08386751194484532,
+          "feature_seconds": 0.008358265040442348,
+          "head_seconds": 0.0008201079908758402
+        }
+      ],
+      "batch8_repeat_seconds": [
+        0.12472872901707888,
+        0.13414299488067627,
+        0.13743972987867892
+      ],
+      "batch8_median_seconds_per_photo": 0.005589291453361511,
+      "head_repeat_seconds": [
+        0.0007711958605796099,
+        0.0009037470445036888,
+        0.000613346928730607
+      ],
+      "head_median_seconds_per_photo": 3.2133160857483745e-05,
+      "api_fee": 0,
+      "economic_cost": null,
+      "cost_note": "Local CPU; no tariff/electricity/hosting assumption. No paid training. Public pretrained training cost not measured."
+    },
+    "provenance": {
+      "efficientnet_b0_full": {
+        "architecture": "efficientnet_b0",
+        "weights_enum": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+        "weights_url": "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth",
+        "download_file_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+        "frozen_state_sha256": "e3d706952923d973403b039958a2f4bd4c2abdb74de753f45eb8f5ef2b904e36",
+        "parameter_count": 4007548,
+        "feature_dimension": 1280,
+        "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+        "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+        "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+        "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+        "view_policy": "full",
+        "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+      },
+      "mobilenet_v3_large_full": {
+        "architecture": "mobilenet_v3_large",
+        "weights_enum": "MobileNet_V3_Large_Weights.IMAGENET1K_V2",
+        "weights_url": "https://download.pytorch.org/models/mobilenet_v3_large-5c1a4163.pth",
+        "download_file_sha256": "5c1a416349c4cf298f2a6a5e2600ed0ee55e604713578f5e74e6bc8bcaef7997",
+        "frozen_state_sha256": "f5e19dc610f5cd2cb72612ec99b90e62739f353332c94db7ef7fe2033df9609a",
+        "parameter_count": 2971952,
+        "feature_dimension": 960,
+        "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+        "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+        "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+        "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+        "view_policy": "full",
+        "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+      },
+      "resnet50_full": {
+        "architecture": "resnet50",
+        "weights_enum": "ResNet50_Weights.IMAGENET1K_V2",
+        "weights_url": "https://download.pytorch.org/models/resnet50-11ad3fa6.pth",
+        "download_file_sha256": "11ad3fa62ca79e40addfd354a8ec4b7c75143b3038b8d2a807fbc68deab379ca",
+        "frozen_state_sha256": "a536001487d7dca0979699c3ce9f02d01b3031c4a56469c9d3632035db7e4f5f",
+        "parameter_count": 23508032,
+        "feature_dimension": 2048,
+        "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+        "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+        "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+        "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+        "view_policy": "full",
+        "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+      },
+      "efficientnet_b0_full-grid": {
+        "architecture": "efficientnet_b0",
+        "weights_enum": "EfficientNet_B0_Weights.IMAGENET1K_V1",
+        "weights_url": "https://download.pytorch.org/models/efficientnet_b0_rwightman-7f5810bc.pth",
+        "download_file_sha256": "7f5810bc96def8f7552d5b7e68d53c4786f81167d28291b21c0d90e1fca14934",
+        "frozen_state_sha256": "e3d706952923d973403b039958a2f4bd4c2abdb74de753f45eb8f5ef2b904e36",
+        "parameter_count": 4007548,
+        "feature_dimension": 2560,
+        "code_license": "Torchvision BSD-3-Clause; upstream LICENSE",
+        "code_license_source": "https://github.com/pytorch/vision/blob/main/LICENSE",
+        "weights_licensing": "Pretrained on ImageNet. No separate commercial-use clearance established; check dataset/model terms before deployment.",
+        "weights_docs": "https://docs.pytorch.org/vision/stable/models.html",
+        "view_policy": "full-grid",
+        "input": "Common canonical RGB JPEG, neutral letterbox224, ImageNet normalization; no enhancement."
+      }
+    },
+    "weights_url": null,
+    "weights_sha256": null
+  },
+  "clip": {
+    "versions": {
+      "torch": "2.15.0+cpu",
+      "torchvision": "0.29.2+cpu",
+      "transformers": "4.46.3",
+      "huggingface-hub": "0.36.0",
+      "safetensors": "0.6.2",
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "Pillow": "12.0.0",
+      "joblib": "1.6.0"
+    },
+    "total_experiment_seconds": 15.623683704063296,
+    "timing": {
+      "cpu": "x86_64",
+      "torch_threads": 4,
+      "photos": 24,
+      "canonical_seconds": 1.4943178021349013,
+      "per_candidate": {
+        "dinov2_224": {
+          "backbone_load_seconds": 0.17299039592035115,
+          "adaptation_seconds": 0.09609261993318796,
+          "warm_batch4_seconds": 0.9653700240887702,
+          "batch_amortized_seconds_per_photo": 0.04022375100369876,
+          "feature_dimension": 768
+        },
+        "dinov2_336": {
+          "backbone_load_seconds": 0.17299039592035115,
+          "adaptation_seconds": 0.10762478201650083,
+          "warm_batch4_seconds": 2.4704563580453396,
+          "batch_amortized_seconds_per_photo": 0.10293568158522248,
+          "feature_dimension": 768
+        },
+        "clip_224": {
+          "backbone_load_seconds": 1.0319999200291932,
+          "adaptation_seconds": 0.10700019192881882,
+          "warm_batch4_seconds": 0.755621027899906,
+          "batch_amortized_seconds_per_photo": 0.03148420949582942,
+          "feature_dimension": 512
+        },
+        "clip_384": {
+          "backbone_load_seconds": 1.0319999200291932,
+          "adaptation_seconds": 0.11506693600676954,
+          "warm_batch4_seconds": 1.9630280118435621,
+          "batch_amortized_seconds_per_photo": 0.08179283382681508,
+          "feature_dimension": 512
+        }
+      },
+      "nested_search_seconds": 0.7022741949185729,
+      "final_grouped_search_seconds": 0.1423965881112963,
+      "backbone_reload_seconds": 0.9631474220659584,
+      "head_reload_seconds": 0.0004929900169372559,
+      "single_photo_smoke_timings": [
+        {
+          "canonical_and_adaptation_seconds": 0.030758407898247242,
+          "feature_seconds": 0.036214014049619436,
+          "head_seconds": 0.0007767379283905029
+        },
+        {
+          "canonical_and_adaptation_seconds": 0.049861480947583914,
+          "feature_seconds": 0.04781136987730861,
+          "head_seconds": 0.0008983640000224113
+        },
+        {
+          "canonical_and_adaptation_seconds": 0.0493532030377537,
+          "feature_seconds": 0.04232131992466748,
+          "head_seconds": 0.0015750329475849867
+        },
+        {
+          "canonical_and_adaptation_seconds": 0.09174434607848525,
+          "feature_seconds": 0.04337790491990745,
+          "head_seconds": 0.0007094689644873142
+        }
+      ],
+      "warm_batch4_repeat_seconds": [
+        0.7555577419698238,
+        0.6950584449805319,
+        0.6692400728352368
+      ],
+      "batch_amortized_median_seconds_per_photo": 0.028960768540855497,
+      "warm_head_repeat_seconds": [
+        0.0009862661827355623,
+        0.0006253200117498636,
+        0.0005585390608757734
+      ],
+      "api_fee": 0,
+      "local_compute_cost": null,
+      "cpu_tariff": null,
+      "note": "Public downloads only; no image uploads, no paid APIs/GPU. Batch amortized time is not single-request latency. Local economic cost unknown."
+    },
+    "provenance": {
+      "dinov2": {
+        "repo": "facebook/dinov2-small",
+        "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+        "file": "model.safetensors",
+        "license": "Apache-2.0 model card; upstream code Apache-2.0",
+        "license_url": "https://huggingface.co/facebook/dinov2-small/blob/ed25f3a31f01632728cabb09d1542f84ab7b0056/README.md",
+        "files": {
+          "config.json": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+            "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/config.json",
+            "bytes": 547
+          },
+          "preprocessor_config.json": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+            "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/preprocessor_config.json",
+            "bytes": 436
+          },
+          "README.md": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+            "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/README.md",
+            "bytes": 3033
+          },
+          "model.safetensors": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "ae1e99fcefd534ed978cdeb8326f08030c96e28b7a81ffcbc98a857c84d14be1",
+            "url": "https://huggingface.co/facebook/dinov2-small/resolve/ed25f3a31f01632728cabb09d1542f84ab7b0056/model.safetensors",
+            "bytes": 88249960
+          }
+        },
+        "code_license": "Transformers Apache-2.0",
+        "code_license_url": "https://github.com/huggingface/transformers/blob/v4.46.3/LICENSE"
+      },
+      "clip": {
+        "repo": "openai/clip-vit-base-patch32",
+        "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+        "file": "pytorch_model.bin",
+        "license": "OpenAI CLIP upstream code MIT; HF mirror card does not specify a separate weight license. Commercial clearance not established.",
+        "license_url": "https://github.com/openai/CLIP/blob/main/LICENSE",
+        "files": {
+          "config.json": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+            "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/config.json",
+            "bytes": 4186
+          },
+          "preprocessor_config.json": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+            "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/preprocessor_config.json",
+            "bytes": 316
+          },
+          "README.md": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+            "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/README.md",
+            "bytes": 7942
+          },
+          "pytorch_model.bin": {
+            "cached": true,
+            "seconds": 0.0,
+            "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+            "url": "https://huggingface.co/openai/clip-vit-base-patch32/resolve/3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268/pytorch_model.bin",
+            "bytes": 605247071
+          }
+        },
+        "code_license": "Transformers Apache-2.0",
+        "code_license_url": "https://github.com/huggingface/transformers/blob/v4.46.3/LICENSE"
+      }
+    },
+    "weights_url": null,
+    "weights_sha256": null,
+    "models": {
+      "dinov2": {
+        "repo": "facebook/dinov2-small",
+        "revision": "ed25f3a31f01632728cabb09d1542f84ab7b0056",
+        "file": "model.safetensors",
+        "license": "Apache-2.0 model card; upstream code Apache-2.0",
+        "license_url": "https://huggingface.co/facebook/dinov2-small/blob/ed25f3a31f01632728cabb09d1542f84ab7b0056/README.md"
+      },
+      "clip": {
+        "repo": "openai/clip-vit-base-patch32",
+        "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+        "file": "pytorch_model.bin",
+        "license": "OpenAI CLIP upstream code MIT; HF mirror card does not specify a separate weight license. Commercial clearance not established.",
+        "license_url": "https://github.com/openai/CLIP/blob/main/LICENSE"
+      }
+    }
+  }
+}

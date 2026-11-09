@@ -1,0 +1,31 @@
+Tyre Wear Indicator: six approaches and indicative Azure costs
+
+We compared six approaches for classifying visible tyre condition as good, bad or review. The source archive contains 25 photos, including one exact duplicate and two review-only examples. The results below are development agreement with preliminary labels, not validated real-world accuracy or tread-depth measurement.
+
+1. ResNet18
+Frozen ImageNet image features with a trained logistic classifier. It achieved 12/22 (54.55%) in grouped cross-validation and 4/9 on the shared comparison subset. Indicative Azure active processing cost: about US$0.00052 per image.
+
+2. MobileNetV3-Large
+A lightweight pretrained image model with a trained classifier head. It achieved 14/22 (63.64%) and 4/9 on the shared subset. Indicative active processing cost: about US$0.00052 per image.
+
+3. CLIP ViT-B/32
+Pretrained CLIP image features with a trained classifier head. It achieved 18/22 (81.82%) and 7/9 on the shared subset. It was the strongest observed local candidate, although selected after comparing several candidates. Indicative active processing cost: about US$0.00069 per image.
+
+4. Luna Responses, refined rubric v2
+One image prompt returns structured observations about tread visibility, groove relief, damage and overall condition. It achieved 19/22 (86.36%) and 8/9 on the shared subset. One of 13 bad photos was incorrectly called good. Estimated API cost: US$0.00027–US$0.00047 per submitted image.
+
+5. Luna Decisions, refined rubric v2
+The same underlying Luna model answers typed questions about visible tread, damage and condition. It achieved 11/22 (50.00%) and 3/9 on the shared subset. Six of 13 bad photos were called good, making this approach a lower priority. Estimated API cost: US$0.00016–US$0.00033 per submitted image; Azure Decisions billing semantics remain partly unresolved.
+
+6. Fine-tuned GPT-4.1
+A supervised vision fine-tune trained on 13 actual examples (6 bad, 5 good, 2 review), evaluated on nine separate photos (5 bad, 4 good). It achieved 9/9; the untuned GPT-4.1 baseline achieved 8/9. It was not evaluated across the 22-photo cohort. Estimated API cost: US$0.002464 per image, PLUS US$1.70 per hour of hosted-model deployment. The completed pilot's one-off training estimate was US$31.98. At 1,000 images/day with the model hosted for 24 hours, API plus model hosting is approximately US$0.0433 per image, before shared app infrastructure and training amortization.
+
+Cost scope
+All figures are indicative USD retail estimates, not invoices. Local processing estimates use one recorded Azure smoke timing per method and the shared 2-vCPU/4-GiB Container Apps allocation; they are not representative throughput averages. The shared app's compute is roughly US$46.66/month if fully idle to US$155.52/month if fully active over 30 days, before free grants, HTTP requests and other infrastructure. Processing costs are already part of that compute bill: do not add them twice or charge the shared host separately for each local method. The API approaches also use the shared frontend/backend infrastructure.
+
+Luna API figures average 25 submitted cases (22 unique binary photos, two review photos and one duplicate). Their short/long-context price ranges use actual returned usage with no observed cache reads/writes. GPT's API estimate averages nine evaluated images. Storage, registry, private networking, DNS, logging, local-model training, discounts and taxes are not included.
+
+Next step
+Prioritize Luna Responses and CLIP for a larger comparison; keep fine-tuned GPT as a challenger. Collect more distinct tyres with expert labels and tyre/session IDs, then freeze a new test set before tuning. All views of the same tyre must stay in one partition. Nine correct predictions do not establish 100% population accuracy. AutoML is prepared but remains untrained pending Azure GPU quota approval, so no AutoML score is reported.
+
+Evidence: saved classifier/custom-improvements/custom-v2 predictions; cloud-refinement-v3/method-summary.json; final-pilot-v4/comparison-1794067466698190856.json; vision-finetune/dataset-receipt.json; verified-costs.json and official Azure retail snapshots checked on 9 November 2026.

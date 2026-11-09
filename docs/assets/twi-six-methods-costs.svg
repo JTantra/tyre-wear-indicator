@@ -1,0 +1,177 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2000" height="3340" viewBox="0 0 2000 3340">
+<title>TWI six-method development comparison</title>
+<rect width="2000" height="3340" fill="#eef3f7"/>
+<rect x="0" y="0" width="2000" height="180" rx="0" fill="#142b43"/>
+<text x="70" y="35" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#ffffff">TWI: six methods, one shared photo panel</text>
+<text x="72" y="111" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="30" font-weight="400" fill="#d2e2ef">Tyre-wear indicator comparison  |  Provisional development label agreement</text>
+<rect x="45" y="205" width="1910" height="770" rx="22" fill="#ffffff"/>
+<text x="80" y="233" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">COMMON 9-PHOTO PANEL</text>
+<text x="80" y="283" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#4e6174">Same 9 photos: 5 bad + 4 good. Training protocols differ. Reviews count as not correct.</text>
+<text x="80" y="338" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#4e6174">METHOD / PROTOCOL</text>
+<text x="610" y="338" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#4e6174">LABEL AGREEMENT</text>
+<text x="1230" y="330" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#4e6174">CORRECT</text>
+<text x="1230" y="359" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4e6174">of 9</text>
+<text x="1405" y="330" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#a44c08">BAD → GOOD</text>
+<text x="1405" y="359" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4e6174">of 5 bad photos</text>
+<line x1="610.0" y1="393" x2="610.0" y2="892" stroke="#dae4ec" stroke-width="2"/>
+<text x="610.0" y="904" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">0%</text>
+<line x1="740.0" y1="393" x2="740.0" y2="892" stroke="#dae4ec" stroke-width="2"/>
+<text x="740.0" y="904" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">25%</text>
+<line x1="870.0" y1="393" x2="870.0" y2="892" stroke="#dae4ec" stroke-width="2"/>
+<text x="870.0" y="904" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">50%</text>
+<line x1="1000.0" y1="393" x2="1000.0" y2="892" stroke="#dae4ec" stroke-width="2"/>
+<text x="1000.0" y="904" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">75%</text>
+<line x1="1130.0" y1="393" x2="1130.0" y2="892" stroke="#dae4ec" stroke-width="2"/>
+<text x="1130.0" y="904" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">100%</text>
+<text x="80" y="398" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">ResNet18</text>
+<text x="80" y="437" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Archived outer-fold 0 OOF</text>
+<text x="1530" y="412" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#142b43">~$0.00052 compute</text>
+<rect x="610" y="402" width="231.1111111111111" height="42" rx="0" fill="#147d86"/>
+<text x="827.1111111111111" y="411" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">44.44%</text>
+<text x="1230" y="409" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">4/9</text>
+<text x="1405" y="409" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#a44c08">1/5</text>
+<text x="80" y="480" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">MobileNetV3 Large</text>
+<text x="80" y="519" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Archived outer-fold 0 OOF</text>
+<text x="1530" y="494" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#142b43">~$0.00052 compute</text>
+<rect x="610" y="484" width="231.1111111111111" height="42" rx="0" fill="#147d86"/>
+<text x="827.1111111111111" y="493" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">44.44%</text>
+<text x="1230" y="491" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">4/9</text>
+<text x="1405" y="491" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#a44c08">1/5</text>
+<text x="80" y="562" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">CLIP ViT-B/32</text>
+<text x="80" y="601" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">224 px · archived OOF</text>
+<text x="1530" y="576" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#142b43">~$0.00069 compute</text>
+<rect x="610" y="566" width="404.44444444444446" height="42" rx="0" fill="#147d86"/>
+<text x="1000.4444444444445" y="575" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">77.78%</text>
+<text x="1230" y="573" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">7/9</text>
+<text x="1405" y="573" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#a44c08">2/5</text>
+<text x="80" y="644" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">Luna Responses</text>
+<text x="80" y="683" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Refined rubric v2 · prompt-only</text>
+<text x="1530" y="658" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#142b43">$0.00027–$0.00047 API</text>
+<rect x="610" y="648" width="462.2222222222222" height="42" rx="0" fill="#147d86"/>
+<text x="1058.2222222222222" y="657" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">88.89%</text>
+<text x="1230" y="655" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">8/9</text>
+<text x="1405" y="655" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">0/5</text>
+<text x="80" y="726" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">Luna Decisions</text>
+<text x="80" y="765" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Refined rubric v2 · prompt-only</text>
+<text x="1530" y="740" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#142b43">$0.00016–$0.00033 API*</text>
+<rect x="610" y="730" width="173.33333333333331" height="42" rx="0" fill="#147d86"/>
+<text x="769.3333333333333" y="739" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">33.33%</text>
+<text x="1230" y="737" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">3/9</text>
+<text x="1405" y="737" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#a44c08">3/5</text>
+<text x="80" y="808" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">Fine-tuned GPT-4.1</text>
+<text x="80" y="847" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">13-photo dataset fine-tune</text>
+<text x="1530" y="822" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#142b43">$0.002464 API</text>
+<rect x="610" y="812" width="520.0" height="42" rx="0" fill="#147d86"/>
+<text x="1116.0" y="821" dominant-baseline="text-before-edge" text-anchor="end" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#ffffff">100.00%</text>
+<text x="1230" y="819" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">9/9</text>
+<text x="1405" y="819" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="34" font-weight="700" fill="#142b43">0/5</text>
+<text x="1530" y="330" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#4e6174">ROUGH COST / IMAGE</text>
+<text x="1530" y="359" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="400" fill="#4e6174">USD • see assumptions below</text>
+<text x="80" y="949" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#4e6174">Raw binary-output coverage: 8/9 for each Luna method (1 review); 9/9 for the other four.</text>
+<rect x="45" y="995" width="1910" height="303" rx="22" fill="#ffffff"/>
+<text x="80" y="1022" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#142b43">FULL 22-PHOTO BENCHMARK</text>
+<text x="80" y="1068" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Separate grouped/development results • different protocols; Luna uses refined retrospective prompts.</text>
+<text x="215" y="1122" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#142b43">ResNet18</text>
+<text x="215" y="1165" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#147d86">54.55%</text>
+<text x="215" y="1220" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">12/22 correct</text>
+<line x1="372" y1="1120" x2="372" y2="1258" stroke="#dae4ec" stroke-width="2"/>
+<text x="528" y="1122" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#142b43">MobileNetV3</text>
+<text x="528" y="1165" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#147d86">63.64%</text>
+<text x="528" y="1220" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">14/22 correct</text>
+<line x1="685" y1="1120" x2="685" y2="1258" stroke="#dae4ec" stroke-width="2"/>
+<text x="841" y="1122" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#142b43">CLIP ViT-B/32</text>
+<text x="841" y="1165" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#147d86">81.82%</text>
+<text x="841" y="1220" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">18/22 correct</text>
+<line x1="998" y1="1120" x2="998" y2="1258" stroke="#dae4ec" stroke-width="2"/>
+<text x="1154" y="1122" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#142b43">Luna Responses</text>
+<text x="1154" y="1165" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#147d86">86.36%</text>
+<text x="1154" y="1220" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">19/22 correct</text>
+<line x1="1311" y1="1120" x2="1311" y2="1258" stroke="#dae4ec" stroke-width="2"/>
+<text x="1467" y="1122" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#142b43">Luna Decisions</text>
+<text x="1467" y="1165" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#147d86">50.00%</text>
+<text x="1467" y="1220" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">11/22 correct</text>
+<line x1="1624" y1="1120" x2="1624" y2="1258" stroke="#dae4ec" stroke-width="2"/>
+<text x="1780" y="1122" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="25" font-weight="700" fill="#142b43">Fine-tuned GPT-4.1</text>
+<text x="1780" y="1171" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#4e6174">Not evaluated</text>
+<text x="1780" y="1220" dominant-baseline="text-before-edge" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#4e6174">on the 22-photo set</text>
+<rect x="45" y="1318" width="1910" height="612" rx="22" fill="#ffffff"/>
+<text x="80" y="1345" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#142b43">ROUGH AZURE COSTS · USD RETAIL ESTIMATES</text>
+<text x="80" y="1398" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">COMPUTE: one synthetic-photo Azure cold smoke per local method (8.62 / 8.64 / 11.43 s), including startup; not a representative average. 2 vCPU + 4 GiB × East</text>
+<text x="80" y="1430" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">US active rates ($0.000024/vCPU-s + $0.000003/GiB-s).</text>
+<text x="80" y="1474" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">API COHORTS DIFFER FROM THE 9-PHOTO ACCURACY PANEL: Luna mean = 25 submitted cases (22 binary + 2 review + 1 duplicate); GPT fine-tune mean =</text>
+<text x="80" y="1506" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">actual 9 evaluation calls. Cache tokens observed: 0.</text>
+<text x="80" y="1550" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">* LUNA: short/long context retail tiers give ranges; exact tier boundary and Decisions charging semantics remain partly unresolved. Indicative estimates, not a final</text>
+<text x="80" y="1582" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">bill.</text>
+<text x="80" y="1626" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">SHARED APP: one 2-vCPU / 4-GiB dashboard allocation, also needed for cloud methods. 30-day compute: ~$46.66 fully idle to $155.52 fully active, before free</text>
+<text x="80" y="1658" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">grants. Not three hosts; do not add processing compute twice.</text>
+<text x="80" y="1702" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">EXCLUDES: Storage, ACR Premium, private endpoints/DNS, logs, networking and other infrastructure; also local training, discounts/tax. Shared-app compute is</text>
+<text x="80" y="1734" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">separate from API and GPT model hosting.</text>
+<rect x="65" y="1790" width="1870" height="122" rx="14" fill="#fff0db"/>
+<text x="85" y="1804" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#a44c08">GPT FINE-TUNE: + $1.70/hour model hosting  •  $31.98 one-off training</text>
+<text x="85" y="1850" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="700" fill="#142b43">1,000 images/day, 24h hosting: ~$0.0433/image (API + model hosting)</text>
+<text x="85" y="1887" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Hosting applies while deployed, even idle. Example excludes shared-app infrastructure and training.</text>
+<text x="70" y="1948" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="31" font-weight="700" fill="#142b43">ACTUAL SPLITS &amp; PROTOCOLS</text>
+<rect x="45" y="2000" width="620" height="265" rx="18" fill="#ffffff"/>
+<rect x="690" y="2000" width="620" height="265" rx="18" fill="#ffffff"/>
+<rect x="1335" y="2000" width="620" height="265" rx="18" fill="#ffffff"/>
+<text x="75" y="2026" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#142b43">LOCAL: ResNet / MobileNet / CLIP</text>
+<text x="75" y="2073" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#4e6174">Grouped 3-fold train / test:</text>
+<text x="75" y="2113" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="32" font-weight="700" fill="#147d86">13 / 9     15 / 7     16 / 6</text>
+<text x="75" y="2163" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">9-panel = archived outer-fold 0 OOF.</text>
+<text x="75" y="2203" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Serving heads refit all 22; not scored here.</text>
+<text x="720" y="2026" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#142b43">FINE-TUNED GPT-4.1</text>
+<text x="720" y="2073" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Train 13: 6 bad + 5 good + 2 review</text>
+<text x="720" y="2113" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Evaluate 9: 5 bad + 4 good</text>
+<text x="720" y="2153" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">2 images excluded by content screening.</text>
+<text x="720" y="2193" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">1 epoch; no validation file.</text>
+<text x="1365" y="2026" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#142b43">LUNA: Responses / Decisions</text>
+<text x="1365" y="2073" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Prompt-only; no dataset fine-tuning.</text>
+<text x="1365" y="2113" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Refined rubric v2.</text>
+<text x="1365" y="2153" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Retrospective development benchmark.</text>
+<text x="1365" y="2193" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">No dataset training; rubric-based calls.</text>
+<rect x="45" y="2290" width="935" height="790" rx="20" fill="#ffffff"/>
+<rect x="1020" y="2290" width="935" height="790" rx="20" fill="#ffffff"/>
+<text x="80" y="2319" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#147d86">LUNA RESPONSES</text>
+<text x="80" y="2360" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#142b43">5 Responses rubric checks</text>
+<text x="80" y="2415" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#4e6174">Responses rubric checks (summarized)</text>
+<text x="80" y="2457" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Equivalent checks, not numbered API questions.</text>
+<text x="80" y="2520" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">1</text>
+<text x="133" y="2520" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#142b43">Is enough tread visible to assess condition?</text>
+<text x="80" y="2584" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">2</text>
+<text x="133" y="2584" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#142b43">Are grooves/raised tread relief distinct, flattened/shallow, or</text>
+<text x="133" y="2622" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#142b43">obscured?</text>
+<text x="80" y="2686" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">3</text>
+<text x="133" y="2686" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#142b43">Is cracking/exposed cords/torn rubber/severe damage visible?</text>
+<text x="80" y="2750" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">4</text>
+<text x="133" y="2750" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#142b43">What visible evidence supports the assessment?</text>
+<text x="80" y="2814" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">5</text>
+<text x="133" y="2814" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="29" font-weight="400" fill="#142b43">What is the condition: good / bad / review?</text>
+<text x="80" y="2970" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#147d86">One prompt → structured observations + final condition.</text>
+<text x="80" y="3037" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Source: infra/refinement_v3.py · lines 8–19, 30–32</text>
+<text x="1055" y="2319" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#147d86">LUNA DECISIONS</text>
+<text x="1055" y="2360" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#142b43">3 Decisions questions</text>
+<text x="1055" y="2415" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#4e6174">2 predicate instructions quoted exactly.</text>
+<text x="1055" y="2457" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Choice question label + rubric summarized.</text>
+<text x="1055" y="2514" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">1</text>
+<text x="1108" y="2514" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#142b43">tread_visible · predicate</text>
+<text x="1108" y="2552" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#142b43">Is enough tread face clear to see groove/raised relief or wear?</text>
+<text x="1108" y="2586" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#142b43">Partial/oblique views suffice if clear. Sidewall/rim alone and fully</text>
+<text x="1108" y="2620" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#142b43">obscuring mud do not. No exact depth measurement is required.</text>
+<text x="1055" y="2675" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">2</text>
+<text x="1108" y="2675" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#142b43">clear_damage · predicate</text>
+<text x="1108" y="2713" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#142b43">Is cracking, exposed cords, torn rubber or severe visible tyre</text>
+<text x="1108" y="2747" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#142b43">damage clearly present? Do not confuse tread grooves, mud or</text>
+<text x="1108" y="2781" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="400" fill="#142b43">shadows with damage.</text>
+<text x="1055" y="2836" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="33" font-weight="700" fill="#147d86">3</text>
+<text x="1108" y="2836" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#142b43">What is the visible condition: good / bad / review?</text>
+<text x="1108" y="2883" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#142b43">Condition rubric (summary): good = clear raised relief/grooves without</text>
+<text x="1108" y="2916" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#142b43">wear/damage; bad = flattened/bald/shallow-looking wear or damage;</text>
+<text x="1108" y="2949" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="26" font-weight="400" fill="#142b43">review = obscured, sidewall-only, or conflicting evidence.</text>
+<text x="1055" y="3037" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">Source: infra/refinement_v3.py · lines 24–28</text>
+<text x="70" y="3106" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="27" font-weight="700" fill="#142b43">Judge visible condition, not tread design alone; do not infer millimetres or TWI verification.</text>
+<text x="70" y="3152" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Tiny, previously explored archive: 25 photos → 24 unique (22 binary + 2 review); preliminary non-expert labels.</text>
+<text x="70" y="3190" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="25" font-weight="400" fill="#4e6174">Hypothesized groups are unconfirmed. 9/9 is not population accuracy. OOF = out-of-fold.</text>
+<text x="70" y="3243" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="22" font-weight="700" fill="#4e6174">SOURCE REFERENCES</text>
+<text x="70" y="3279" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">classifier/custom-improvements/custom-v2 predictions  •  infra/cloud-refinement-v3/method-summary.json</text>
+<text x="70" y="3312" dominant-baseline="text-before-edge" text-anchor="start" font-family="Arial, sans-serif" font-size="23" font-weight="400" fill="#4e6174">infra/final-pilot-v4/comparison-1794067466698190856.json  •  GPT dataset-receipt.json</text>
+</svg>

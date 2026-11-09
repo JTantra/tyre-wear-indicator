@@ -1,0 +1,1016 @@
+{
+  "schema": 1,
+  "generated_utc": "2026-11-09T00:36:30.323929+00:00",
+  "source_root": "original private tyre-wear-indicator project; retained locally",
+  "files": [
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": ".gitignore",
+      "export_sha256": "4b4f3cf71af913d9ce927337d1f212184d497dc0e3ca0aa68c1025a8dde9180b",
+      "bytes": 612
+    },
+    {
+      "original_path": null,
+      "export_path": "FINAL_BENCHMARK.json",
+      "original_sha256": null,
+      "export_sha256": "d8b0f11d426a98c2033d6d463f1cdf6c19e960df87bd83fbd8b9ed9acd245ee3",
+      "bytes": 7789,
+      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "README.md",
+      "export_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab",
+      "bytes": 7055
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "SECURITY.md",
+      "export_sha256": "de079b23ae811649eb70808ea3d4808a12e04f0a2d5748e66e097e0e6eb2580c",
+      "bytes": 1756
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "THIRD_PARTY_NOTICES.md",
+      "export_sha256": "b4766dc0f4145d4e59818e23cce3b4b85b3dfa167f3fc2e735498e5476f9bbf3",
+      "bytes": 1583
+    },
+    {
+      "original_path": "app/__init__.py",
+      "export_path": "app/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "export_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/benchmark.py",
+      "export_path": "app/benchmark.py",
+      "original_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
+      "export_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
+      "bytes": 4991,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/feedback.py",
+      "export_path": "app/feedback.py",
+      "original_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6",
+      "export_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6",
+      "bytes": 19505,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/job_store.py",
+      "export_path": "app/job_store.py",
+      "original_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c",
+      "export_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c",
+      "bytes": 17928,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/local_worker.py",
+      "export_path": "app/local_worker.py",
+      "original_sha256": "4815b94b50d76a8c596130f74dba01f5bdf1b58e2f5b135a81b077404e123f3d",
+      "export_sha256": "4815b94b50d76a8c596130f74dba01f5bdf1b58e2f5b135a81b077404e123f3d",
+      "bytes": 1283,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/providers.py",
+      "export_path": "app/providers.py",
+      "original_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3",
+      "export_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3",
+      "bytes": 4122,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/server.py",
+      "export_path": "app/server.py",
+      "original_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
+      "export_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
+      "bytes": 25637,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/session_security.py",
+      "export_path": "app/session_security.py",
+      "original_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32",
+      "export_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32",
+      "bytes": 6508,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/site_gate.py",
+      "export_path": "app/site_gate.py",
+      "original_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114",
+      "export_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114",
+      "bytes": 8116,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/test_feedback.py",
+      "export_path": "app/test_feedback.py",
+      "original_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae",
+      "export_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae",
+      "bytes": 8257,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "app/test_dashboard.py",
+      "export_path": "app/test_upload_contract.py",
+      "original_sha256": "fada50b5df2c8127ee980b6f38b23f239c50b93bf676f9f2260c2411b7833a1f",
+      "export_sha256": "581781a1a288af40516ffe9749fe36eff26530f009b361dd35cba2953aa94331",
+      "bytes": 1321,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "config/environment.example.txt",
+      "export_sha256": "7f38d01f34e8f38f7344a7f23fb41c464c6fc6f4953ed36fc5ced1764ff6b6ce",
+      "bytes": 733
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "config/luna.example.json",
+      "export_sha256": "ddaa736af896f64c70fa78c847e7273634bb80f982826bec8eebad5acce14f51",
+      "bytes": 1086
+    },
+    {
+      "original_path": "dashboard/dashboard.js",
+      "export_path": "dashboard/dashboard.js",
+      "original_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
+      "export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
+      "bytes": 22014,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "dashboard/index.html",
+      "export_path": "dashboard/index.html",
+      "original_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
+      "export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
+      "bytes": 10204,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "dashboard/style.css",
+      "export_path": "dashboard/style.css",
+      "original_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
+      "export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
+      "bytes": 8971,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "docs/COSTS.md",
+      "export_sha256": "da9b1640a6227d79789ac4fbd0dac5ebe794147b19312fe093fcc6931a95770a",
+      "bytes": 3030
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "docs/DATA_EXCLUDED.md",
+      "export_sha256": "ec067fc208186db467246d1336b411810a761fc1e8fb6bed029b3188588f1efd",
+      "bytes": 3131
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "docs/EXPERIMENTS.md",
+      "export_sha256": "53083f498a5ea76a5131cbc1bc3e02821f238a6e2511ea564a1ebea159b82ac7",
+      "bytes": 2919
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "docs/LUNA_QUESTIONS.md",
+      "export_sha256": "a708da94a8051a53d936c34d1457fcb36ae2689f5c2acce248a312a552d3c3f7",
+      "bytes": 1629
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "docs/RUNTIME.md",
+      "export_sha256": "4f693a52a2e92ebcb221f51c386a8c939d1e34c4efe2acc5c2bb63d9b4449539",
+      "bytes": 3411
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "docs/VERIFICATION.md",
+      "export_sha256": "b752954b17ae51292ff1c2d6968397dff61a117783982417263926414f4369af",
+      "bytes": 2160
+    },
+    {
+      "original_path": null,
+      "export_path": "docs/assets/team-summary-with-costs.txt",
+      "original_sha256": null,
+      "export_sha256": "293e580d8c8e8d0b48923ded22bfea9adc4d83e40a92bd31bb6c78b7f2191aa6",
+      "bytes": 4214,
+      "treatment": "allowlisted reviewed infographic/team copy; no photos"
+    },
+    {
+      "original_path": null,
+      "export_path": "docs/assets/twi-six-methods-costs.png",
+      "original_sha256": null,
+      "export_sha256": "c83b73e196b0ccb555ef98ef47bac1c7737bd45103606a77667c0427e05c4c59",
+      "bytes": 619164,
+      "treatment": "allowlisted reviewed infographic/team copy; no photos"
+    },
+    {
+      "original_path": null,
+      "export_path": "docs/assets/twi-six-methods-costs.svg",
+      "original_sha256": null,
+      "export_sha256": "c39f6c13b8727d926762897541b42923731f350895e4a4d57029e378474d0703",
+      "bytes": 31934,
+      "treatment": "allowlisted reviewed infographic/team copy; no photos"
+    },
+    {
+      "original_path": null,
+      "export_path": "docs/assets/verified-azure-costs.json",
+      "original_sha256": null,
+      "export_sha256": "e5965211d4e8a061aaa437b27de529ca902264673ad13b44743cd2815c97c9db",
+      "bytes": 22076,
+      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/download_best.py",
+      "export_path": "infra/automl-pilot-v1/preparation/download_best.py",
+      "original_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c",
+      "export_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c",
+      "bytes": 3584,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/evaluate.py",
+      "export_path": "infra/automl-pilot-v1/preparation/evaluate.py",
+      "original_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159",
+      "export_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159",
+      "bytes": 6971,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/prepare.py",
+      "export_path": "infra/automl-pilot-v1/preparation/prepare.py",
+      "original_sha256": "f54a1164d420208c1fe812169a6d2576bd3b978f0817f1533800b86e6397dbde",
+      "export_sha256": "3ba330b70f13de4c17254d20d49bec4e2369c3c584d0cdc15fe394eb92709e52",
+      "bytes": 9220,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
+      "export_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
+      "original_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
+      "export_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f",
+      "bytes": 402,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
+      "export_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
+      "original_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
+      "export_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96",
+      "bytes": 187,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
+      "export_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
+      "original_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee",
+      "export_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee",
+      "bytes": 851,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "infra/cloud_policy_v2.py",
+      "export_path": "infra/cloud_policy_v2.py",
+      "original_sha256": "d7a9cb4e79efd692ba43669f92436a7b48f62eb5ca490b43d4d510333a170512",
+      "export_sha256": "09269b458ab08d128fbd857e48cedf2d2e0954f919cb6e96503c6d4032fe181a",
+      "bytes": 1138,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "infra/refinement_v3.py",
+      "export_path": "infra/refinement_v3.py",
+      "original_sha256": "1447202acd7cf12a1a3b4e93f2e62ea757fb9f9e0d39e25f1f6d378a75a12314",
+      "export_sha256": "4d376aa9486e84a82b48c48d68b938c558e69d89eb575e7f1e4fa8e8c5f602f9",
+      "bytes": 12461,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "infra/test-refinement-v3.py",
+      "export_path": "infra/test-refinement-v3.py",
+      "original_sha256": "8859e5c995190ac263c7c4914be5e789c1de1bfafc69ba1795dfa1e3595d3217",
+      "export_sha256": "be621a87df93fbe66112b9d962fbc83f8f743f8776a773e199016ba7245f4f7c",
+      "bytes": 4908,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "infra/vision-finetune/adapter.py",
+      "export_path": "infra/vision-finetune/adapter.py",
+      "original_sha256": "d89280b0f2ae36907bca78b52f5f31224ae0331d6e492094dd4a72215d54bb87",
+      "export_sha256": "ae3f8119bce9f3a9abc298c5752ab2e29489fa70dd8d130497395dda425d687d",
+      "bytes": 10578,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "infra/vision-finetune/plan.json",
+      "export_path": "infra/vision-finetune/plan.json",
+      "original_sha256": "558423c3434e59eee50d10d3dbba2652793403c8417da5fce0c861915faac0f5",
+      "export_sha256": "3fad6655f65876c43513f067c38be56b14584c2098d3a46e1008f89f53c11043",
+      "bytes": 2864,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/azure-automl/README.md",
+      "export_sha256": "74df300333cecdbe8d27e660cf245a673009def7523b8ebf6fc842c11b0ef6b3",
+      "bytes": 4940
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/clip/README.md",
+      "export_sha256": "7d020155f9c3b62ba88bc0205129ac7749987c14e766ccade3d43beb6eee8d50",
+      "bytes": 5176
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/gpt41-finetuned/README.md",
+      "export_sha256": "e4bcca70e30cf633325243e76119f3a20d469478d9c7b6d5bfe471a9f1ccb7c4",
+      "bytes": 5358
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/luna-decisions/README.md",
+      "export_sha256": "8943732fd9dbb1d8a9a6f9290ed6cafe62f9422c393851d6c0fec4a00c30ca19",
+      "bytes": 5084
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/luna-responses/README.md",
+      "export_sha256": "3c7c0c5355504ba734571b9d07bb311691bda963811617a3382f82f1bd7f0e26",
+      "bytes": 5054
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/mobilenet/README.md",
+      "export_sha256": "a4bd755cb9fa9a59837bcf4c89e4164e3312737f27050f4b9b6b06ae829cf512",
+      "bytes": 4871
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "methods/resnet18/README.md",
+      "export_sha256": "726a784e06ab478d1da5317b9e866ad2dbcd1f7a1ac7362c8a6c2abd841dd421",
+      "bytes": 4653
+    },
+    {
+      "original_path": "requirements-audit.txt",
+      "export_path": "requirements-audit.txt",
+      "original_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023",
+      "export_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023",
+      "bytes": 94,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-v2/requirements-custom-v2-lock.txt",
+      "export_path": "requirements-foundation-lock.txt",
+      "original_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874",
+      "export_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874",
+      "bytes": 655,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "requirements-pilot-lock.txt",
+      "export_path": "requirements-pilot-lock.txt",
+      "original_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0",
+      "export_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0",
+      "bytes": 430,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "requirements-pilot.txt",
+      "export_path": "requirements-pilot.txt",
+      "original_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656",
+      "export_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656",
+      "bytes": 106,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "infra/cloud-refinement-v3/per-image.json",
+      "export_path": "results/cloud-rounds-per-case.json",
+      "original_sha256": "21ce9b942f6b64950b22bff6c5761bb40445e781ceba2f2821be8b90654dc80b",
+      "export_sha256": "512bbdb0ef880b868fca427c9632957bff796acbed750eb565717ae01a0d68ab",
+      "bytes": 121130,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "infra/vision-finetune/dataset-receipt.json",
+      "export_path": "results/gpt-training.json",
+      "original_sha256": "574727d253e0219c0ff558b80534d62483bf2884582bcb3ff2af3dc2159be6dd",
+      "export_sha256": "e064833efaa4d080fd4f562f7e70b59111e9b4024f63ca34b2159573f941251a",
+      "bytes": 2651,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": null,
+      "export_path": "results/legacy-rounds.json",
+      "original_sha256": null,
+      "export_sha256": "3f78291b9cd3983f4574940b5adeec7500f7e1609d404969c11bf622467ddafa",
+      "bytes": 29650,
+      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+    },
+    {
+      "original_path": null,
+      "export_path": "results/method-summary.json",
+      "original_sha256": null,
+      "export_sha256": "6564b6897049a3cd68772711f86c5cc463198ed3097e69efda23213c157b47ea",
+      "bytes": 6454,
+      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+    },
+    {
+      "original_path": null,
+      "export_path": "results/model-provenance.json",
+      "original_sha256": null,
+      "export_sha256": "2021312c938eb668cc4ae111bc65b6f4b7e53e5b8d7fd8e7b3728dc55f3bef79",
+      "bytes": 16156,
+      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+    },
+    {
+      "original_path": "artifacts/classifier/splits.json",
+      "export_path": "results/partitions.json",
+      "original_sha256": "206fdaa0d6dc8b3284d6f9355ad32232c746b738bd14cc64522c5ee77063b701",
+      "export_sha256": "4da669d2aafa6bdff0bfcd9b639384834938bd462fee6071c4341e7435efb7b8",
+      "bytes": 2827,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": null,
+      "export_path": "results/per-image.csv",
+      "original_sha256": null,
+      "export_sha256": "a7cde9ed98ee4a3929f8f4f0d4f14679846b49a925c3c351defc01b384e86fe2",
+      "bytes": 3368,
+      "treatment": "new documentation/tool"
+    },
+    {
+      "original_path": null,
+      "export_path": "results/per-image.json",
+      "original_sha256": null,
+      "export_sha256": "da128b7d85394ec0a7f50b17c4a4b9cc48af8626e315919aeaf2fcd6d1f36efe",
+      "bytes": 44766,
+      "treatment": "allowlisted projection; no raw response, filename, identity or annotation reason"
+    },
+    {
+      "original_path": "scripts/audit_dataset.py",
+      "export_path": "scripts/audit_dataset.py",
+      "original_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1",
+      "export_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1",
+      "bytes": 18702,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/benchmark_contract.py",
+      "export_path": "scripts/benchmark_contract.py",
+      "original_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f",
+      "export_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f",
+      "bytes": 11174,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/cost_accounting.py",
+      "export_path": "scripts/cost_accounting.py",
+      "original_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382",
+      "export_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382",
+      "bytes": 5811,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/cost_bounds.py",
+      "export_path": "scripts/cost_bounds.py",
+      "original_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28",
+      "export_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28",
+      "bytes": 2124,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/custom_improvements.py",
+      "export_path": "scripts/custom_improvements.py",
+      "original_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a",
+      "export_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a",
+      "bytes": 19497,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/custom_refinement_v2.py",
+      "export_path": "scripts/custom_refinement_v2.py",
+      "original_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e",
+      "export_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e",
+      "bytes": 14750,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/local_classifier.py",
+      "export_path": "scripts/local_classifier.py",
+      "original_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1",
+      "export_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1",
+      "bytes": 12271,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/predict_classifier.py",
+      "export_path": "scripts/predict_classifier.py",
+      "original_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6",
+      "export_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6",
+      "bytes": 1638,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/predict_custom.py",
+      "export_path": "scripts/predict_custom.py",
+      "original_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291",
+      "export_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291",
+      "bytes": 2115,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/preprocessing.py",
+      "export_path": "scripts/preprocessing.py",
+      "original_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed",
+      "export_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed",
+      "bytes": 4246,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "scripts/project_ledger.py",
+      "export_path": "scripts/project_ledger.py",
+      "original_sha256": "a87d8b0d3805ab0ef76721c3d5d3e82cc76458b435919a03e73ff504ffc28ebf",
+      "export_sha256": "b3bb3875115724ee892e6ee74af2080bdb04c9c5d6ccaad077f06dace47ca1db",
+      "bytes": 6365,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "scripts/run_benchmark.py",
+      "export_path": "scripts/run_benchmark.py",
+      "original_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe",
+      "export_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe",
+      "bytes": 29479,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "tests/test_fresh_review.py",
+      "export_path": "tests/clock_fixture.py",
+      "original_sha256": "d900d0d0bd52d4522bee53a4a46732d45f791b361985e9a4fe29ada1fb0eb0d3",
+      "export_sha256": "a9874efe4546fcc86493c5f2e95a427e82aacc5cfb9d5ae3bf9b0f4b8af26663",
+      "bytes": 185,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": "tests/test_benchmark_contract.py",
+      "export_path": "tests/test_benchmark_contract.py",
+      "original_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98",
+      "export_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98",
+      "bytes": 4705,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "tests/test_cloud_cost_bounds.py",
+      "export_path": "tests/test_cloud_cost_bounds.py",
+      "original_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a",
+      "export_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a",
+      "bytes": 1311,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "tests/test_cost_ledger.py",
+      "export_path": "tests/test_cost_ledger.py",
+      "original_sha256": "6d628e1d0fe815607d514d2b52e6dfa3f3ed86aa6e4080d2ad17643c76df36b6",
+      "export_sha256": "4797f9a0cf97bef849e667473c4ef554fa39e0a820a94e3e0070e5092f47a21c",
+      "bytes": 8859,
+      "treatment": "export-only adaptation/projection; hashes differ; see docs/RUNTIME.md and preparation exact diff"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "tests/test_publication.py",
+      "export_sha256": "8490004d28c8dc5e6f96cb2d9bfa092ae89d2ea43d5dab85f8a16c2148c7b819",
+      "bytes": 7312
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/README.md",
+      "export_path": "third_party/clip/README.md",
+      "original_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+      "export_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+      "bytes": 7942,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/config.json",
+      "export_path": "third_party/clip/config.json",
+      "original_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+      "export_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+      "bytes": 4186,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/preprocessor_config.json",
+      "export_path": "third_party/clip/preprocessor_config.json",
+      "original_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+      "export_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+      "bytes": 316,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/README.md",
+      "export_path": "third_party/dinov2/README.md",
+      "original_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+      "export_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c",
+      "bytes": 3033,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/config.json",
+      "export_path": "third_party/dinov2/config.json",
+      "original_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+      "export_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d",
+      "bytes": 547,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/preprocessor_config.json",
+      "export_path": "third_party/dinov2/preprocessor_config.json",
+      "original_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "export_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828",
+      "bytes": 436,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": "artifacts/custom-improvements/torchvision-LICENSE.txt",
+      "export_path": "third_party/torchvision-LICENSE.txt",
+      "original_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+      "export_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d",
+      "bytes": 1517,
+      "treatment": "byte-identical reviewed allowlist source"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "tools/check_private_archive.py",
+      "export_sha256": "776908f90549c77c3d752db5f4e4f28af98422a52ec17a4951810621155c4189",
+      "bytes": 600
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "tools/check_publication.py",
+      "export_sha256": "a8513f0462add51a9a6d9aeeef925e82fc4fa9935941df3e9525edd57f71d74c",
+      "bytes": 8358
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "tools/prepare_gpt_training.py",
+      "export_sha256": "0331dcd7049ad2579ff5922ad79b5a493284000685e450ea526c1eedc599c286",
+      "bytes": 2359
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "tools/run_luna.py",
+      "export_sha256": "7db560c090325497795bbc76af36e8c1b33ad272f8b5df862446a10d22256210",
+      "bytes": 1091
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new method documentation/offline tool/safe result projection",
+      "export_path": "tools/run_offline_tests.py",
+      "export_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a",
+      "bytes": 1274
+    }
+  ],
+  "projection_sources": [
+    {
+      "original_path": "scripts/audit_dataset.py",
+      "original_sha256": "e6b4e867bf8ae9eed192f74ee2939500d457e507658d37f993e57b667a194cc1"
+    },
+    {
+      "original_path": "scripts/preprocessing.py",
+      "original_sha256": "ddea2b85f87185f14af37f7749156d21cd535a5e7d5b87db2d0a0f3e8915cfed"
+    },
+    {
+      "original_path": "scripts/local_classifier.py",
+      "original_sha256": "81887a0e66ec1377cb83fcc33f2286426c3ec0f7cd3588dc80009d1ae874cbf1"
+    },
+    {
+      "original_path": "scripts/custom_improvements.py",
+      "original_sha256": "45b2efd89dad6c2aac5d43d142eb98e24375a641ece62c140b9c9999aba3638a"
+    },
+    {
+      "original_path": "scripts/custom_refinement_v2.py",
+      "original_sha256": "0b27cb69b4bdf11a495984b489f74140614dbd7466e9833499b86f075921683e"
+    },
+    {
+      "original_path": "scripts/predict_classifier.py",
+      "original_sha256": "a1e5368ed45be84b5dfd53f474d8bcc6b2775a8a18ad34cba784bffda84386f6"
+    },
+    {
+      "original_path": "scripts/predict_custom.py",
+      "original_sha256": "8bd9d7b837c95a1c862be36c052712f7323f52aa43ab38947da3e1f28d9d2291"
+    },
+    {
+      "original_path": "scripts/benchmark_contract.py",
+      "original_sha256": "e84ac0bf52d2b82d4c459ee24cda90e4f1d3fa7172e3a623ad972f8a95ecce5f"
+    },
+    {
+      "original_path": "scripts/run_benchmark.py",
+      "original_sha256": "9b5bd1d5cfcb17996bf4e4972f32e16f2ebfb4a69bc3d203ec439658a3fbe3fe"
+    },
+    {
+      "original_path": "scripts/project_ledger.py",
+      "original_sha256": "a87d8b0d3805ab0ef76721c3d5d3e82cc76458b435919a03e73ff504ffc28ebf"
+    },
+    {
+      "original_path": "scripts/cost_accounting.py",
+      "original_sha256": "e0bb98f2e61c5c8e88d6039cd03f2b6f0a3239a15495098e6e77031ca64dd382"
+    },
+    {
+      "original_path": "scripts/cost_bounds.py",
+      "original_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28"
+    },
+    {
+      "original_path": "app/__init__.py",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": "app/server.py",
+      "original_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff"
+    },
+    {
+      "original_path": "app/providers.py",
+      "original_sha256": "9d925df9923302a6d575e27c6e6fc633e2017f55caae907bcaae0854f5beb4e3"
+    },
+    {
+      "original_path": "app/benchmark.py",
+      "original_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86"
+    },
+    {
+      "original_path": "app/feedback.py",
+      "original_sha256": "2cc4f607bf06faa203abc7bbfe62ecbae50214f84466b563b6bb54d091595ff6"
+    },
+    {
+      "original_path": "app/job_store.py",
+      "original_sha256": "145ab9ff7d87e4a86bf870e8902f30e1fd7dda098f073f4c22fe7abdf042816c"
+    },
+    {
+      "original_path": "app/session_security.py",
+      "original_sha256": "0cf005597a720db1ea29cfb9556fde836f4bf75689501b3c0718566fa1d53f32"
+    },
+    {
+      "original_path": "app/site_gate.py",
+      "original_sha256": "49c93b91fc2bc8530c3b2d25066f39f3e050f5c6c8f49af46d9020b890094114"
+    },
+    {
+      "original_path": "app/local_worker.py",
+      "original_sha256": "4815b94b50d76a8c596130f74dba01f5bdf1b58e2f5b135a81b077404e123f3d"
+    },
+    {
+      "original_path": "dashboard/index.html",
+      "original_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953"
+    },
+    {
+      "original_path": "dashboard/style.css",
+      "original_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf"
+    },
+    {
+      "original_path": "dashboard/dashboard.js",
+      "original_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5"
+    },
+    {
+      "original_path": "requirements-pilot.txt",
+      "original_sha256": "3ed468b2a306dee8eed21f68301eb0302f11ffcb887675c22d72359d80e58656"
+    },
+    {
+      "original_path": "requirements-pilot-lock.txt",
+      "original_sha256": "0da520b7793d9d8918a3341f04486c756676804ad2eac62d378877fc89f982e0"
+    },
+    {
+      "original_path": "requirements-audit.txt",
+      "original_sha256": "6533e4396070b0d2632996e4426acaf5c89a5b4dc71137415380f9ef03a31023"
+    },
+    {
+      "original_path": "artifacts/custom-v2/requirements-custom-v2-lock.txt",
+      "original_sha256": "c853e15a0c4632db9bb0eaf261525224263a76f1f061856676a1e59afd8af874"
+    },
+    {
+      "original_path": "infra/refinement_v3.py",
+      "original_sha256": "1447202acd7cf12a1a3b4e93f2e62ea757fb9f9e0d39e25f1f6d378a75a12314"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/prepare.py",
+      "original_sha256": "f54a1164d420208c1fe812169a6d2576bd3b978f0817f1533800b86e6397dbde"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/evaluate.py",
+      "original_sha256": "15698325508177814539bc757bc3e3e8a80cb2a4dee6477565db2fa7ec3fc159"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/download_best.py",
+      "original_sha256": "7c9758ad42f3049425ed336700f092ce07330a0740051f4ff35da0783f33af0c"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/sdk_job.py",
+      "original_sha256": "f55dc7887835a5ba7cc8cffb3a60f0e59e330042ecefbf3887173d330223f7ee"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/requirements-preparation.txt",
+      "original_sha256": "154e900c0f27e6492912229ef60ef47acc1855909fa0f6b0d5393c292bd1fb96"
+    },
+    {
+      "original_path": "infra/automl-pilot-v1/preparation/requirements-client.txt",
+      "original_sha256": "2eabb3cab2bac2d9b7f9b5c62d3010b3b24a02694407448ffed35ee875d86f4f"
+    },
+    {
+      "original_path": "infra/vision-finetune/adapter.py",
+      "original_sha256": "d89280b0f2ae36907bca78b52f5f31224ae0331d6e492094dd4a72215d54bb87"
+    },
+    {
+      "original_path": "infra/cloud_policy_v2.py",
+      "original_sha256": "d7a9cb4e79efd692ba43669f92436a7b48f62eb5ca490b43d4d510333a170512"
+    },
+    {
+      "original_path": "tests/test_benchmark_contract.py",
+      "original_sha256": "c4a0ece83f9e2f7b2685a19521fdee259eef7974938f9882bab6cc3376a28b98"
+    },
+    {
+      "original_path": "tests/test_cloud_cost_bounds.py",
+      "original_sha256": "f82b087bbe6a1ff0b9d379a371a11da039a24586ef8cabbc28c98741b8cbdd7a"
+    },
+    {
+      "original_path": "tests/test_fresh_review.py",
+      "original_sha256": "d900d0d0bd52d4522bee53a4a46732d45f791b361985e9a4fe29ada1fb0eb0d3"
+    },
+    {
+      "original_path": "tests/test_cost_ledger.py",
+      "original_sha256": "6d628e1d0fe815607d514d2b52e6dfa3f3ed86aa6e4080d2ad17643c76df36b6"
+    },
+    {
+      "original_path": "app/test_feedback.py",
+      "original_sha256": "e3d1cbf60fa8046503573907ecd2ac9cd4c2bfc36e35b58cb0c0ecf61f105bae"
+    },
+    {
+      "original_path": "app/test_dashboard.py",
+      "original_sha256": "fada50b5df2c8127ee980b6f38b23f239c50b93bf676f9f2260c2411b7833a1f"
+    },
+    {
+      "original_path": "infra/test-refinement-v3.py",
+      "original_sha256": "8859e5c995190ac263c7c4914be5e789c1de1bfafc69ba1795dfa1e3595d3217"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/README.md",
+      "original_sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/config.json",
+      "original_sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/clip/preprocessor_config.json",
+      "original_sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/README.md",
+      "original_sha256": "4c20dca454a8e5c670e8de5c7e6040f512aeca5438516f7623eedc4e3b00599c"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/config.json",
+      "original_sha256": "1809f83e3bdb1609a501a610ad4a742f4fd8ae44d72ca4aa0df52d1f2ac8628d"
+    },
+    {
+      "original_path": "artifacts/custom-v2/weights/dinov2/preprocessor_config.json",
+      "original_sha256": "14e780d86fa1861f8751f868d7f45425b5feb55c38ca26f152ca5097ab30f828"
+    },
+    {
+      "original_path": "artifacts/custom-improvements/torchvision-LICENSE.txt",
+      "original_sha256": "6502f676851cfe25f8af75531dfb32375b7325b73c37e7b43741fa422893e71d"
+    },
+    {
+      "original_path": "artifacts/classifier/splits.json",
+      "original_sha256": "206fdaa0d6dc8b3284d6f9355ad32232c746b738bd14cc64522c5ee77063b701"
+    },
+    {
+      "original_path": "artifacts/classifier/predictions.json",
+      "original_sha256": "a20dc593bdbef841048eec5b84be9061e7132c1e0615d8e9661152a1d308bc54"
+    },
+    {
+      "original_path": "artifacts/custom-improvements/predictions.json",
+      "original_sha256": "80ce1c8154465574751097fed0d0590515e588b41de19ee80beea7faba94cacb"
+    },
+    {
+      "original_path": "artifacts/custom-v2/predictions.json",
+      "original_sha256": "aa8cb613143a2389dfd288581b23e2ecdb4e57a8ddd5c4f5a86c518782a4edac"
+    },
+    {
+      "original_path": "infra/cloud-refinement-v3/per-image.json",
+      "original_sha256": "21ce9b942f6b64950b22bff6c5761bb40445e781ceba2f2821be8b90654dc80b"
+    },
+    {
+      "original_path": "infra/final-pilot-v4/per-image-1794067466698190856.json",
+      "original_sha256": "cbaece1ccc99057ef5d309eb620d8b756c158a83f17c8504ba152bf3b8ed36a3"
+    },
+    {
+      "original_path": "infra/vision-finetune/dataset-receipt.json",
+      "original_sha256": "574727d253e0219c0ff558b80534d62483bf2884582bcb3ff2af3dc2159be6dd"
+    },
+    {
+      "original_path": "infra/vision-finetune/plan.json",
+      "original_sha256": "558423c3434e59eee50d10d3dbba2652793403c8417da5fce0c861915faac0f5"
+    },
+    {
+      "original_path": "artifacts/classifier/summary.json",
+      "original_sha256": "25f20ab7244c57e740ea94e3b6ccb6277119ca751d417d713f84633bf54765af"
+    },
+    {
+      "original_path": "artifacts/custom-improvements/summary.json",
+      "original_sha256": "d6b8d51ec4cad271a2337df0ca80c15a7a76d64f9d0e1043d4275faac48e849f"
+    },
+    {
+      "original_path": "artifacts/custom-improvements/identity.json",
+      "original_sha256": "58b8087a39f0d4513952204377df1459dae0e58055d6dbe323263968deb7fdc9"
+    },
+    {
+      "original_path": "artifacts/custom-v2/summary.json",
+      "original_sha256": "25304f7e84fad5f8299db9194c542714da5247a00361f698cfb626142a85fcdd"
+    },
+    {
+      "original_path": "artifacts/custom-v2/identity.json",
+      "original_sha256": "59c08fb914a1368a5da476345129c6e78681e019a2bfa9e13a76e1e0ebea47a4"
+    },
+    {
+      "original_path": "artifacts/classifier_legacy_center/predictions.json",
+      "original_sha256": "32e7f09e7dbac35ef60ae8e1fc31582e30a1b7b498d44a1f995d27e0e5713cab"
+    },
+    {
+      "original_path": "infra/vision-finetune/continuation-v2/ft-ready-job.json",
+      "original_sha256": "6eae47749652950220d8932aeeb853479ba531ab301afad93f841bbc7dac0a23"
+    }
+  ],
+  "excluded_categories": [
+    {
+      "category": "private dataset/photos/labels/contact sheets",
+      "reason": "owner/customer/person privacy; privately acquired only"
+    },
+    {
+      "category": "model weights/features/trained heads",
+      "reason": "large files; public pinned checkpoint acquisition and private regeneration; no pickle/LFS export"
+    },
+    {
+      "category": "cloud/IAM/ARM/service readbacks/provider raw responses",
+      "reason": "credentials/identities/capabilities or privacy/unknown raw content"
+    },
+    {
+      "category": "production ledger/receiptstore/feedback/uploads",
+      "reason": "private production history and runtime data, not a publication asset"
+    },
+    {
+      "category": "venv/cache/delegation/harness/logs/archive",
+      "reason": "non-source runtime or secret-bearing historical material"
+    }
+  ],
+  "recursive_hash_note": "Manifest does not self-hash; external preparation receipt pins manifest+full tree."
+}

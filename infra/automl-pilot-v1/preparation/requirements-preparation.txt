@@ -1,0 +1,8 @@
+# Local preparation/testing only; NOT the model training/inference environment.
+Pillow==12.0.0
+numpy==2.3.4
+pandas==2.3.3
+PyYAML==6.0.3
+mltable==1.7.0
+jsonschema==4.25.1
+requests==2.32.5
