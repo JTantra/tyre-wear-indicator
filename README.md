@@ -61,3 +61,7 @@ No deployment or paid inference is performed by this refactor. The curated appli
 
 [Security](SECURITY.md) · [Third-party notices](THIRD_PARTY_NOTICES.md) · [Migration/source mapping](export-manifest.json).
 Tiny provisional labels, suspected groups, pretraining overlap and repeated model selection limit generalization. No100% real-world claim.
+
+## New encoder experiment (append-only, 2026-11-10)
+
+[SigLIP2](classifiers/siglip2/README.md) genuinely ran:15/22, shared5/9, false-good0/13. Existing CLIP exactly reproduced18/22 and7/9. [DINOv3-S](classifiers/dinov3/README.md) is unrun (HF401 access gate), not a DINOv2 substitution. The separate joint nested available-family selector scored17/22. See the [full comparison, frozen plan, timings and limitations](docs/foundation-next-2026-11-10/README.md). These reused tiny-data scores do not establish population accuracy or automatic clearance. The original methods/table/graphic above are unchanged; no dashboard/deployment was added.

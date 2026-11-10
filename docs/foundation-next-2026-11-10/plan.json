@@ -1,0 +1,159 @@
+{
+  "schema": "foundation-next-v1",
+  "requested": [
+    "clip",
+    "dinov3",
+    "siglip2"
+  ],
+  "available": [
+    "clip",
+    "siglip2"
+  ],
+  "models": {
+    "clip": {
+      "repo": "openai/clip-vit-base-patch32",
+      "revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "checkpoint": "pytorch_model.bin",
+      "pooling": "projected L2-normalized image embedding",
+      "license": "Upstream CLIP MIT; separate mirror weight license unspecified"
+    },
+    "dinov3": {
+      "repo": "facebook/dinov3-vits16-pretrain-lvd1689m",
+      "revision": "114c1379950215c8b35dfcd4e90a5c251dde0d32",
+      "checkpoint": "model.safetensors",
+      "pooling": "official CLS pooler_output; no patch/pooling search",
+      "license": "DINOv3 custom gated terms; no acceptance authorized"
+    },
+    "siglip2": {
+      "repo": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "checkpoint": "model.safetensors",
+      "pooling": "official get_image_features = attention pooled vision pooler_output, no extra L2 normalization",
+      "license": "Apache-2.0 official pinned model card"
+    }
+  },
+  "pins": {
+    "clip": {
+      "config.json": {
+        "sha256": "b575ef3c36f2a057fa19e221650105052d61cc9c1a972ec15019c6261ec98770",
+        "bytes": 4186
+      },
+      "preprocessor_config.json": {
+        "sha256": "910e70b3956ac9879ebc90b22fb3bc8a75b6a0677814500101a4c072bd7857bd",
+        "bytes": 316
+      },
+      "README.md": {
+        "sha256": "8f0e8c678e0afe5f384f3bf8a6694c1cb53c41e52f86277967b6c5354cb0f9f4",
+        "bytes": 7942
+      },
+      "pytorch_model.bin": {
+        "sha256": "a63082132ba4f97a80bea76823f544493bffa8082296d62d71581a4feff1576f",
+        "bytes": 605247071
+      }
+    },
+    "siglip2": {
+      "config.json": {
+        "sha256": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+        "bytes": 253
+      },
+      "preprocessor_config.json": {
+        "sha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+        "bytes": 394
+      },
+      "README.md": {
+        "sha256": "39ac3705d62af9ffa1a14675b8ccb220a75f2d81acd530e564a3b1e3dfe418d8",
+        "bytes": 3375
+      },
+      "model.safetensors": {
+        "sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+        "bytes": 1500800904
+      }
+    }
+  },
+  "head_grid": [
+    {
+      "head": "logistic",
+      "C": 0.01
+    },
+    {
+      "head": "logistic",
+      "C": 0.1
+    },
+    {
+      "head": "logistic",
+      "C": 1.0
+    },
+    {
+      "head": "linear_svm",
+      "C": 0.01
+    },
+    {
+      "head": "linear_svm",
+      "C": 0.1
+    },
+    {
+      "head": "linear_svm",
+      "C": 1.0
+    }
+  ],
+  "versions": {
+    "torch": "2.15.0+cpu",
+    "torchvision": "0.29.2+cpu",
+    "transformers": "4.57.1",
+    "huggingface-hub": "0.36.2",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "Pillow": "12.0.0",
+    "joblib": "1.6.0"
+  },
+  "code": {
+    "classifiers/common/foundation_next.py": "04a1a1d5f19361dd0405359535e2f2c535e004c25b40f0493696dab7215a3a7f",
+    "classifiers/common/foundation_next_experiment.py": "a3aee35aeed5c11dae273b6005c9d4e0788840e7efb4baadb49f432a2201e121",
+    "classifiers/common/numeric_linear_head.py": "2e2e1b82ec304f3dbd31bf75bdc9f516387acbe83299ba39effd3f01875f9e0f",
+    "classifiers/common/head_selection.py": "98598282fb8d204343cf1040799550ce60a9ac57d191d898ed9674b3e247855f",
+    "classifiers/common/preprocessing.py": "26e4f82e672b2e9a1bed6ddd3903b00cabdb24bef36311d38c6580c813e67eee"
+  },
+  "preprocessing": "EXIF RGB max1024 JPEG95 subsampling0; canonical decode; full-frame aspect-preserving 224 square mean-color pad, pinned processor resample and mean/std; no enhancements/crops",
+  "selection": "Fixed representations and joint nested architecture selection. Original grouped outer3; train-only StandardScaler; balanced logistic/LinearSVC x C .01/.1/1; grouped inner2, balanced accuracy, first-grid ties. Final separate all22 inner2 selection per representation and joint. No review rows fit or tune.",
+  "pooling_rationale": "DINOv3 official CLS provides fixed global image descriptor; SigLIP2 official image-feature attention pooling; CLIP projected normalized embedding matches baseline. No pooling/resolution search.",
+  "seed": 2026,
+  "batch_size": 4,
+  "torch_threads": 4,
+  "qualifications": [
+    "Provisional repeated archive, only three good similarity groups, not verified tyre identities.",
+    "Fixed-backbone ranking is retrospectively optimistic; joint nested selection is separate.",
+    "No validated visibility/OOD gate: all operational outputs require review; no safety certification.",
+    "Local API fee zero; compute/electricity/hosting economic cost unknown. No cloud tariff inferred."
+  ],
+  "freeze_receipt": {
+    "utc": "2026-11-10T13:18:29.176452+00:00",
+    "plan_sha256": "ec62cdeec63d8e1957a644a3471996f3c6125fffd700b841aec1e953bca9b877",
+    "stage": "before first backbone execution"
+  },
+  "binary_photos": 22,
+  "bad_photos": 13,
+  "good_photos": 9,
+  "review_photos": 2,
+  "groups": 16,
+  "good_groups": 3,
+  "fold_train_test": [
+    [
+      13,
+      9
+    ],
+    [
+      15,
+      7
+    ],
+    [
+      16,
+      6
+    ]
+  ],
+  "selection_protocol_changed_after_results": false,
+  "prior_failed_plan_sha256": "ceb2491001cce45877e376f46467efdc26303fa5692ed88aca62ca94d6385084",
+  "prior_failure": "Numeric export assertion exposed pinned sklearn casting of scaler statistics to input dtype. Corrected serialization only; no feature/grid/selection/preprocessing change. Initial failed run retained privately; all OOF predictions unchanged."
+}

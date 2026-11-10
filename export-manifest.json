@@ -1,15 +1,15 @@
 {
   "schema": "twi-safe-export-v2-classifier-layout",
-  "generated_utc": "2026-11-09T01:19:11.561929+00:00",
+  "generated_utc": "2026-11-10T13:28:27.404303+00:00",
   "source_root": "original private tyre-wear-indicator project; retained locally",
   "files": [
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
       "export_path": ".gitignore",
-      "export_sha256": "ee27d3c54cadb78f7e0b530a9515e76578c9f22030f866f0657ec2b550d49c15",
-      "bytes": 1046,
+      "export_sha256": "0578fd2ab5563e3b90616987a235141920191a64838f6b9d0e72ac5528974665",
+      "bytes": 1192,
       "baseline_export_path": ".gitignore",
       "baseline_export_sha256": "4b4f3cf71af913d9ce927337d1f212184d497dc0e3ca0aa68c1025a8dde9180b"
     },
@@ -26,10 +26,10 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
       "export_path": "README.md",
-      "export_sha256": "1accabab8dbcf15d3d46bafed5e38d613d88ec6981203845d7dd25f33e0e8ce0",
-      "bytes": 4133,
+      "export_sha256": "4172560f23f273c38145e0aed444bd505235f103e5ca3a443c558bba3f95b9d3",
+      "bytes": 4775,
       "baseline_export_path": "README.md",
       "baseline_export_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab"
     },
@@ -46,10 +46,10 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
       "export_path": "THIRD_PARTY_NOTICES.md",
-      "export_sha256": "a7139de2e6934db534648ddf0d14af646dfd3d50ea45a7af44d1465ca2d2abf9",
-      "bytes": 2070,
+      "export_sha256": "feb0d29fb24d20ff88bce2b81c2ad2efed1b6f7b2af26164297e620c8bb7ed57",
+      "bytes": 2729,
       "baseline_export_path": "THIRD_PARTY_NOTICES.md",
       "baseline_export_sha256": "b4766dc0f4145d4e59818e23cce3b4b85b3dfa167f3fc2e735498e5476f9bbf3"
     },
@@ -404,6 +404,38 @@
       "baseline_export_sha256": "326d297abc6a5af84ddfd91a4a4dce22210bfbb4ab8b026947fdfd07fdb96b28"
     },
     {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/common/foundation_next.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "04a1a1d5f19361dd0405359535e2f2c535e004c25b40f0493696dab7215a3a7f",
+      "bytes": 4162
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/common/foundation_next_acquisition.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "4a94109e05ffbfa67299310c26ff8e1d1308d7415b1692eecd444f17533db98e",
+      "bytes": 2228
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/common/foundation_next_experiment.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "a3aee35aeed5c11dae273b6005c9d4e0788840e7efb4baadb49f432a2201e121",
+      "bytes": 12523
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/common/foundation_next_integrity.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "98fb63f0b97eafb5d734366cc2242e3be402701b65e5a17da9f1c06a50573a4b",
+      "bytes": 735
+    },
+    {
       "export_path": "classifiers/common/head_selection.py",
       "export_sha256": "98598282fb8d204343cf1040799550ce60a9ac57d191d898ed9674b3e247855f",
       "bytes": 7727,
@@ -446,6 +478,14 @@
       "export_sha256": "a56ab009960dad598a346a6c1b145529cc81e19969dbb3ed1fcce5f940aba0d4",
       "bytes": 1693,
       "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/common/numeric_linear_head.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "2e2e1b82ec304f3dbd31bf75bdc9f516387acbe83299ba39effd3f01875f9e0f",
+      "bytes": 1850
     },
     {
       "export_path": "classifiers/common/owned-heads.json",
@@ -590,6 +630,86 @@
       "export_sha256": "acb57574457109898dc48dcb5267b639a7c85c50015d3f962bcf56624e11423f",
       "bytes": 3757,
       "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/README.md",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "8db52b9bec3b627c20b86a2d069d696cc83bb15be47e8206576435a30a4140ae",
+      "bytes": 4804
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/config.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "993c519ec84717c829c3032edd1383e7c90ea74325cc8cad3bd9a5d39c4f93eb",
+      "bytes": 407
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/inference.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "1ef0af23a0dafea6d3d103a5c1ca65334e2be06259b3c0d72d5ffbb50bbfd68a",
+      "bytes": 305
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/results/per-image.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570",
+      "bytes": 3
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/results/summary.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "08b049a2ffc9d794419863aa4ce7822757758f622d2937a386141a1b7649abf7",
+      "bytes": 767
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/test.py",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "export_sha256": "60d2fdd43d2dd499e8f50d3bb3690716979791d8cbad932aaca92f88d5e43dfc",
+      "bytes": 871
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/train.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "b68a0a3f7d5dc3fdeeabf75118a0a11f16c83e0e21b0acc1747b2eee4f8a4446",
+      "bytes": 326
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/weights/README.md",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "0faed3e60a2d4d0109fb2c4727b5e736fe4de3c707cccf635d4791a02b14600c",
+      "bytes": 569
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/weights/fetch.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "243cdf5d84250af71b981b42a343b4b61a5a75f823f42cf38b22a339e434c7b4",
+      "bytes": 225
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/dinov3/weights/pretrained.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "fb8ade5d60c095caa9f1a449dd067608606600a4ea8d65a841d73001814ce732",
+      "bytes": 231
     },
     {
       "original_path": null,
@@ -998,6 +1118,118 @@
     {
       "original_path": null,
       "original_sha256": null,
+      "export_path": "classifiers/siglip2/README.md",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "8be0f6b36b95c07a4c2d39a25c5dc8393b4b9eadee2357122bf49319461e9604",
+      "bytes": 4736
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/config.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "993c519ec84717c829c3032edd1383e7c90ea74325cc8cad3bd9a5d39c4f93eb",
+      "bytes": 407
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/inference.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "caf6f48a00a531d6b6e74332b0980316941b017bbeaf11bdc722fbd81376f87e",
+      "bytes": 307
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/results/per-image.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "f58f5f6c8244ff2e12cdfa78f35942399d7f6ad09dab461ed8a9e8a33fdb9355",
+      "bytes": 2487
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/results/summary.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "b5e5c37334ab3ae5625379457aeaa2d0e68171dce487a23545c7c5b8271a8cd1",
+      "bytes": 4656
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/test.py",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "export_sha256": "58811f5217065a3ba29a13c09e4b2b6320fd24172d52de13f9a8029cd5d1de9c",
+      "bytes": 872
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/train.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "63a2090ccd50e010ba5d3a4b48e4fb4bdcdaf0e9ff814be6cf97658f6cd4b7a1",
+      "bytes": 327
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/README.md",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "7b63c0c0d8c0ed9341dd15cbf2219b0d22653716477bbe346f3f6b0b8996a3ce",
+      "bytes": 584
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/fetch.py",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "0824c5c08b54565bf1313d896d7e9cc6443a2f433539258956810be87c92b3bd",
+      "bytes": 226
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/head.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "f9d8e99da2e1649876f56f7b4b277a3841d921337640e6bba987021ae4ea1aea",
+      "bytes": 59045
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/pretrained.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "f8d106604ed709fa56037a54a9098e0c8d53fe94ef015656beda2ea36b232fcc",
+      "bytes": 1533
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/upstream/siglip2/README.md",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "39ac3705d62af9ffa1a14675b8ccb220a75f2d81acd530e564a3b1e3dfe418d8",
+      "bytes": 3375
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/upstream/siglip2/config.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+      "bytes": 253
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "classifiers/siglip2/weights/upstream/siglip2/preprocessor_config.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+      "bytes": 394
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
       "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
       "export_path": "dashboard/README.md",
       "export_sha256": "93f116882b9930e531c31faa5e19652881d0fdc2ecca42a3cef785810b030148",
@@ -1164,10 +1396,10 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
       "export_path": "docs/EXPERIMENTS.md",
-      "export_sha256": "0f89f18ca86b07e753aecee9d91583e60797533f4385bf6ae9f6c77c1a15d0b9",
-      "bytes": 2957,
+      "export_sha256": "07f39e1ff9d328ab8a9e9739f32e1563ae4951d057ef8addbc80bcbe79f2d872",
+      "bytes": 3176,
       "baseline_export_path": "docs/EXPERIMENTS.md",
       "baseline_export_sha256": "53083f498a5ea76a5131cbc1bc3e02821f238a6e2511ea564a1ebea159b82ac7"
     },
@@ -1226,6 +1458,62 @@
       "treatment": "byte-identical baseline export",
       "baseline_export_path": "docs/assets/verified-azure-costs.json",
       "baseline_export_sha256": "e5965211d4e8a061aaa437b27de529ca902264673ad13b44743cd2815c97c9db"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/README.md",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "export_sha256": "16b25653af1bb045a062224dd6a18d5a194e199d1dad2c7641a64a12940d23c2",
+      "bytes": 7622
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/VERIFICATION.md",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "export_sha256": "a7ea99fcacea0c4d2d801d7fd11a073adfada59d13980005fb60b6c43aacecb3",
+      "bytes": 2376
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/comparison.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "7f54a3931acaca85cb8c2410a16b4fb93749c2fe4788c6d474cae9f0f827ad29",
+      "bytes": 19095
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/per-image.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "7ce134342c2bd6e48784b913dfd0dd301eaaa4552dc996b67a8a28cefc47105f",
+      "bytes": 8323
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/plan.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "1da01a604387e8d21be10e62619ad04e3df67f31a7dddb3ed5cbfda1b45ba331",
+      "bytes": 5732
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/requirements-lock.txt",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "4147b0b8406b5936d88d7f0b83a0a7b37fa940c47759874cb7c1d87e53e4654d",
+      "bytes": 816
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "docs/foundation-next-2026-11-10/verification.json",
+      "treatment": "new foundation-next experiment source or explicitly privacy-projected evidence; no original image/feature/split identifiers",
+      "export_sha256": "425e977e714c5bc60106b41583721676972b6834b4f8f47407e5860513f0f443",
+      "bytes": 1791
     },
     {
       "export_path": "infra/README.md",
@@ -1324,6 +1612,14 @@
       "baseline_export_sha256": "4797f9a0cf97bef849e667473c4ef554fa39e0a820a94e3e0070e5092f47a21c"
     },
     {
+      "original_path": null,
+      "original_sha256": null,
+      "export_path": "tests/test_foundation_next.py",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "export_sha256": "cdf5462fea5a1f1a74cfdf04ba0210512041433025d73290b04c631b8581472e",
+      "bytes": 8187
+    },
+    {
       "export_path": "tests/test_layout.py",
       "export_sha256": "ed9634cc6169aa98cbec9b0816e3b67240d1773ef8904ceb990acf1b0b4d67a5",
       "bytes": 8774,
@@ -1362,20 +1658,20 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
       "export_path": "tools/check_publication.py",
-      "export_sha256": "bb2f62c9957025143a66597d662d02aab8dac4c4aaab38f97eefe497be94835e",
-      "bytes": 10979,
+      "export_sha256": "b005341ff30009deb67c39218fbc9a8eebcc8a199d11619b0fc438c21f0b9cea",
+      "bytes": 14600,
       "baseline_export_path": "tools/check_publication.py",
       "baseline_export_sha256": "a8513f0462add51a9a6d9aeeef925e82fc4fa9935941df3e9525edd57f71d74c"
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
       "export_path": "tools/run_offline_tests.py",
-      "export_sha256": "96c7c57fcf2ed7dc4762cec46e02a30689b0bcac09f7519ce4431ecf7cc30439",
-      "bytes": 1756,
+      "export_sha256": "f50fb3666c392cd320bc542f61f7542d4cb536dec40ffac4811a0e43fc365278",
+      "bytes": 1788,
       "baseline_export_path": "tools/run_offline_tests.py",
       "baseline_export_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a"
     },
@@ -1683,7 +1979,7 @@
         "new_path": ".gitignore",
         "baseline_sha256": "4b4f3cf71af913d9ce927337d1f212184d497dc0e3ca0aa68c1025a8dde9180b",
         "disposition": "retained/moved",
-        "export_sha256": "ee27d3c54cadb78f7e0b530a9515e76578c9f22030f866f0657ec2b550d49c15"
+        "export_sha256": "0578fd2ab5563e3b90616987a235141920191a64838f6b9d0e72ac5528974665"
       },
       {
         "old_path": "FINAL_BENCHMARK.json",
@@ -1697,7 +1993,7 @@
         "new_path": "README.md",
         "baseline_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab",
         "disposition": "retained/moved",
-        "export_sha256": "1accabab8dbcf15d3d46bafed5e38d613d88ec6981203845d7dd25f33e0e8ce0"
+        "export_sha256": "4172560f23f273c38145e0aed444bd505235f103e5ca3a443c558bba3f95b9d3"
       },
       {
         "old_path": "SECURITY.md",
@@ -1711,7 +2007,7 @@
         "new_path": "THIRD_PARTY_NOTICES.md",
         "baseline_sha256": "b4766dc0f4145d4e59818e23cce3b4b85b3dfa167f3fc2e735498e5476f9bbf3",
         "disposition": "retained/moved",
-        "export_sha256": "a7139de2e6934db534648ddf0d14af646dfd3d50ea45a7af44d1465ca2d2abf9"
+        "export_sha256": "feb0d29fb24d20ff88bce2b81c2ad2efed1b6f7b2af26164297e620c8bb7ed57"
       },
       {
         "old_path": "app/__init__.py",
@@ -1844,7 +2140,7 @@
         "new_path": "docs/EXPERIMENTS.md",
         "baseline_sha256": "53083f498a5ea76a5131cbc1bc3e02821f238a6e2511ea564a1ebea159b82ac7",
         "disposition": "retained/moved",
-        "export_sha256": "0f89f18ca86b07e753aecee9d91583e60797533f4385bf6ae9f6c77c1a15d0b9"
+        "export_sha256": "07f39e1ff9d328ab8a9e9739f32e1563ae4951d057ef8addbc80bcbe79f2d872"
       },
       {
         "old_path": "docs/LUNA_QUESTIONS.md",
@@ -2292,7 +2588,7 @@
         "new_path": "tools/check_publication.py",
         "baseline_sha256": "a8513f0462add51a9a6d9aeeef925e82fc4fa9935941df3e9525edd57f71d74c",
         "disposition": "retained/moved",
-        "export_sha256": "bb2f62c9957025143a66597d662d02aab8dac4c4aaab38f97eefe497be94835e"
+        "export_sha256": "b005341ff30009deb67c39218fbc9a8eebcc8a199d11619b0fc438c21f0b9cea"
       },
       {
         "old_path": "tools/prepare_gpt_training.py",
@@ -2313,7 +2609,7 @@
         "new_path": "tools/run_offline_tests.py",
         "baseline_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a",
         "disposition": "retained/moved",
-        "export_sha256": "96c7c57fcf2ed7dc4762cec46e02a30689b0bcac09f7519ce4431ecf7cc30439"
+        "export_sha256": "f50fb3666c392cd320bc542f61f7542d4cb536dec40ffac4811a0e43fc365278"
       }
     ],
     "head_hyperparameters_changed": false,
@@ -2328,5 +2624,146 @@
       "App backend/frontend unified under dashboard; loopback read-only start; infra reserved hosting."
     ],
     "training_scope": "Method-specific fixed representation OOF uses same folds/head grid; historical multi-architecture searches preserved as separate experiments, not automatically rerun. ResNet baselineC1 and nestedC[.01,.1,1,10], other fixed candidates same six logistic/SVM grid; serving original hashes unchanged."
+  },
+  "foundation_next": {
+    "schema": "append-only-experiment-provenance-v1",
+    "baseline_commit": "b60b7ac1a8fcc20aa0d5d5dbc5bfdf5db6415cea",
+    "original_benchmark_metrics_unchanged": true,
+    "original_heads_unchanged": true,
+    "original_six_score_graphic_unchanged": true,
+    "public_comparison": "docs/foundation-next-2026-11-10/comparison.json",
+    "private_plan_sha256": "ec62cdeec63d8e1957a644a3471996f3c6125fffd700b841aec1e953bca9b877",
+    "private_summary_sha256": "1aabbb9b9a9a2ae02a49800c05454adb5ad6044be87204f685b2e519e847aaa1",
+    "private_predictions_sha256": "32cd50b61a446709f3dc51a40d9dd3a1bffde993dcbf944f83725200af5cc75c",
+    "private_reproduction_sha256": "d6ffa736050155393b4335de8e025111f4247d1e522ea0010bcb4281926b0ebc",
+    "private_crosswalk_retained_not_exported": true,
+    "code_files": [
+      {
+        "path": "classifiers/common/foundation_next.py",
+        "sha256": "04a1a1d5f19361dd0405359535e2f2c535e004c25b40f0493696dab7215a3a7f"
+      },
+      {
+        "path": "classifiers/common/foundation_next_acquisition.py",
+        "sha256": "4a94109e05ffbfa67299310c26ff8e1d1308d7415b1692eecd444f17533db98e"
+      },
+      {
+        "path": "classifiers/common/foundation_next_experiment.py",
+        "sha256": "a3aee35aeed5c11dae273b6005c9d4e0788840e7efb4baadb49f432a2201e121"
+      },
+      {
+        "path": "classifiers/common/foundation_next_integrity.py",
+        "sha256": "98fb63f0b97eafb5d734366cc2242e3be402701b65e5a17da9f1c06a50573a4b"
+      },
+      {
+        "path": "classifiers/common/numeric_linear_head.py",
+        "sha256": "2e2e1b82ec304f3dbd31bf75bdc9f516387acbe83299ba39effd3f01875f9e0f"
+      },
+      {
+        "path": "classifiers/dinov3/README.md",
+        "sha256": "8db52b9bec3b627c20b86a2d069d696cc83bb15be47e8206576435a30a4140ae"
+      },
+      {
+        "path": "classifiers/dinov3/config.json",
+        "sha256": "993c519ec84717c829c3032edd1383e7c90ea74325cc8cad3bd9a5d39c4f93eb"
+      },
+      {
+        "path": "classifiers/dinov3/inference.py",
+        "sha256": "1ef0af23a0dafea6d3d103a5c1ca65334e2be06259b3c0d72d5ffbb50bbfd68a"
+      },
+      {
+        "path": "classifiers/dinov3/results/per-image.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "path": "classifiers/dinov3/results/summary.json",
+        "sha256": "08b049a2ffc9d794419863aa4ce7822757758f622d2937a386141a1b7649abf7"
+      },
+      {
+        "path": "classifiers/dinov3/test.py",
+        "sha256": "60d2fdd43d2dd499e8f50d3bb3690716979791d8cbad932aaca92f88d5e43dfc"
+      },
+      {
+        "path": "classifiers/dinov3/train.py",
+        "sha256": "b68a0a3f7d5dc3fdeeabf75118a0a11f16c83e0e21b0acc1747b2eee4f8a4446"
+      },
+      {
+        "path": "classifiers/dinov3/weights/README.md",
+        "sha256": "0faed3e60a2d4d0109fb2c4727b5e736fe4de3c707cccf635d4791a02b14600c"
+      },
+      {
+        "path": "classifiers/dinov3/weights/fetch.py",
+        "sha256": "243cdf5d84250af71b981b42a343b4b61a5a75f823f42cf38b22a339e434c7b4"
+      },
+      {
+        "path": "classifiers/dinov3/weights/pretrained.json",
+        "sha256": "fb8ade5d60c095caa9f1a449dd067608606600a4ea8d65a841d73001814ce732"
+      },
+      {
+        "path": "classifiers/siglip2/README.md",
+        "sha256": "8be0f6b36b95c07a4c2d39a25c5dc8393b4b9eadee2357122bf49319461e9604"
+      },
+      {
+        "path": "classifiers/siglip2/config.json",
+        "sha256": "993c519ec84717c829c3032edd1383e7c90ea74325cc8cad3bd9a5d39c4f93eb"
+      },
+      {
+        "path": "classifiers/siglip2/inference.py",
+        "sha256": "caf6f48a00a531d6b6e74332b0980316941b017bbeaf11bdc722fbd81376f87e"
+      },
+      {
+        "path": "classifiers/siglip2/results/per-image.json",
+        "sha256": "f58f5f6c8244ff2e12cdfa78f35942399d7f6ad09dab461ed8a9e8a33fdb9355"
+      },
+      {
+        "path": "classifiers/siglip2/results/summary.json",
+        "sha256": "b5e5c37334ab3ae5625379457aeaa2d0e68171dce487a23545c7c5b8271a8cd1"
+      },
+      {
+        "path": "classifiers/siglip2/test.py",
+        "sha256": "58811f5217065a3ba29a13c09e4b2b6320fd24172d52de13f9a8029cd5d1de9c"
+      },
+      {
+        "path": "classifiers/siglip2/train.py",
+        "sha256": "63a2090ccd50e010ba5d3a4b48e4fb4bdcdaf0e9ff814be6cf97658f6cd4b7a1"
+      },
+      {
+        "path": "classifiers/siglip2/weights/README.md",
+        "sha256": "7b63c0c0d8c0ed9341dd15cbf2219b0d22653716477bbe346f3f6b0b8996a3ce"
+      },
+      {
+        "path": "classifiers/siglip2/weights/fetch.py",
+        "sha256": "0824c5c08b54565bf1313d896d7e9cc6443a2f433539258956810be87c92b3bd"
+      },
+      {
+        "path": "classifiers/siglip2/weights/head.json",
+        "sha256": "f9d8e99da2e1649876f56f7b4b277a3841d921337640e6bba987021ae4ea1aea"
+      },
+      {
+        "path": "classifiers/siglip2/weights/pretrained.json",
+        "sha256": "f8d106604ed709fa56037a54a9098e0c8d53fe94ef015656beda2ea36b232fcc"
+      },
+      {
+        "path": "classifiers/siglip2/weights/upstream/siglip2/README.md",
+        "sha256": "39ac3705d62af9ffa1a14675b8ccb220a75f2d81acd530e564a3b1e3dfe418d8"
+      },
+      {
+        "path": "classifiers/siglip2/weights/upstream/siglip2/config.json",
+        "sha256": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7"
+      },
+      {
+        "path": "classifiers/siglip2/weights/upstream/siglip2/preprocessor_config.json",
+        "sha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc"
+      },
+      {
+        "path": "tests/test_foundation_next.py",
+        "sha256": "cdf5462fea5a1f1a74cfdf04ba0210512041433025d73290b04c631b8581472e"
+      }
+    ],
+    "disclosures": [
+      "New optional environment only; original CPU/runtime locks unchanged.",
+      "Frozen baseline source and migration retain their original semantics; new experiment independently versioned.",
+      "Numeric SigLIP2 full22 head explicitly safe-schema/hash/size bound; ops independently reviews before external publication.",
+      "DINOv3 unrun access-blocked401, no gate bypass or terms acceptance."
+    ]
   }
 }

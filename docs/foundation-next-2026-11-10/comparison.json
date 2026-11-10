@@ -1,0 +1,694 @@
+{
+  "schema": "foundation-next-v1",
+  "status": "completed_available_candidates",
+  "requested_models": [
+    "clip",
+    "dinov3",
+    "siglip2"
+  ],
+  "executed_models": [
+    "clip",
+    "siglip2"
+  ],
+  "binary_photos": 22,
+  "bad_photos": 13,
+  "good_photos": 9,
+  "review_photos": 2,
+  "groups": 16,
+  "good_groups": 3,
+  "methods": {
+    "clip_224": {
+      "per_class": {
+        "bad": {
+          "support": 13,
+          "precision": 0.8461538461538461,
+          "recall": 0.8461538461538461,
+          "f1": 0.8461538461538461,
+          "coverage": 1.0
+        },
+        "good": {
+          "support": 9,
+          "precision": 0.7777777777777778,
+          "recall": 0.7777777777777778,
+          "f1": 0.7777777777777778,
+          "coverage": 1.0
+        }
+      },
+      "n": 22,
+      "correct": 18,
+      "accuracy_all": 0.8181818181818182,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.8181818181818182,
+      "balanced_accuracy": 0.811965811965812,
+      "macro_f1": 0.811965811965812,
+      "confusion_labels": [
+        "bad",
+        "good",
+        "review"
+      ],
+      "confusion": [
+        [
+          11,
+          2,
+          0
+        ],
+        [
+          2,
+          7,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bad_to_good": 2,
+      "unsafe_clearance_rate": 0.15384615384615385,
+      "group_weighted": {
+        "groups": 16,
+        "accuracy": 0.8229166666666667,
+        "balanced_accuracy": 0.7841880341880342,
+        "meaning": "Each hypothesized group totals one unit; fractional per-photo outcomes, not confirmed tyre-level scoring."
+      },
+      "shared_fold0": {
+        "per_class": {
+          "bad": {
+            "support": 5,
+            "precision": 1.0,
+            "recall": 0.6,
+            "f1": 0.75,
+            "coverage": 1.0
+          },
+          "good": {
+            "support": 4,
+            "precision": 0.6666666666666666,
+            "recall": 1.0,
+            "f1": 0.8,
+            "coverage": 1.0
+          }
+        },
+        "n": 9,
+        "correct": 7,
+        "accuracy_all": 0.7777777777777778,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.7777777777777778,
+        "balanced_accuracy": 0.8,
+        "macro_f1": 0.775,
+        "confusion_labels": [
+          "bad",
+          "good",
+          "review"
+        ],
+        "confusion": [
+          [
+            3,
+            2,
+            0
+          ],
+          [
+            0,
+            4,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "bad_to_good": 2,
+        "unsafe_clearance_rate": 0.4
+      }
+    },
+    "siglip2_224": {
+      "per_class": {
+        "bad": {
+          "support": 13,
+          "precision": 0.65,
+          "recall": 1.0,
+          "f1": 0.7878787878787878,
+          "coverage": 1.0
+        },
+        "good": {
+          "support": 9,
+          "precision": 1.0,
+          "recall": 0.2222222222222222,
+          "f1": 0.36363636363636365,
+          "coverage": 1.0
+        }
+      },
+      "n": 22,
+      "correct": 15,
+      "accuracy_all": 0.6818181818181818,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.6818181818181818,
+      "balanced_accuracy": 0.6111111111111112,
+      "macro_f1": 0.5757575757575757,
+      "confusion_labels": [
+        "bad",
+        "good",
+        "review"
+      ],
+      "confusion": [
+        [
+          13,
+          0,
+          0
+        ],
+        [
+          7,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bad_to_good": 0,
+      "unsafe_clearance_rate": 0.0,
+      "group_weighted": {
+        "groups": 16,
+        "accuracy": 0.875,
+        "balanced_accuracy": 0.6666666666666666,
+        "meaning": "Each hypothesized group totals one unit; fractional per-photo outcomes, not confirmed tyre-level scoring."
+      },
+      "shared_fold0": {
+        "per_class": {
+          "bad": {
+            "support": 5,
+            "precision": 0.5555555555555556,
+            "recall": 1.0,
+            "f1": 0.7142857142857143,
+            "coverage": 1.0
+          },
+          "good": {
+            "support": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "coverage": 1.0
+          }
+        },
+        "n": 9,
+        "correct": 5,
+        "accuracy_all": 0.5555555555555556,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5555555555555556,
+        "balanced_accuracy": 0.5,
+        "macro_f1": 0.35714285714285715,
+        "confusion_labels": [
+          "bad",
+          "good",
+          "review"
+        ],
+        "confusion": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "bad_to_good": 0,
+        "unsafe_clearance_rate": 0.0
+      }
+    },
+    "nested_architecture": {
+      "per_class": {
+        "bad": {
+          "support": 13,
+          "precision": 0.7222222222222222,
+          "recall": 1.0,
+          "f1": 0.8387096774193549,
+          "coverage": 1.0
+        },
+        "good": {
+          "support": 9,
+          "precision": 1.0,
+          "recall": 0.4444444444444444,
+          "f1": 0.6153846153846154,
+          "coverage": 1.0
+        }
+      },
+      "n": 22,
+      "correct": 17,
+      "accuracy_all": 0.7727272727272727,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.7727272727272727,
+      "balanced_accuracy": 0.7222222222222222,
+      "macro_f1": 0.7270471464019852,
+      "confusion_labels": [
+        "bad",
+        "good",
+        "review"
+      ],
+      "confusion": [
+        [
+          13,
+          0,
+          0
+        ],
+        [
+          5,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bad_to_good": 0,
+      "unsafe_clearance_rate": 0.0,
+      "group_weighted": {
+        "groups": 16,
+        "accuracy": 0.9166666666666667,
+        "balanced_accuracy": 0.7777777777777777,
+        "meaning": "Each hypothesized group totals one unit; fractional per-photo outcomes, not confirmed tyre-level scoring."
+      },
+      "shared_fold0": {
+        "per_class": {
+          "bad": {
+            "support": 5,
+            "precision": 0.5555555555555556,
+            "recall": 1.0,
+            "f1": 0.7142857142857143,
+            "coverage": 1.0
+          },
+          "good": {
+            "support": 4,
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "coverage": 1.0
+          }
+        },
+        "n": 9,
+        "correct": 5,
+        "accuracy_all": 0.5555555555555556,
+        "coverage": 1.0,
+        "accepted_accuracy": 0.5555555555555556,
+        "balanced_accuracy": 0.5,
+        "macro_f1": 0.35714285714285715,
+        "confusion_labels": [
+          "bad",
+          "good",
+          "review"
+        ],
+        "confusion": [
+          [
+            5,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "bad_to_good": 0,
+        "unsafe_clearance_rate": 0.0
+      }
+    }
+  },
+  "parity": {
+    "clip_features": {
+      "exact": true,
+      "max_absolute_difference": 0.0,
+      "allclose_rtol": 0.0001,
+      "allclose_atol": 1e-05,
+      "checkpoint_and_canonical_hashes_exact": true
+    },
+    "clip_predictions": {
+      "exact": true,
+      "correct": 18,
+      "n": 22,
+      "common_correct": 7,
+      "common_n": 9
+    }
+  },
+  "plan_sha256": "ec62cdeec63d8e1957a644a3471996f3c6125fffd700b841aec1e953bca9b877",
+  "timing": {
+    "canonical24_seconds": 1.497953809000137,
+    "per_candidate": {
+      "clip_224": {
+        "first_local_load_seconds": 2.2957932559993424,
+        "model_adaptation_seconds": 0.11983406099989224,
+        "first_batch24_seconds": 0.8122209780003686,
+        "warm_batch24_size4_repeat_seconds": [
+          0.7323527680000552,
+          0.7204598359994634,
+          0.7343969740004468
+        ],
+        "warm_batch_amortized_median_seconds_per_photo": 0.030514698666668966,
+        "feature_dimension": 512,
+        "cached_backbone_reload_seconds": 0.7793293180002365,
+        "numeric_head_reload_seconds": 0.0008592069989390438,
+        "head24_repeat10_seconds": [
+          0.00015230099961627275,
+          0.00019050900118600111,
+          0.00012728900037473068,
+          0.00012455899923224933,
+          0.0001272350000363076,
+          0.00012816600064979866,
+          0.00016100799984997138,
+          0.00012769800014211796,
+          0.000128116000269074,
+          0.00012677000086114276
+        ]
+      },
+      "siglip2_224": {
+        "first_local_load_seconds": 0.8136971769999946,
+        "model_adaptation_seconds": 0.05613342200012994,
+        "first_batch24_seconds": 2.9804026109995903,
+        "warm_batch24_size4_repeat_seconds": [
+          2.743490009001107,
+          2.7263071529996523,
+          3.094152187999498
+        ],
+        "warm_batch_amortized_median_seconds_per_photo": 0.11431208370837946,
+        "feature_dimension": 768,
+        "cached_backbone_reload_seconds": 0.790585946999272,
+        "numeric_head_reload_seconds": 0.000703800000337651,
+        "head24_repeat10_seconds": [
+          0.00025875999926938675,
+          0.0002280450007674517,
+          0.0002273659993079491,
+          0.00024166200091713108,
+          0.00023127699932956602,
+          0.00024505100009264424,
+          0.000266507000560523,
+          0.0002356770000915276,
+          0.0002326949997950578,
+          0.0002265820003231056
+        ]
+      }
+    },
+    "nested_search_seconds": 0.20547128500038525,
+    "final_all22_search_and_fit_seconds": 0.11783786699925258,
+    "total_experiment_seconds": 45.919897022999976,
+    "acquisition_excluded": true
+  },
+  "protected_originals_unchanged": true,
+  "protected_file_count": 49818,
+  "forced_binary_coverage": 1.0,
+  "operational_automation_coverage": 0.0,
+  "api_fee_per_image": 0.0,
+  "local_economic_cost": null,
+  "qualifications": [
+    "Provisional repeated archive, only three good similarity groups, not verified tyre identities.",
+    "Fixed-backbone ranking is retrospectively optimistic; joint nested selection is separate.",
+    "No validated visibility/OOD gate: all operational outputs require review; no safety certification.",
+    "Local API fee zero; compute/electricity/hosting economic cost unknown. No cloud tariff inferred."
+  ],
+  "unrun": {
+    "dinov3": {
+      "status": "access_blocked",
+      "http_status": 401,
+      "exception": "GatedRepoError",
+      "response_text": "",
+      "checkpoint_sha256": null,
+      "metrics": null,
+      "next_action": "Owner may independently review terms and request access at https://huggingface.co/facebook/dinov3-vits16-pretrain-lvd1689m; then approve use of an already authorized HF login. No terms accepted by this experiment."
+    }
+  },
+  "final_fits": {
+    "clip_224": {
+      "selected": {
+        "head": "logistic",
+        "C": 0.01,
+        "candidate": "clip_224",
+        "inner_balanced_accuracy": 0.6068376068376069
+      },
+      "head_sha256": "c526fcf35977f497892503d52c43a940251cb1015c28af255b38e1f859aefb66",
+      "fit_population": 22,
+      "not_oof_accuracy": true
+    },
+    "siglip2_224": {
+      "selected": {
+        "head": "logistic",
+        "C": 0.01,
+        "candidate": "siglip2_224",
+        "inner_balanced_accuracy": 0.5
+      },
+      "head_sha256": "f9d8e99da2e1649876f56f7b4b277a3841d921337640e6bba987021ae4ea1aea",
+      "fit_population": 22,
+      "not_oof_accuracy": true
+    },
+    "nested_architecture": {
+      "selected": {
+        "head": "logistic",
+        "C": 0.01,
+        "candidate": "clip_224",
+        "inner_balanced_accuracy": 0.6068376068376069
+      },
+      "head_sha256": "c526fcf35977f497892503d52c43a940251cb1015c28af255b38e1f859aefb66",
+      "fit_population": 22,
+      "not_oof_accuracy": true
+    }
+  },
+  "review_diagnostics": {
+    "clip_224": {
+      "photo_count": 2,
+      "fold_head_diagnostics": [
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "good",
+            "decision_margin": 0.6259385744800383
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -1.7727473131675078
+          }
+        ],
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "good",
+            "decision_margin": 0.9461870385786966
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.3350870665611148
+          }
+        ],
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "good",
+            "decision_margin": 0.6032793219552699
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.8426165031902548
+          }
+        ]
+      ],
+      "not_binary_scoring_or_tuning": true
+    },
+    "siglip2_224": {
+      "photo_count": 2,
+      "fold_head_diagnostics": [
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.8764064272765386
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.6558256743563088
+          }
+        ],
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.6717341343539756
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -1.0633717489638992
+          }
+        ],
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.8454503531981319
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -1.5326814831764304
+          }
+        ]
+      ],
+      "not_binary_scoring_or_tuning": true
+    },
+    "nested_architecture": {
+      "photo_count": 2,
+      "fold_head_diagnostics": [
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.8764064272765386
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.6558256743563088
+          }
+        ],
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "good",
+            "decision_margin": 0.9461870385786966
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.3350870665611148
+          }
+        ],
+        [
+          {
+            "case": "review-1",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -0.8454503531981319
+          },
+          {
+            "case": "review-2",
+            "forced_binary_prediction": "bad",
+            "decision_margin": -1.5326814831764304
+          }
+        ]
+      ],
+      "not_binary_scoring_or_tuning": true
+    }
+  },
+  "reproduction": {
+    "exact_features_and_predictions_and_trials_and_metrics": true,
+    "heads_refit_and_numeric_reload_parity": true,
+    "protected_originals_unchanged": true,
+    "seconds": 31.337506698999277
+  },
+  "cpu_model": "Intel(R) Core(TM) Ultra 9 185H",
+  "execution_environment": {
+    "python": "3.12.3",
+    "platform": "WSL2 Linux x86_64 on Windows 11; CPU only",
+    "logical_cpus": 22,
+    "torch_threads": 4
+  },
+  "acquisition": {
+    "siglip2": {
+      "status": "available",
+      "repo": "google/siglip2-base-patch16-224",
+      "revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+      "files": {
+        "README.md": {
+          "sha256": "39ac3705d62af9ffa1a14675b8ccb220a75f2d81acd530e564a3b1e3dfe418d8",
+          "bytes": 3375,
+          "seconds": 0.2538407579995692,
+          "existing_cache": false,
+          "url": "https://huggingface.co/google/siglip2-base-patch16-224/resolve/75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2/README.md"
+        },
+        "config.json": {
+          "sha256": "fe8b5fe6d5734360678fd71c11c21e1ea3364bd8598d34295d9206335973ffd7",
+          "bytes": 253,
+          "seconds": 0.25391233600021224,
+          "existing_cache": false,
+          "url": "https://huggingface.co/google/siglip2-base-patch16-224/resolve/75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2/config.json"
+        },
+        "preprocessor_config.json": {
+          "sha256": "9b36b57ebaf20f09bf4c22100ccc21877ea6bfe5aead0c00c59f8af8ccefacfc",
+          "bytes": 394,
+          "seconds": 0.2477922979996947,
+          "existing_cache": false,
+          "url": "https://huggingface.co/google/siglip2-base-patch16-224/resolve/75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2/preprocessor_config.json"
+        },
+        "model.safetensors": {
+          "sha256": "612923381c76ec5a9bed335d1c48827e3f2e506ac31b044b63b2031fadee6a0b",
+          "bytes": 1500800904,
+          "seconds": 28.27582848399925,
+          "existing_cache": false,
+          "url": "https://huggingface.co/google/siglip2-base-patch16-224/resolve/75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2/model.safetensors"
+        }
+      },
+      "total_seconds": 29.032930731000306
+    }
+  },
+  "smoke_timing": {
+    "clip_224": {
+      "sample_count": 4,
+      "canonical_and_adaptation_seconds": [
+        0.03571825200015155,
+        0.05485389400018903,
+        0.052507502001390094,
+        0.08135379799932707
+      ],
+      "warm_single_feature_seconds": [
+        0.05839124499834725,
+        0.06165136800154869,
+        0.0507819569993444,
+        0.04803225300020131
+      ],
+      "head_seconds": [
+        0.0003468570012046257,
+        0.00015359600001829676,
+        0.00016823999976622872,
+        0.00020140400010859594
+      ],
+      "evaluation": "Four real image engineering smokes (two binary training photos + both source-review photos); not held-out metrics"
+    },
+    "siglip2_224": {
+      "sample_count": 4,
+      "canonical_and_adaptation_seconds": [
+        0.031626500000129454,
+        0.04974119899998186,
+        0.04877539399967645,
+        0.08407301700026437
+      ],
+      "warm_single_feature_seconds": [
+        0.13003491400013445,
+        0.1358178129994485,
+        0.12579069700041146,
+        0.13078663800115464
+      ],
+      "head_seconds": [
+        0.000223651999476715,
+        0.0002063249994534999,
+        0.0002077469998766901,
+        0.00026921700009552296
+      ],
+      "evaluation": "Four real image engineering smokes (two binary training photos + both source-review photos); not held-out metrics"
+    }
+  }
+}

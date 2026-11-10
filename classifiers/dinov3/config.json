@@ -1,0 +1,31 @@
+{
+  "size": 224,
+  "head_grid": [
+    {
+      "head": "logistic",
+      "C": 0.01
+    },
+    {
+      "head": "logistic",
+      "C": 0.1
+    },
+    {
+      "head": "logistic",
+      "C": 1.0
+    },
+    {
+      "head": "linear_svm",
+      "C": 0.01
+    },
+    {
+      "head": "linear_svm",
+      "C": 0.1
+    },
+    {
+      "head": "linear_svm",
+      "C": 1.0
+    }
+  ],
+  "inner_folds": 2,
+  "seed": 2026
+}

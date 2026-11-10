@@ -51,3 +51,7 @@ dashboard/backend/runtime*/
 infra/experiment-request-ledger.json
 
 dashboard/backend/private_live_providers.py
+
+# New optional foundation encoder public acquisitions (never Git/LFS)
+classifiers/dinov3/weights/acquired/
+classifiers/siglip2/weights/acquired/

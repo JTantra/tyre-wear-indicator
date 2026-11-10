@@ -14,3 +14,7 @@
 10.NativeAutoML10/3/9prepared, actualGPU quota 0across investigatedUSregions; nojob/model/scoreexists. NoAutoMLbar added to six-methodvisual.
 
 All prior source rounds remain privately retained; curated safe source/evidence mapping avoids exporting secret-bearing logs or misleading old deployrunbooks. Model-provenance.json records current local runtimes/versions; cost snapshot qualifies one-caseAzuretimings versus larger warmbatchtimings. Offlinefixturetests are not modelqualitymeasurements.
+
+## 2026-11-10 frozen next-encoder extension
+
+[Append-only DINOv3 access status + executed SigLIP2/CLIP comparison](foundation-next-2026-11-10/README.md). Separate versioned evidence, no overwrite of prior experiments.

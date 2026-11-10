@@ -1,0 +1,41 @@
+{
+  "offline": {
+    "tests_run": 102,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 8,
+    "model_inference": false,
+    "cloud_calls": false
+  },
+  "offline_passed": 94,
+  "new_test_count": 17,
+  "real_new_model_runs": 1,
+  "existing_baseline_runs": 1,
+  "dino_unrun_http_status": 401,
+  "full_reproduction": "ec62cdeec63d8e1957a644a3471996f3c6125fffd700b841aec1e953bca9b877",
+  "additional_verification": {
+    "real_private_features_recomputed_metrics_and_predictions": true,
+    "all_nested_and_final_search_trials_exact": true,
+    "published_siglip_cli_margins_exact": true,
+    "all_active_dependencies_satisfied": true,
+    "dependency_constraints_checked": 42,
+    "visible_distributions": 33,
+    "inner_assignments_saved": true,
+    "seconds": 0.3555046809997293
+  },
+  "local_smoke": {
+    "siglip_real_image_cli_count": 2,
+    "exact_reloaded_margins": true,
+    "dino_fail_closed": true
+  },
+  "commands": [
+    "python -m classifiers.common.foundation_next_experiment --data-root \"$PRIVATE_DATA\" --out \"$OUTPUT\" --weights \"$WEIGHTS\" --clip-weights \"$CLIP_CACHE\" --access-dir \"$ACCESS\"",
+    "python -m classifiers.common.foundation_next_experiment --data-root \"$PRIVATE_DATA\" --out \"$OUTPUT\" --weights \"$WEIGHTS\" --clip-weights \"$CLIP_CACHE\" --access-dir \"$ACCESS\" --reproduce",
+    "python classifiers/siglip2/train.py --data-root \"$PRIVATE_DATA\" --out \"$METHOD_OUTPUT\" --weights \"$WEIGHTS\" --access-dir \"$ACCESS\"",
+    "python classifiers/siglip2/test.py --image \"$PHOTO\" --weights \"$WEIGHTS/siglip2\"",
+    "python tools/run_offline_tests.py",
+    "python tools/check_publication.py",
+    "python tools/check_publication.py --staged"
+  ],
+  "publication": "Local only; pending independent ops review/publication. No push/deployment."
+}

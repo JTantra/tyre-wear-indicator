@@ -16,3 +16,9 @@ Inspected small numeric final local heads are now explicitly owner-authorized in
 Only exact owned hashes/sizes and the safe schema are allowlisted; giant backbones, raw data, feature matrices,
 private images/labels, credentials and production receipts remain excluded. Historical blanket head exclusion
 above describes the prior export, not the new exception.
+
+## New frozen encoders (2026-11-10)
+
+SigLIP2 Base: official Google model-card Apache-2.0 assertion at revision75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2. [Pinned public card](classifiers/siglip2/weights/upstream/siglip2/README.md) and [checkpoint digests](classifiers/siglip2/weights/pretrained.json); no public backbone bytes or input data in Git. Transformers4.57.1 code Apache-2.0.
+
+DINOv3-S: custom gated terms, revision114c1379950215c8b35dfcd4e90a5c251dde0d32; no terms accepted or licensed-access inference made. [Unrun status and owner access action](classifiers/dinov3/README.md). Do not confuse historical DINOv2 Apache provenance with DINOv3 rights.

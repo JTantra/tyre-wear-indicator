@@ -1,0 +1,214 @@
+{
+  "status": "completed",
+  "all22": {
+    "per_class": {
+      "bad": {
+        "support": 13,
+        "precision": 0.65,
+        "recall": 1.0,
+        "f1": 0.7878787878787878,
+        "coverage": 1.0
+      },
+      "good": {
+        "support": 9,
+        "precision": 1.0,
+        "recall": 0.2222222222222222,
+        "f1": 0.36363636363636365,
+        "coverage": 1.0
+      }
+    },
+    "n": 22,
+    "correct": 15,
+    "accuracy_all": 0.6818181818181818,
+    "coverage": 1.0,
+    "accepted_accuracy": 0.6818181818181818,
+    "balanced_accuracy": 0.6111111111111112,
+    "macro_f1": 0.5757575757575757,
+    "confusion_labels": [
+      "bad",
+      "good",
+      "review"
+    ],
+    "confusion": [
+      [
+        13,
+        0,
+        0
+      ],
+      [
+        7,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "bad_to_good": 0,
+    "unsafe_clearance_rate": 0.0,
+    "group_weighted": {
+      "groups": 16,
+      "accuracy": 0.875,
+      "balanced_accuracy": 0.6666666666666666,
+      "meaning": "Each hypothesized group totals one unit; fractional per-photo outcomes, not confirmed tyre-level scoring."
+    },
+    "shared_fold0": {
+      "per_class": {
+        "bad": {
+          "support": 5,
+          "precision": 0.5555555555555556,
+          "recall": 1.0,
+          "f1": 0.7142857142857143,
+          "coverage": 1.0
+        },
+        "good": {
+          "support": 4,
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "coverage": 1.0
+        }
+      },
+      "n": 9,
+      "correct": 5,
+      "accuracy_all": 0.5555555555555556,
+      "coverage": 1.0,
+      "accepted_accuracy": 0.5555555555555556,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.35714285714285715,
+      "confusion_labels": [
+        "bad",
+        "good",
+        "review"
+      ],
+      "confusion": [
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ],
+      "bad_to_good": 0,
+      "unsafe_clearance_rate": 0.0
+    }
+  },
+  "common9": {
+    "per_class": {
+      "bad": {
+        "support": 5,
+        "precision": 0.5555555555555556,
+        "recall": 1.0,
+        "f1": 0.7142857142857143,
+        "coverage": 1.0
+      },
+      "good": {
+        "support": 4,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "coverage": 1.0
+      }
+    },
+    "n": 9,
+    "correct": 5,
+    "accuracy_all": 0.5555555555555556,
+    "coverage": 1.0,
+    "accepted_accuracy": 0.5555555555555556,
+    "balanced_accuracy": 0.5,
+    "macro_f1": 0.35714285714285715,
+    "confusion_labels": [
+      "bad",
+      "good",
+      "review"
+    ],
+    "confusion": [
+      [
+        5,
+        0,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "bad_to_good": 0,
+    "unsafe_clearance_rate": 0.0
+  },
+  "forced_binary_coverage": 1.0,
+  "operational_automation_coverage": 0.0,
+  "source_plan_sha256": "ec62cdeec63d8e1957a644a3471996f3c6125fffd700b841aec1e953bca9b877",
+  "checkpoint_revision": "75de2d55ec2d0b4efc50b3e9ad70dba96a7b2fa2",
+  "head_sha256": "f9d8e99da2e1649876f56f7b4b277a3841d921337640e6bba987021ae4ea1aea",
+  "review_diagnostics": {
+    "photo_count": 2,
+    "fold_head_diagnostics": [
+      [
+        {
+          "case": "review-1",
+          "forced_binary_prediction": "bad",
+          "decision_margin": -0.8764064272765386
+        },
+        {
+          "case": "review-2",
+          "forced_binary_prediction": "bad",
+          "decision_margin": -0.6558256743563088
+        }
+      ],
+      [
+        {
+          "case": "review-1",
+          "forced_binary_prediction": "bad",
+          "decision_margin": -0.6717341343539756
+        },
+        {
+          "case": "review-2",
+          "forced_binary_prediction": "bad",
+          "decision_margin": -1.0633717489638992
+        }
+      ],
+      [
+        {
+          "case": "review-1",
+          "forced_binary_prediction": "bad",
+          "decision_margin": -0.8454503531981319
+        },
+        {
+          "case": "review-2",
+          "forced_binary_prediction": "bad",
+          "decision_margin": -1.5326814831764304
+        }
+      ]
+    ],
+    "not_binary_scoring_or_tuning": true
+  },
+  "final_fit": {
+    "selected": {
+      "head": "logistic",
+      "C": 0.01,
+      "candidate": "siglip2_224",
+      "inner_balanced_accuracy": 0.5
+    },
+    "head_sha256": "f9d8e99da2e1649876f56f7b4b277a3841d921337640e6bba987021ae4ea1aea",
+    "fit_population": 22,
+    "not_oof_accuracy": true
+  }
+}

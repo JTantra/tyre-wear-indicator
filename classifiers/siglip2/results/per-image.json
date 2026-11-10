@@ -1,0 +1,134 @@
+[
+  {
+    "case": 1,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -0.05034772865125955
+  },
+  {
+    "case": 2,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.3971013188433228
+  },
+  {
+    "case": 3,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -1.8044563080889235
+  },
+  {
+    "case": 4,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -3.395197358242837
+  },
+  {
+    "case": 5,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -1.5257164980283158
+  },
+  {
+    "case": 6,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.2770592101522272
+  },
+  {
+    "case": 7,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -1.8035383896775323
+  },
+  {
+    "case": 8,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -0.5955814035132393
+  },
+  {
+    "case": 9,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -1.551797294890875
+  },
+  {
+    "case": 10,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.6592326152548716
+  },
+  {
+    "case": 11,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -0.09003886068419541
+  },
+  {
+    "case": 12,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -3.0244452973456992
+  },
+  {
+    "case": 13,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -2.034692778334434
+  },
+  {
+    "case": 14,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.34100085020309806
+  },
+  {
+    "case": 15,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -0.3181968551280713
+  },
+  {
+    "case": 16,
+    "truth": "good",
+    "prediction": "good",
+    "decision_margin": 1.9525107452102928
+  },
+  {
+    "case": 17,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -0.3455411995301567
+  },
+  {
+    "case": 18,
+    "truth": "good",
+    "prediction": "good",
+    "decision_margin": 0.68075730243409
+  },
+  {
+    "case": 19,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.5924770466988534
+  },
+  {
+    "case": 20,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.3542032988211997
+  },
+  {
+    "case": 21,
+    "truth": "bad",
+    "prediction": "bad",
+    "decision_margin": -1.635798158809046
+  },
+  {
+    "case": 22,
+    "truth": "good",
+    "prediction": "bad",
+    "decision_margin": -0.19536483298937216
+  }
+]
