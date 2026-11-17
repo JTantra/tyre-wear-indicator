@@ -1,5 +1,5 @@
 "use strict";
-const $=id=>document.getElementById(id);let benchmarks=[],providers=[],records=[],csrf='',previewURL='',imageReady=false,imageChecking=false,validationSerial=0,uploadRunning=false;
+const $=id=>document.getElementById(id);let benchmarks=[],providers=[],cohortData=null,csrf='',previewURL='',imageReady=false,imageChecking=false,validationSerial=0,uploadRunning=false;
 const el=(tag,text,cls)=>{const node=document.createElement(tag);if(text!==undefined)node.textContent=text;if(cls)node.className=cls;return node;};
 let feedbackId='',feedbackState=null,feedbackBusy=false,selectionGeneration=0,recoveryToken='';
 const selectionMatches=(generation,id)=>generation===selectionGeneration&&id===feedbackId;
@@ -41,34 +41,68 @@ async function recoverSession(event){
 // Browser form restoration must never pre-authorize retention for a fresh page.
 $('retention-consent').checked=false;
 window.addEventListener('pageshow',()=>{$('retention-consent').checked=false;});
-const pct=v=>v==null?'Unknown':(100*v).toFixed(1)+'%';const ratio=(n,d)=>n==null?'Unknown':n+'/'+(d||22);
+const pct=v=>v==null?'Not evaluated':(100*v).toFixed(1)+'%';const ratio=(n,d)=>n==null?'Not evaluated':n+'/'+d;
 async function api(path,options){const response=await fetch(path,{credentials:'same-origin',cache:'no-store',...options});const body=await response.json();if(!response.ok)throw Error(body.error||'Request failed');return body;}
 function clear(node){node.replaceChildren();}
 function showError(message){$('global-error').hidden=false;$('global-error').textContent=message;}
-function cost(m){const low=m.usd_per_submitted_image_low,high=m.usd_per_submitted_image_high;return low==null||high==null?'Unknown':('$'+low.toFixed(6)+'–'+high.toFixed(6));}
-function support(m){if(m.reuses_variant)return 'Historical routing analysis only';if(m.family!=='custom-local')return 'Live rubric / preserved benchmark';if(['custom-resnet18-baseline','custom-refined-mobilenet_v3_large_full','custom-v2-clip_224'].includes(m.method))return 'Saved final head ≠ CV replay';return 'Historical-only CV variant';}
+function cost(m){const low=m.usd_per_submitted_image_low,high=m.usd_per_submitted_image_high;return low==null||high==null?'Not evaluated':('$'+low.toFixed(6)+(low===high?'':'–$'+high.toFixed(6)));}
+function support(m){const p=providers.find(p=>p.id===m.provider_id);return p?(p.status==='available'?'Configured · '+(p.paid?'remote':'saved head'):'Unavailable'):'No configured adapter';}
 function paintBudget(b){
- const money=b.monetary_limit_removed?'Monetary cap removed (not unlimited requests)':('USD '+(b.additional_approved_usd??'unknown')+' additional approved');
- const planning=b.additional_planning_high_usd==null?'unknown':'$'+b.additional_planning_high_usd.toFixed(6);
- $('budget').textContent=(b.live_snapshot?'LIVE READ-ONLY BUDGET':'BUDGET UNAVAILABLE')+' · '+(b.used??'Unknown')+'/'+b.lifetime_cap+' lifetime requests · '+(b.remaining??'Unknown')+' remaining · '+money+' · planning high '+planning+'. Exact invoice unknown. '+(b.note||'');
+ if(!b.live_snapshot){$('budget').textContent='Current private ledger unavailable. Remaining requests and invoice total cannot be verified. Providers fail closed; historical request counts are not a live budget. '+(b.note||'');return;}
+ const planning=b.additional_planning_high_usd==null?'not measured':'$'+b.additional_planning_high_usd.toFixed(6);
+ $('budget').textContent='LIVE READ-ONLY BUDGET · '+(b.used??'Not available')+'/'+b.lifetime_cap+' lifetime requests · '+(b.remaining??'Not available')+' remaining · '+(b.monetary_limit_removed?'Monetary cap removed (not unlimited requests)':('USD '+(b.additional_approved_usd??'not verified')+' additional approved'))+' · planning high '+planning+'. Exact invoice not available. '+(b.note||'');
 }
-async function refreshMetadata(generation=selectionGeneration){const metadata=await api('/api/methods');if(generation!==selectionGeneration)return;providers=metadata.methods;paintBudget(metadata.budget);renderProviders(true);}
-function table(){
+async function refreshMetadata(generation=selectionGeneration){const metadata=await api('/api/methods');if(generation!==selectionGeneration)return;providers=metadata.methods;paintBudget(metadata.budget);renderProviders(true);if(cohortData)table();}
+function filteredMethods(){
  const query=$('search').value.toLowerCase(),family=$('family').value,sort=$('sort').value;
- const rows=benchmarks.filter(m=>(m.method+' '+m.evaluation).toLowerCase().includes(query)&&(!family||m.family===family)).sort((a,b)=>sort==='method'?a.method.localeCompare(b.method):sort==='unsafe_good_of_bad'?(a[sort]??99)-(b[sort]??99):(b[sort]??-1)-(a[sort]??-1));
- clear($('benchmark-rows'));$('visible-count').textContent=rows.length+' / '+benchmarks.length+' methods';
- for(const m of rows){const tr=el('tr'),td=el('td'),details=el('details');details.append(el('summary',m.method),el('span',m.family,'tag'));
- details.append(el('p',(m.evaluation||'Evaluation unspecified')+'\nSource: '+(m.source||'Frozen cloud benchmark')+'\nLatency: '+(m.latency_scope||'No measured comparable request latency in summary.')+'\nCost: '+(m.cost_note||'Retail bounds when known; failed/unknown attempts are not zero.')+'\nOperational local policy: review required, no safety certification.'));
- td.append(details);tr.append(td);
- const values=[[pct(m.accuracy_binary),ratio(m.correct_binary,m.binary_n)],[pct(m.accepted_accuracy),'accepted binary only'],[pct(m.binary_coverage),'diagnostic / raw'],[ratio(m.unsafe_good_of_bad,m.bad_n||13),m.unsafe_good_of_bad?'unsafe error':''],[ratio(m.review_rejected,m.source_review_n||2),m.review_rejected==null?'not measured':'review-only'],[m.mean_latency_seconds==null?'Unknown':m.mean_latency_seconds.toFixed(2)+' s','see scope'],[cost(m),m.family==='custom-local'?'API $0; compute unknown':'retail, not invoice'],[support(m),'Current upload ≠ historical score']];
- for(let i=0;i<values.length;i++){const cell=el('td'),metric=el('div',values[i][0],'metric');metric.append(el('small',values[i][1]));if(i===3&&m.unsafe_good_of_bad)metric.classList.add('unsafe');cell.append(metric);tr.append(cell);} $('benchmark-rows').append(tr);}
+ return benchmarks.filter(m=>(m.label+' '+m.method+' '+m.evaluation).toLowerCase().includes(query)&&(!family||m.family===family)).sort((a,b)=>{
+  if(a.evaluated!==b.evaluated)return a.evaluated?-1:1;
+  return sort==='method'?a.label.localeCompare(b.label):sort==='unsafe_good_of_bad'?(a[sort]??99)-(b[sort]??99):(b[sort]??-1)-(a[sort]??-1);
+ });
+}
+function table(){
+ const rows=filteredMethods();clear($('benchmark-rows'));$('visible-count').textContent=rows.length+' / '+benchmarks.length+' methods';
+ for(const m of rows){
+  const tr=el('tr'),td=el('td'),button=el('button',m.label,'source-button');tr.dataset.method=m.method;
+  button.type='button';button.setAttribute('aria-haspopup','dialog');button.setAttribute('aria-label',m.label+' sources and scope');button.addEventListener('click',()=>showMethod(m));
+  td.append(button,el('span',m.family,'tag'));tr.append(td);
+  const latency=m.latency_seconds==null?m.latency_label:m.latency_seconds.toFixed(2)+' s';
+  const values=[[pct(m.accuracy_binary),ratio(m.correct_binary,m.binary_n)],[pct(m.accepted_accuracy),m.evaluated?m.accepted_n+' binary outputs':'No full-cohort score'],
+   [pct(m.binary_coverage),m.evaluated?m.accepted_n+'/'+m.binary_n+' · '+m.review_outputs+' review':'Not evaluated'],
+   [ratio(m.unsafe_good_of_bad,m.bad_n),m.unsafe_good_of_bad?'bad → good':''],[latency,m.latency_n?m.latency_label+' · n='+m.latency_n:'Expand for scope'],
+   [cost(m),m.hosting_usd_hour!=null?'+ $'+m.hosting_usd_hour.toFixed(2)+'/h hosting':m.cost_label],[support(m),'Independent of historical score']];
+  for(let i=0;i<values.length;i++){const cell=el('td'),metric=el('div',values[i][0],'metric');metric.append(el('small',values[i][1]));if(i===3&&m.unsafe_good_of_bad)metric.classList.add('unsafe');cell.append(metric);tr.append(cell);}
+  if(m.training_one_off_usd!=null)tr.children[6].append(el('small','$'+m.training_one_off_usd.toFixed(2)+' one-off training','subtle'));
+  $('benchmark-rows').append(tr);
+ }
+ scatter();
+}
+function showMethod(m){
+ $('method-title').textContent=m.label+' · sources and scope';const body=$('method-detail-body');clear(body);
+ const facts=[['Evaluation',m.evaluation],['Prediction source',m.source],['Binary outputs',m.evaluated?m.accepted_n+'/'+m.binary_n+' · '+m.review_outputs+' reviews · '+m.errors+' errors':'Not evaluated'],
+  ['Timing scope',m.latency_scope+(m.latency_n?' n='+m.latency_n+'.':'')],['Timing source',m.latency_source||'No cohort timing source recorded'],
+  ['Timing date','Frozen archive baseline '+cohortData.provenance.archive_baseline+'. Per-case calendar dates are not recorded; no date inferred.'],
+  ['Cost scope',m.cost_note],['Cost source',m.cost_source],['Retail snapshot',m.cost_snapshot],
+  ['Source-review diagnostic',m.review_diagnostic],['Upload runtime',support(m)+'. '+(providers.find(p=>p.id===m.provider_id)?.reason||'No adapter for this benchmark method is configured. Historical evidence does not enable uploads.')]];
+ if(m.smoke_seconds!=null)facts.splice(4,0,['Startup context',m.smoke_seconds.toFixed(2)+' s · n='+m.smoke_n+' synthetic Azure smoke; not cohort latency.']);
+ const dl=el('dl');for(const [name,value]of facts)dl.append(el('dt',name),el('dd',value));body.append(dl);$('method-details').showModal();
+}
+$('close-method-details').addEventListener('click',()=>$('method-details').close());
+function selectCohort(){
+ const c=cohortData.cohorts[$('cohort').value];benchmarks=c.methods;
+ $('cohort-n').textContent=c.n;$('cohort-population').textContent=c.bad+' provisional bad · '+c.good+' provisional good. '+(c.id==='shared9'?'Same nine photos for all six methods.':'GPT fine-tuned was not evaluated on all 22.');
+ $('cohort-caption').textContent=c.caption;$('cohort-description').textContent=c.id==='shared9'?'Nine matched evaluation photos: 5 bad, 4 good. No source-review photos in this cohort.':'22 binary photos: 13 bad, 9 good. GPT has no full-22 score and is not ranked.';
+ $('unsafe-heading').textContent='False good / '+c.bad;$('method-count').textContent=benchmarks.filter(m=>m.evaluated).length+' / '+benchmarks.length;
+ $('cohort-card').textContent=c.caption;
+ const best=benchmarks.find(m=>m.method==='clip'),overall=benchmarks.filter(m=>m.evaluated).sort((a,b)=>b.accuracy_binary-a.accuracy_binary)[0];
+ $('best-local').textContent=ratio(best.correct_binary,best.binary_n);$('best-overall').textContent=ratio(overall.correct_binary,overall.binary_n);$('best-overall-label').textContent=overall.label+' · selected cohort only';
+ table();
 }
 function scatter(){const svg=$('scatter'),ns='http://www.w3.org/2000/svg';clear(svg);const s=(tag,attrs,text)=>{const n=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))n.setAttribute(k,v);if(text)n.textContent=text;svg.append(n);return n;};
  for(let v=0;v<=100;v+=25){const x=48+v*5.5,y=247-v*2.05;s('line',{x1:48,y1:y,x2:598,y2:y,stroke:'#e4e9eb'});s('text',{x:38,y:y+4,'text-anchor':'end',fill:'#697a83','font-size':10},v+'%');s('text',{x,y:265,'text-anchor':'middle',fill:'#697a83','font-size':10},v+'%');}
  s('text',{x:320,y:286,'text-anchor':'middle',fill:'#697a83','font-size':10},'RAW BINARY COVERAGE →');s('text',{x:48,y:18,fill:'#697a83','font-size':10},'OVERALL ACCURACY');
- benchmarks.forEach((m,i)=>{if(m.accuracy_binary==null||m.binary_coverage==null)return;const color=m.unsafe_good_of_bad?'#b94237':m.family==='custom-local'?'#287b78':'#596ea7';const n=s('circle',{cx:48+m.binary_coverage*550+(i%3-1)*3,cy:247-m.accuracy_binary*205+(i%2)*3,r:5,fill:color,opacity:.75,tabindex:0,role:'img','aria-label':m.method+': '+pct(m.accuracy_binary)+' overall; '+pct(m.binary_coverage)+' coverage; '+m.unsafe_good_of_bad+' unsafe / 13'});const title=document.createElementNS(ns,'title');title.textContent=n.getAttribute('aria-label');n.append(title);});}
+ filteredMethods().forEach((m,i)=>{if(m.accuracy_binary==null||m.binary_coverage==null)return;const color=m.unsafe_good_of_bad?'#b94237':m.family==='custom-local'?'#287b78':'#596ea7';const n=s('circle',{cx:48+m.binary_coverage*550+(i%3-1)*3,cy:247-m.accuracy_binary*205+(i%2)*3,r:5,fill:color,opacity:.75,tabindex:0,role:'img','aria-label':m.method+': '+pct(m.accuracy_binary)+' overall; '+pct(m.binary_coverage)+' coverage; '+m.unsafe_good_of_bad+' false good / '+m.bad_n});const title=document.createElementNS(ns,'title');title.textContent=n.getAttribute('aria-label');n.append(title);});}
 function renderProviders(preserve=false){const selected=new Set([...document.querySelectorAll('input[name=provider]:checked')].map(n=>n.value));clear($('provider-list'));for(const p of providers){const label=el('label',undefined,'provider'),input=el('input');input.type='checkbox';input.value=p.id;input.name='provider';input.disabled=p.status!=='available'||uploadRunning||feedbackBusy;input.checked=p.status==='available'&&(preserve?selected.has(p.id):!p.paid);const text=el('span');text.append(el('strong',p.label),el('small',p.status.toUpperCase()+(p.paid?' · PAID REMOTE':' · LOCAL')+' · '+(p.reason||'Configured adapter; explicit consent required for remote inference.')));label.append(input,text);$('provider-list').append(label);}updateRunState();}
-function images(){const method=$('image-method').value,index=$('image-index').value;clear($('image-rows'));for(const r of records.filter(r=>r.variant===method&&(!index||String(r.index)===index))){const tr=el('tr');for(const [text,cls]of [[String(r.index)+(r.flagged_label?' · flagged':''),''],[r.sha256||'Not recorded','hash'],[r.truth||'Unknown',''],[r.prediction||'Unknown',r.truth==='bad'&&r.prediction==='good'?'unsafe':''],[(r.population||'')+' / '+(r.reason||''),'']])tr.append(el('td',text,cls));$('image-rows').append(tr);} }
 async function upload(event){event.preventDefault();$('global-error').hidden=true;const file=$('image').files[0],selected=[...document.querySelectorAll('input[name=provider]:checked')].map(n=>n.value);if(uploadRunning||feedbackBusy)return showError('Wait for the current upload or annotation operation to finish.');if(!csrf||imageChecking||!imageReady)return showError('Choose a fully decoded image within the size and pixel limits.');if(!file||!selected.length)return showError('Choose an image and at least one available method.');if(file.size>5*1024*1024)return showError('Image exceeds 5 MB.');if(selected.some(id=>!providers.some(p=>p.id===id&&p.status==='available')))return showError('Choose only available methods.');if(selected.some(id=>providers.find(p=>p.id===id).paid)&&!$('paid-consent').checked)return showError('Paid remote methods require explicit consent.');
  const form=new FormData();form.append('image',file);form.append('methods',JSON.stringify(selected));form.append('paid_consent',String($('paid-consent').checked));form.append('retention_consent',String($('retention-consent').checked));const generation=++selectionGeneration;$('label-panel').hidden=true;feedbackId='';feedbackState=null;uploadRunning=true;updateRunState();clear($('results'));$('job-status').textContent='Submitting validated image…';
  try{const accepted=await api('/api/infer',{method:'POST',headers:{'X-CSRF-Token':csrf},body:form});if(generation!==selectionGeneration)return;presentRecovery(accepted,$('retention-consent').checked);let job;
@@ -101,13 +135,16 @@ $('image').addEventListener('change',async()=>{
  finally{if(serial===validationSerial){imageChecking=false;updateRunState();}}
 });
 updateRunState();
-for(const id of ['search','family','sort'])$(id).addEventListener('input',table);for(const id of ['image-method','image-index'])$(id).addEventListener('change',images);$('inference-form').addEventListener('submit',upload);
-(async()=>{try{const [summary,metadata,evidence,session]=await Promise.all([api('/api/benchmarks'),api('/api/methods'),api('/api/per-images'),api('/api/session')]);benchmarks=summary.methods;providers=metadata.methods;records=evidence.rows;csrf=session.csrf_token;$('method-count').textContent=benchmarks.length;$('evidence-source').textContent=summary.source;
- const best=benchmarks.find(m=>m.method==='custom-v2-clip_224'),nested=benchmarks.find(m=>m.method==='custom-v2-nested_architecture');$('best-local').textContent=best?ratio(best.correct_binary,best.binary_n):'Not recorded';$('nested-local').textContent=nested?ratio(nested.correct_binary,nested.binary_n):'Not recorded';
- for(const f of [...new Set(benchmarks.map(m=>m.family))].sort()){const option=el('option',f);option.value=f;$('family').append(option);}for(const method of [...new Set(records.map(r=>r.variant))].sort()){const option=el('option',method);option.value=method;$('image-method').append(option);}for(const i of [...new Set(records.map(r=>r.index))].sort((a,b)=>a-b)){const option=el('option','Photo '+i);option.value=i;$('image-index').append(option);}$('record-count').textContent=records.length+' records';
+for(const id of ['search','family','sort'])$(id).addEventListener('input',table);
+$('cohort').addEventListener('change',selectCohort);$('inference-form').addEventListener('submit',upload);
+(async()=>{try{
+ const [summary,metadata,session]=await Promise.all([api('/api/benchmarks'),api('/api/methods'),api('/api/session')]);
+ cohortData=summary;providers=metadata.methods;csrf=session.csrf_token;$('cohort').value=summary.default_cohort;$('evidence-source').textContent=summary.source;
+ for(const f of [...new Set(summary.methods.map(m=>m.family))].sort()){const option=el('option',f);option.value=f;$('family').append(option);}
  paintBudget(metadata.budget);
- for(const text of ['Local CLIP fixed candidate 18/22 vs fully nested 15/22. Raw diagnostic coverage 100%; operational auto-coverage 0%. No 90% prospective accuracy claim.','Only three provisional good similarity groups; independence and pretraining overlap unknown.','Photo #14 is a duplicate used for repeatability, not scored twice. Photo #11 has a flagged source label.','Costs exclude unknown attempts when only a known subtotal is available; local hardware cost is unknown.',...summary.limitations])$('limitations').append(el('li',typeof text==='string'?text:JSON.stringify(text)));
- table();scatter();renderProviders();images();await refreshOwnedFeedback();}catch(err){showError('Evidence could not load: '+err.message);}})();
+ for(const text of summary.limitations)$('limitations').append(el('li',text));
+ selectCohort();renderProviders();await refreshOwnedFeedback();
+ }catch(err){showError('Evidence could not load: '+err.message);}})();
 function renderFeedback(){
  const active=Boolean(feedbackState?.retained);
  $('retention-status').textContent='Annotation ID: '+feedbackId+' · '+(active?('Privately retained · revision '+feedbackState.revision+' · '+feedbackState.review_status+' · '+(feedbackState.training_eligible?'Owner approved; eligible for versioned export':'Not training eligible')):feedbackState?.revoked?'Consent withdrawn; image reference and labels deleted.':'No retained image / consent: training labeling disabled.');

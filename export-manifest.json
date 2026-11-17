@@ -26,12 +26,20 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "export_path": "README.md",
-      "export_sha256": "4172560f23f273c38145e0aed444bd505235f103e5ca3a443c558bba3f95b9d3",
-      "bytes": 4775,
+      "export_sha256": "bdb733a69649d9b45cef3d80105a493421c8e2c747eb47e2d1cf10b2d3ee4214",
+      "bytes": 5024,
       "baseline_export_path": "README.md",
-      "baseline_export_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab"
+      "baseline_export_sha256": "bc41dfa663ca1e48c1820871c167a175d73ea192b26fb5d9ef8bda2bf6edd5ab",
+      "previous_exports": [
+        {
+          "sha256": "4172560f23f273c38145e0aed444bd505235f103e5ca3a443c558bba3f95b9d3",
+          "bytes": 4775,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": null,
@@ -1230,12 +1238,20 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "export_path": "dashboard/README.md",
-      "export_sha256": "93f116882b9930e531c31faa5e19652881d0fdc2ecca42a3cef785810b030148",
-      "bytes": 4216,
+      "export_sha256": "9ff26f354101620d454844b81c659506abfa15efdceda3ea4983a5db2a88b71c",
+      "bytes": 5182,
       "baseline_export_path": "docs/RUNTIME.md",
-      "baseline_export_sha256": "4f693a52a2e92ebcb221f51c386a8c939d1e34c4efe2acc5c2bb63d9b4449539"
+      "baseline_export_sha256": "4f693a52a2e92ebcb221f51c386a8c939d1e34c4efe2acc5c2bb63d9b4449539",
+      "previous_exports": [
+        {
+          "sha256": "93f116882b9930e531c31faa5e19652881d0fdc2ecca42a3cef785810b030148",
+          "bytes": 4216,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "export_path": "dashboard/__init__.py",
@@ -1257,11 +1273,19 @@
       "original_path": "app/benchmark.py",
       "export_path": "dashboard/backend/benchmark.py",
       "original_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
-      "export_sha256": "1a0436a684b3aece48c000edd27a1f19eee5660679720e6e1f5ad180bf3b3cfd",
-      "bytes": 2981,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_sha256": "703d14dcf8f667ba9f42179ba2930cd1b208d85b90de22c9ec3b98812ae42ba9",
+      "bytes": 11428,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "baseline_export_path": "app/benchmark.py",
-      "baseline_export_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86"
+      "baseline_export_sha256": "7d55f3553d8184651395239d2cbc9b6e37a080899550a5743352961cb7b85d86",
+      "previous_exports": [
+        {
+          "sha256": "1a0436a684b3aece48c000edd27a1f19eee5660679720e6e1f5ad180bf3b3cfd",
+          "bytes": 2981,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": "app/feedback.py",
@@ -1297,11 +1321,19 @@
       "original_path": "app/server.py",
       "export_path": "dashboard/backend/server.py",
       "original_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
-      "export_sha256": "35a10181b8f630432cc360880ac7cab09e11cf24c8427a143ae44bb54dddb9b6",
-      "bytes": 26434,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "export_sha256": "cf4d074e1fda31246df6a15537629048628d51b4fc5b09799333a6efda004e2b",
+      "bytes": 26451,
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "baseline_export_path": "app/server.py",
-      "baseline_export_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff"
+      "baseline_export_sha256": "d7cd11b40805803ec9a408fc31ef39103567cc19239b76253ecbe007e693bcff",
+      "previous_exports": [
+        {
+          "sha256": "35a10181b8f630432cc360880ac7cab09e11cf24c8427a143ae44bb54dddb9b6",
+          "bytes": 26434,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": "app/session_security.py",
@@ -1347,31 +1379,55 @@
       "original_path": "dashboard/dashboard.js",
       "export_path": "dashboard/frontend/dashboard.js",
       "original_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
-      "export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
-      "bytes": 22014,
-      "treatment": "byte-identical baseline export, relocated",
+      "export_sha256": "735ff732360f12dccfd62a6ca05652eb3be22f5b1789dc9389821dc49491ee38",
+      "bytes": 23047,
+      "treatment": "byte-identical baseline export, relocated; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "baseline_export_path": "dashboard/dashboard.js",
-      "baseline_export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5"
+      "baseline_export_sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
+      "previous_exports": [
+        {
+          "sha256": "5e1ccf51c4acc944ae49a2616735278f2cd869193b0be48fc2f0fc74cf3f97f5",
+          "bytes": 22014,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": "dashboard/index.html",
       "export_path": "dashboard/frontend/index.html",
       "original_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
-      "export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
-      "bytes": 10204,
-      "treatment": "byte-identical baseline export, relocated",
+      "export_sha256": "d5f070c4bd2b2cf718d45344540d062d2404b4aebd0e1fbe20134f1615a0a891",
+      "bytes": 9833,
+      "treatment": "byte-identical baseline export, relocated; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "baseline_export_path": "dashboard/index.html",
-      "baseline_export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953"
+      "baseline_export_sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
+      "previous_exports": [
+        {
+          "sha256": "5988747d289939879b804d56f578b2a5eebb8422fd06296ac50ea01e963a5953",
+          "bytes": 10204,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": "dashboard/style.css",
       "export_path": "dashboard/frontend/style.css",
       "original_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
-      "export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
-      "bytes": 8971,
-      "treatment": "byte-identical baseline export, relocated",
+      "export_sha256": "11281b5aec66829a22c3c7f27b298476ddc8c00c09b2519a0f73495afc412acf",
+      "bytes": 10302,
+      "treatment": "byte-identical baseline export, relocated; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "baseline_export_path": "dashboard/style.css",
-      "baseline_export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf"
+      "baseline_export_sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
+      "previous_exports": [
+        {
+          "sha256": "52f5acaef481090e6883d156982342689a9bd7e20373b8a88a021c6d226413bf",
+          "bytes": 8971,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": null,
@@ -1621,19 +1677,35 @@
     },
     {
       "export_path": "tests/test_layout.py",
-      "export_sha256": "ed9634cc6169aa98cbec9b0816e3b67240d1773ef8904ceb990acf1b0b4d67a5",
-      "bytes": 8774,
-      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+      "export_sha256": "535b2d4f086b49045cdfd9fa056f439f0897bd42ac9a88d2e53c45ff2f09c758",
+      "bytes": 9407,
+      "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
+      "previous_exports": [
+        {
+          "sha256": "ed9634cc6169aa98cbec9b0816e3b67240d1773ef8904ceb990acf1b0b4d67a5",
+          "bytes": 8774,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "relocated baseline export, imports/pathroots/docs rewritten",
+      "treatment": "relocated baseline export, imports/pathroots/docs rewritten; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "export_path": "tests/test_publication.py",
-      "export_sha256": "6d95c7dec971b6619048e42db9c99ba176582ee14f01edf24be9656c17ca07b7",
+      "export_sha256": "e786c7638d4748fd207d4f107cbf639f19221133aa956b306349735ea3ac03e1",
       "bytes": 7795,
       "baseline_export_path": "tests/test_publication.py",
-      "baseline_export_sha256": "8490004d28c8dc5e6f96cb2d9bfa092ae89d2ea43d5dab85f8a16c2148c7b819"
+      "baseline_export_sha256": "8490004d28c8dc5e6f96cb2d9bfa092ae89d2ea43d5dab85f8a16c2148c7b819",
+      "previous_exports": [
+        {
+          "sha256": "6d95c7dec971b6619048e42db9c99ba176582ee14f01edf24be9656c17ca07b7",
+          "bytes": 7795,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "original_path": "infra/test-refinement-v3.py",
@@ -1668,18 +1740,42 @@
     {
       "original_path": null,
       "original_sha256": null,
-      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged",
+      "treatment": "existing public source/docs with bounded append-only foundation-next extension; baseline model evidence unchanged; dashboard projection v2 modifies presentation/derived aggregates or tests, not frozen archive",
       "export_path": "tools/run_offline_tests.py",
-      "export_sha256": "f50fb3666c392cd320bc542f61f7542d4cb536dec40ffac4811a0e43fc365278",
-      "bytes": 1788,
+      "export_sha256": "b21ec8ad5541901d8acaa3d68b2f97093ee75cbb216b1119ce1b091c79569032",
+      "bytes": 1822,
       "baseline_export_path": "tools/run_offline_tests.py",
-      "baseline_export_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a"
+      "baseline_export_sha256": "c56feb3d251d884745c35f2c4517c3733977df6b44168b0a3f750cd1c69fd24a",
+      "previous_exports": [
+        {
+          "sha256": "f50fb3666c392cd320bc542f61f7542d4cb536dec40ffac4811a0e43fc365278",
+          "bytes": 1788,
+          "revision": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+          "scope": "historical export before cohort projection v2"
+        }
+      ]
     },
     {
       "export_path": "tools/smoke_local_models.py",
       "export_sha256": "1ae63c3d317dd5d76a9da180f7508c16edc166d68352b995ad8a526d12ff645f",
       "bytes": 2567,
       "treatment": "new scoped classifier layout/CLI/safe numeric export/test/documentation; not an unchanged original-source claim"
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new dashboard cohort projection v2 regression or source/scope documentation; no research evidence changed",
+      "export_path": "tests/test_dashboard_cohorts.py",
+      "export_sha256": "e352576edd01d751dc7d3115391e563c240a95c4942fc4326bd04298e8c5352d",
+      "bytes": 8184
+    },
+    {
+      "original_path": null,
+      "original_sha256": null,
+      "treatment": "new dashboard cohort projection v2 regression or source/scope documentation; no research evidence changed",
+      "export_path": "docs/dashboard-cohorts.md",
+      "export_sha256": "ede17416f5d9028aefd3430a1c478e97c7e95d3bfc429d6db071fc36ad0815d5",
+      "bytes": 6625
     }
   ],
   "projection_sources": [
@@ -2765,5 +2861,14 @@
       "Numeric SigLIP2 full22 head explicitly safe-schema/hash/size bound; ops independently reviews before external publication.",
       "DINOv3 unrun access-blocked401, no gate bypass or terms acceptance."
     ]
+  },
+  "dashboard_projection": {
+    "version": 2,
+    "generated_utc": "2026-11-17T16:02:49.763334+00:00",
+    "archive_baseline": "63c074f7fe97f17196f3421e7e0001e3d0221086",
+    "default_cohort": "shared9",
+    "display_methods": 6,
+    "preserved_frozen_evidence": true,
+    "source_document": "docs/dashboard-cohorts.md"
   }
 }

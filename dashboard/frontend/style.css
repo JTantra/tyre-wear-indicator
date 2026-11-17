@@ -3,3 +3,11 @@
 
 .owned-feedback{display:block;margin:16px 0;font-size:13px}.owned-feedback select{display:block;width:100%;margin-top:8px}
 #session-recovery summary{cursor:pointer;font-weight:650}#session-recovery input{display:block;width:100%;margin-top:8px;padding:10px;border:1px solid #bccacf;border-radius:6px;font:inherit;min-height:44px}#recovery-display{font-family:ui-monospace,Consolas,monospace}#session-recovery button{width:100%}#session-recovery input:focus-visible,#session-recovery summary:focus-visible{outline:2px solid var(--teal);outline-offset:3px}
+
+/* Keep comparison details compact and wide tables contained on small screens. */
+.comparison>* , .upload-grid>* , .intro>* {min-width:0} .toolbar{flex-wrap:wrap} .table-scroll{max-width:100%} td:first-child{min-width:175px;max-width:240px} details p{overflow-wrap:anywhere} .metric small{white-space:normal;max-width:160px} #cohort-population{white-space:normal} .owned-feedback select{min-width:0;max-width:100%}
+
+.source-button{width:auto;padding:0;background:transparent;color:var(--ink);font:inherit;font-weight:650;text-align:left;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+#method-details{width:min(820px,92vw);max-height:85vh;border:1px solid var(--line);border-radius:5px;padding:26px;color:var(--ink);box-shadow:0 12px 50px #15293433}
+#method-details::backdrop{background:#15293480}#method-details .section-head{align-items:start}#method-details h2{font-size:21px}#close-method-details{width:auto;padding:9px 16px}#method-detail-body dl{display:grid;grid-template-columns:145px 1fr;gap:14px 20px;font-size:12px;line-height:1.6}#method-detail-body dt{font-weight:650}#method-detail-body dd{margin:0;overflow-wrap:anywhere;color:var(--muted)}
+@media(max-width:620px){#method-details{padding:18px}#method-detail-body dl{grid-template-columns:1fr;gap:5px}#method-detail-body dd{margin-bottom:10px}}

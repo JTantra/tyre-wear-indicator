@@ -6,7 +6,7 @@ Original project and activeca2 manifest/build/runtime/productionledger remain un
 
 Export-only changes: absolute WSLroot becomes source-relative; AutoML subscription/RG/workspace are environment placeholders; GPTtenant binds AZURE_TENANT_ID; private owner/IAM/auth-reconciliation branch removed and raises; cloud guard requires fresh TYRE_OWNER_AUTHORIZED_CLOUD opt-in; safe GPTplan describes actual13, not earlier15; production FINAL_BENCHMARK projection replaced with safe anonymous research aggregates; selected tests needing private assets explicitly skip. The original local app cloud registry expects private sibling adapters; these are not copied and remote availability correctly fails closed. The published safe app is local-only until separately engineered/reviewed private durable cloud runtime integration. No ca2 packaging/redeployment claim.
 
-Local app: `python -m app.server --bind 127.0.0.1 --port 8765`. Regenerate local heads first to enable actual local infer. Its feedback SQLite and volatile in-memory job stores are development-only; generated state is ignored. Publicmode requires explicit durable feedback/job factories, HTTPS ingress/public origins, cookie/session keys and paid adapter checkpoint contract; simply binding0.0.0.0must fail without them. The existing online password-gated pilot has four methods and separate private native infrastructure; exported local registry should not be confused with its capabilities.
+Local app (current layout): `python -m dashboard.backend.server --bind 127.0.0.1 --port 8765 --read-only`. Remove `--read-only` only for separately authorized local inference; merely viewing comparisons needs no model execution. Regenerate local heads first to enable actual local infer. Its feedback SQLite and volatile in-memory job stores are development-only; generated state is ignored. Publicmode requires explicit durable feedback/job factories, HTTPS ingress/public origins, cookie/session keys and paid adapter checkpoint contract; simply binding0.0.0.0must fail without them. The existing online password-gated pilot has four methods and separate private native infrastructure; exported local registry should not be confused with its capabilities.
 
 GPT genuine adapter conditional inputs in infra/vision-finetune/: fresh account-readback endpoint; job-readback succeeded/exact trained_model; deployment-name readback model version/provisioning/rateLimits; per-method preflight complete; configured plan.scope and AZURE_TENANT_ID; credential with CognitiveServices audience. Adapter requires cloud-send consent, complete availablemethod, validated bytes, exclusive project ledger reservation and200lifetimecap; unknown transport/usage/schema halts. These private receipts are intentionally absent and may contain identities/secrets if naively captured: keep them ignored. No command automates training/deployment/IAM under this task. Owner must independently verify new source/receipt protocol before cloud-serving this adapted tree.
 
@@ -23,3 +23,16 @@ New start: `python -m dashboard.backend.server --bind 127.0.0.1 --port 8765 --re
 Open http://127.0.0.1:8765 . Frontend and benchmark/method APIs are real loopback HTTP.
 Read-only disables POST/inference/background worker; session issuance is ephemeral.
 Local heads are included; availability additionally requires pinned backbones. Paid capabilities stay unavailable.
+
+
+## Cohort comparison projection v2
+
+The default dashboard compares exactly six core methods on the same nine photos (5 bad, 4 good).
+The secondary full-22 view uses 13 bad / 9 good; GPT is explicitly not evaluated there.
+All cards, filters, chart points and score denominators follow the selected cohort.
+The historical per-image explorer is removed from the UI; archived research files and its compatibility endpoint remain intact.
+Per-job upload predictions, consent, authentication, retention and recovery are unchanged.
+Other experimental classifiers remain in the research tree but are intentionally omitted from dashboard presentation and upload choices.
+Historical scores never imply a configured runtime adapter.
+
+[Projection sources, scopes and verification](../docs/dashboard-cohorts.md).

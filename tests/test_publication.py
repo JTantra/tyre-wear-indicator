@@ -80,7 +80,7 @@ class PublicationTests(unittest.TestCase):
     with urllib.request.urlopen('http://127.0.0.1:'+str(port)+'/api/methods') as r:
      data=json.load(r);self.assertEqual(r.status,200);self.assertFalse(any(m['status']=='available' for m in data['methods']))
     with urllib.request.urlopen('http://127.0.0.1:'+str(port)+'/api/benchmarks') as r:
-     data=json.load(r);self.assertEqual(data['method_count'],7)
+     data=json.load(r);self.assertEqual(data['method_count'],6)
    finally:http.shutdown();http.server_close();thread.join(5)
  @unittest.skip('Original private image archive/weights intentionally excluded; no model inference or fake result')
  def test_private_models_retrain_and_infer(self):pass

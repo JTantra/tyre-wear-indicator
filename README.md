@@ -56,6 +56,8 @@ python tools/check_publication.py
 python tools/check_publication.py --staged
 python tools/run_offline_tests.py
 ```
+The dashboard defaults to the six-method shared-nine comparison; full22 is secondary and has no GPT score. Historical per-image browsing is intentionally removed; research records remain. See [cohort sources and scopes](docs/dashboard-cohorts.md).
+
 [Dashboard setup](dashboard/README.md) · [Hosting boundaries](infra/README.md) · [Costs](docs/COSTS.md).
 No deployment or paid inference is performed by this refactor. The curated application is not the private deployed production image.
 

@@ -96,7 +96,14 @@ class LayoutTests(unittest.TestCase):
     else:self.fail('Dashboard readiness timeout')
     for path,needle in [('/',b'<html'),('/dashboard.js',b'api/'),('/style.css',b'{')]:
      with urllib.request.urlopen(base+path,timeout=3) as r:self.assertEqual(r.status,200);self.assertIn(needle,r.read())
-    with urllib.request.urlopen(base+'/api/benchmarks') as r:self.assertEqual(json.load(r)['method_count'],7)
+    with urllib.request.urlopen(base+'/api/benchmarks') as r:
+     data=json.load(r);self.assertEqual(data['method_count'],6);self.assertEqual(data['default_cohort'],'shared9')
+     self.assertEqual([m['correct_binary'] for m in data['methods']],[4,4,7,8,3,9])
+     self.assertEqual([m['correct_binary'] for m in data['cohorts']['full22']['methods']],[12,14,18,19,11,None])
+    with urllib.request.urlopen(base+'/api/methods') as r:
+     value=json.load(r);self.assertEqual(len(value['methods']),4)
+     self.assertEqual({m['id'] for m in value['methods']},{'local-resnet18-final','local-mobilenet-final','local-clip-final','remote-luna'})
+     self.assertNotIn('azure-ml',json.dumps(value));self.assertFalse(value['budget']['live_snapshot'])
     with urllib.request.urlopen(base+'/api/per-images') as r:self.assertEqual(len(json.load(r)['rows']),128)
     with urllib.request.urlopen(base+'/api/session') as r:self.assertEqual(len(json.load(r)['csrf_token']),43);self.assertIn('HttpOnly',r.headers['Set-Cookie'])
     for path in ['/api/feedback','/api/jobs/'+('a'*32)]:

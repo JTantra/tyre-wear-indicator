@@ -231,7 +231,7 @@ class Handler(BaseHTTPRequestHandler):
    try: JOB_STORE.health(); FEEDBACK.list_owned('__readiness__'); return self.send(200,{'ready':True,'public':PUBLIC})
    except Exception: return self.send(503,{'ready':False})
   if path=='/api/benchmarks': return self.send(200,benchmark.summary())
-  if path=='/api/methods': return self.send(200,{'methods':REGISTRY.methods(),'budget':benchmark.budget()})
+  if path=='/api/methods': return self.send(200,{'methods':benchmark.method_metadata(REGISTRY),'budget':benchmark.budget()})
   if path=='/api/per-images': return self.send(200,{'rows':benchmark.per_images()})
   if path=='/api/feedback':
    if not self.auth: return self.send(404,{'error':'Session not found'})
